@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &mdash; Simba Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><i class="fa-solid fa-paw"></i>Simba Adventures</a>
+      <ul class="nav-menu nav-menu-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tours &amp; Safaris</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
+        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="wrap">
+      <span class="eyebrow on-dark">Start Your Journey</span>
+      <h1>Contact Us</h1>
+      <p class="lede">Tell us what you have in mind and we'll help shape a Tanzania safari that feels made for you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div style="display:grid; grid-template-columns:1fr 340px; gap:30px; align-items:start;">
+        <div class="form-card">
+          <h3 style="margin-bottom:4px;">Safari <span class="italic">Enquiry</span></h3>
+          <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;">Fill in what you know &mdash; we'll handle the rest.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Your name" required></div>
+              <div class="form-group"><label>Email <span class="req">*</span></label><input type="email" placeholder="you@email.com" required></div>
+            </div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 000-0000"></div>
+            <div class="form-group"><label>Message <span class="req">*</span></label><textarea placeholder="Tell us where you would like to go, when you would like to travel, and anything that would make this trip special..."></textarea></div>
+            <button type="submit" class="btn btn-gold btn-block">Send My Enquiry &rarr;</button>
+            <p class="form-note">We typically reply within 24 hours.</p>
+          </form>
+        </div>
+
+        <div>
+          <div class="info-card-dark" style="margin-bottom:20px;">
+            <h3>Contact Directly</h3>
+            <p style="font-size:12.5px; color:rgba(237,231,211,0.7); margin-bottom:18px;">Prefer a conversation? Our safari specialists are happy to help.</p>
+            <div class="info-line"><i class="fa-solid fa-location-dot"></i><div><strong>Arusha, Tanzania</strong>Near Kilimanjaro Gate</div></div>
+            <div class="info-line"><i class="fa-solid fa-phone"></i><div><strong>+255 700 123 456</strong>Mon&ndash;Sat, 8am&ndash;6pm EAT</div></div>
+            <div class="info-line" style="margin-bottom:0;"><i class="fa-solid fa-envelope"></i><div><strong>hello@simbaadventures.co.tz</strong>Response within 24 hours</div></div>
+          </div>
+
+          <div class="info-card-light">
+            <h3>Why book with <span class="italic">Simba</span>?</h3>
+            <div class="check-line"><i class="fa-solid fa-check"></i>100% Tanzanian-owned &amp; operated</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i>No hidden fees &mdash; transparent pricing</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i>Fully bespoke, never group tours</div>
+            <div class="check-line" style="margin-bottom:0;"><i class="fa-solid fa-check"></i>24/7 in-country support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap" style="max-width:760px;">
+      <div class="section-header center">
+        <span class="eyebrow">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">When is the best time to visit Tanzania?<span class="plus">+</span></div>
+        <div class="faq-a">The dry season from June to October offers the best game viewing, including the Great Migration river crossings. The calving season in January&ndash;February is also spectacular.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How far in advance should I book?<span class="plus">+</span></div>
+        <div class="faq-a">We recommend booking 6&ndash;12 months ahead for peak season (July&ndash;September) to secure the best camps. Off-peak trips can often be arranged with 2&ndash;3 months' notice.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are your safaris suitable for families?<span class="plus">+</span></div>
+        <div class="faq-a">Absolutely. We design family-friendly itineraries with shorter drive times, family tents, and guides experienced in engaging younger travellers.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><i class="fa-solid fa-paw"></i>Simba Adventures</div>
+          <p class="footer-desc">Tanzania's premier safari specialist. Crafting unforgettable wildlife journeys since 2006.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-menu">
+            <li><a href="tour.html">Serengeti Safaris</a></li>
+            <li><a href="tour.html">Kilimanjaro Treks</a></li>
+            <li><a href="tour.html">Zanzibar Retreats</a></li>
+            <li><a href="tour.html">Ngorongoro Crater</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="about-us.html">Our Team</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Get In Touch</div>
+          <div class="footer-contact-info">
+            <p><i class="fa-solid fa-location-dot"></i>Arusha, Tanzania</p>
+            <p><i class="fa-solid fa-phone"></i>+255 700 123 456</p>
+            <p><i class="fa-solid fa-envelope"></i>hello@simbaadventures.co.tz</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2006&ndash;2026 Simba Adventures. All rights reserved.</div>
+        <div><a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.html">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      var q = item.querySelector('.faq-q');
+      if(q){ q.addEventListener('click', function(){ item.classList.toggle('open'); }); }
+    });
+  </script>
+</body>
+</html>

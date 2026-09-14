@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy &mdash; Simba Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><i class="fa-solid fa-paw"></i>Simba Adventures</a>
+      <ul class="nav-menu nav-menu-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tours &amp; Safaris</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
+        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-tight" style="padding-top:56px;">
+    <div class="wrap">
+      <span class="eyebrow">Legal Protection</span>
+      <h1 style="font-size:40px;">Privacy <span class="italic">Policy</span></h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px;">
+    <div class="wrap" style="max-width:820px;">
+      <div class="content-box">
+        <p>At Simba Adventures, we take your personal privacy seriously. This document outlines how we collect, handle, and secure your personal details during safari bookings.</p>
+
+        <h3>1. Information We Collect</h3>
+        <p>We collect essential personal information required to process national park permits, accommodations, and internal flights, including full names, passport details, phone numbers, and dietary preferences.</p>
+
+        <h3>2. How We Use Your Data</h3>
+        <p>Your data is strictly used for booking safari lodges, processing government conservation permits, and organizing local concierge transportation across East Africa.</p>
+
+        <h3>3. Data Protection &amp; Sharing</h3>
+        <p>We never sell or distribute your personal details to third-party advertisers. Information is only shared with accredited park authorities and partner lodges essential to your itinerary.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><i class="fa-solid fa-paw"></i>Simba Adventures</div>
+          <p class="footer-desc">Tanzania's premier safari specialist. Crafting unforgettable wildlife journeys since 2006.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-menu">
+            <li><a href="tour.html">Serengeti Safaris</a></li>
+            <li><a href="tour.html">Kilimanjaro Treks</a></li>
+            <li><a href="tour.html">Zanzibar Retreats</a></li>
+            <li><a href="tour.html">Ngorongoro Crater</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="about-us.html">Our Team</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Get In Touch</div>
+          <div class="footer-contact-info">
+            <p><i class="fa-solid fa-location-dot"></i>Arusha, Tanzania</p>
+            <p><i class="fa-solid fa-phone"></i>+255 700 123 456</p>
+            <p><i class="fa-solid fa-envelope"></i>hello@simbaadventures.co.tz</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2006&ndash;2026 Simba Adventures. All rights reserved.</div>
+        <div><a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.html">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      var q = item.querySelector('.faq-q');
+      if(q){ q.addEventListener('click', function(){ item.classList.toggle('open'); }); }
+    });
+  </script>
+</body>
+</html>
