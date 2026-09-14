@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
 
   <link
     rel="preconnect"
-    href="https://fonts.gstatic.com"
+    href="https://fonts.googleapis.com"
     crossorigin
   >
 
@@ -181,7 +182,7 @@
 
 
       /*
-        LOAD TOURS FROM JSON
+        LOAD TOURS FROM CMS JSON
       */
 
       fetch('tours.json')
@@ -201,7 +202,23 @@
         })
 
 
-        .then(function(tours) {
+        .then(function(data) {
+
+
+          /*
+            SUPPORT CMS STRUCTURE:
+
+            {
+              "tours": [...]
+            }
+
+            ALSO SUPPORT OLD ARRAY FORMAT
+          */
+
+          const tours =
+            Array.isArray(data)
+              ? data
+              : data.tours || [];
 
 
           /*
@@ -242,6 +259,16 @@
             return;
 
           }
+
+
+          /*
+            SAFE TAGS ARRAY
+          */
+
+          const tags =
+            Array.isArray(tour.tags)
+              ? tour.tags
+              : [];
 
 
           /*
@@ -385,7 +412,7 @@
                 "
               >
 
-                ${tour.tags.map(function(tag) {
+                ${tags.map(function(tag) {
 
                   return `
                     <span
@@ -473,3 +500,4 @@
 
 </body>
 </html>
+```
