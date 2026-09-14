@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
 
   <title>Tours & Safaris — Simba Adventures</title>
 
@@ -37,109 +39,97 @@
 
 </head>
 
-
 <body>
-
 
   <!-- ================= HEADER ================= -->
 
   <header class="site-header">
 
-    <div class="wrap">
+```
+<div class="wrap">
 
-      <a
-        href="index.html"
-        class="brand"
-      >
+  <a
+    href="index.html"
+    class="brand"
+  >
 
-        <i class="fa-solid fa-paw"></i>
+    <i class="fa-solid fa-paw"></i>
 
-        Simba Adventures
+    Simba Adventures
 
+  </a>
+
+
+  <ul
+    class="nav-menu nav-menu-links"
+    id="navMenu"
+  >
+
+    <li>
+      <a href="index.html">
+        Home
       </a>
+    </li>
 
 
-      <ul
-        class="nav-menu nav-menu-links"
-        id="navMenu"
+    <li>
+      <a
+        href="tour.html"
+        class="active"
       >
-
-        <li>
-
-          <a href="index.html">
-            Home
-          </a>
-
-        </li>
+        Tours &amp; Safaris
+      </a>
+    </li>
 
 
-        <li>
-
-          <a
-            href="tour.html"
-            class="active"
-          >
-            Tours &amp; Safaris
-          </a>
-
-        </li>
+    <li>
+      <a href="about-us.html">
+        About Us
+      </a>
+    </li>
 
 
-        <li>
-
-          <a href="about-us.html">
-            About Us
-          </a>
-
-        </li>
+    <li>
+      <a href="gallery.html">
+        Gallery
+      </a>
+    </li>
 
 
-        <li>
+    <li>
+      <a href="contact-us.html">
+        Contact
+      </a>
+    </li>
 
-          <a href="gallery.html">
-            Gallery
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="contact-us.html">
-            Contact
-          </a>
-
-        </li>
-
-      </ul>
+  </ul>
 
 
-      <div class="nav-right">
+  <div class="nav-right">
 
-        <a
-          href="plan-my-safari.html"
-          class="btn btn-gold btn-sm"
-        >
-          Plan My Safari
-        </a>
+    <a
+      href="plan-my-safari.html"
+      class="btn btn-gold btn-sm"
+    >
+      Plan My Safari
+    </a>
 
 
-        <div
-          class="menu-toggle"
-          onclick="document.getElementById('navMenu').classList.toggle('show')"
-        >
+    <div
+      class="menu-toggle"
+      onclick="document.getElementById('navMenu').classList.toggle('show')"
+    >
 
-          <i class="fa-solid fa-bars"></i>
-
-        </div>
-
-      </div>
+      <i class="fa-solid fa-bars"></i>
 
     </div>
 
+  </div>
+
+</div>
+```
+
   </header>
-
-
 
   <!-- ================= HERO ================= -->
 
@@ -151,160 +141,158 @@
     "
   >
 
-    <div class="wrap">
+```
+<div class="wrap">
 
-      <span class="eyebrow on-dark">
-        Our Journeys
-      </span>
-
-
-      <h1>
-
-        Find Your
-
-        <span
-          class="italic"
-          style="
-            font-style:italic;
-            color:#D9B564;
-          "
-        >
-          Adventure
-        </span>
-
-      </h1>
+  <span class="eyebrow on-dark">
+    Our Journeys
+  </span>
 
 
-      <p class="lede">
+  <h1>
 
-        Handcrafted Tanzanian safaris,
-        from the Serengeti plains to
-        the beaches of Zanzibar.
+    Find Your
 
-      </p>
+    <span
+      class="italic"
+      style="
+        font-style:italic;
+        color:#D9B564;
+      "
+    >
+      Adventure
+    </span>
 
-    </div>
+  </h1>
+
+
+  <p class="lede">
+
+    Handcrafted Tanzanian safaris,
+    from the Serengeti plains to
+    the beaches of Zanzibar.
+
+  </p>
+
+</div>
+```
 
   </section>
-
-
 
   <!-- ================= TOURS SECTION ================= -->
 
   <section class="section">
 
-    <div class="wrap">
+```
+<div class="wrap">
 
 
-      <!-- ================= SECTION HEADER ================= -->
+  <div class="section-header">
 
-      <div class="section-header">
-
-        <span class="eyebrow">
-          Explore Tanzania
-        </span>
+    <span class="eyebrow">
+      Explore Tanzania
+    </span>
 
 
-        <h2>
-          Our Signature Safaris
-        </h2>
+    <h2>
+      Our Signature Safaris
+    </h2>
 
 
-        <p>
-          Choose a journey or let us create
-          something completely bespoke.
-        </p>
+    <p>
+      Choose a journey or let us create
+      something completely bespoke.
+    </p>
 
-      </div>
-
-
-
-      <!-- ================= FILTERS ================= -->
-
-      <div
-        style="
-          display:flex;
-          flex-wrap:wrap;
-          gap:10px;
-          margin-bottom:30px;
-        "
-      >
-
-        <button
-          class="btn btn-outline tour-filter active"
-          data-filter="All"
-        >
-          All Tours
-        </button>
-
-
-        <button
-          class="btn btn-outline tour-filter"
-          data-filter="Big Five"
-        >
-          Big Five
-        </button>
-
-
-        <button
-          class="btn btn-outline tour-filter"
-          data-filter="Migration"
-        >
-          Migration
-        </button>
-
-
-        <button
-          class="btn btn-outline tour-filter"
-          data-filter="Beach Combo"
-        >
-          Beach Combos
-        </button>
-
-
-        <button
-          class="btn btn-outline tour-filter"
-          data-filter="Short Break"
-        >
-          Short Breaks
-        </button>
-
-      </div>
+  </div>
 
 
 
-      <!-- ================= TOUR COUNT ================= -->
+  <!-- ================= FILTERS ================= -->
 
-      <p
-        id="tour-count"
-        style="
-          margin-bottom:20px;
-          color:var(--ink-faint);
-          font-size:14px;
-        "
-      >
-        Loading tours...
-      </p>
+  <div
+    style="
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:30px;
+    "
+  >
 
-
-
-      <!-- ================= TOUR GRID ================= -->
-
-      <div
-        class="itin-grid"
-        id="tours-grid"
-      >
-
-        <!-- Tours will be loaded from tours.json -->
-
-      </div>
+    <button
+      class="btn btn-outline tour-filter active"
+      data-filter="All"
+    >
+      All Tours
+    </button>
 
 
-    </div>
+    <button
+      class="btn btn-outline tour-filter"
+      data-filter="Big Five"
+    >
+      Big Five
+    </button>
+
+
+    <button
+      class="btn btn-outline tour-filter"
+      data-filter="Migration"
+    >
+      Migration
+    </button>
+
+
+    <button
+      class="btn btn-outline tour-filter"
+      data-filter="Beach Combo"
+    >
+      Beach Combos
+    </button>
+
+
+    <button
+      class="btn btn-outline tour-filter"
+      data-filter="Short Break"
+    >
+      Short Breaks
+    </button>
+
+  </div>
+
+
+
+  <!-- ================= TOUR COUNT ================= -->
+
+  <p
+    id="tour-count"
+    style="
+      margin-bottom:20px;
+      color:var(--ink-faint);
+      font-size:14px;
+    "
+  >
+    Loading tours...
+  </p>
+
+
+
+  <!-- ================= TOUR GRID ================= -->
+
+  <div
+    class="itin-grid"
+    id="tours-grid"
+  >
+
+    <!-- Tours loaded from tours.json -->
+
+  </div>
+
+
+</div>
+```
 
   </section>
-
-
 
   <!-- ================= CTA ================= -->
 
@@ -316,317 +304,285 @@
     "
   >
 
-    <div
-      class="wrap"
-      style="
-        max-width:900px;
-        text-align:center;
-      "
-    >
+```
+<div
+  class="wrap"
+  style="
+    max-width:900px;
+    text-align:center;
+  "
+>
 
-      <span class="eyebrow">
-        Can't Decide?
-      </span>
-
-
-      <h2>
-        Let Us Plan Your
-        <span class="italic">
-          Perfect Safari
-        </span>
-      </h2>
+  <span class="eyebrow">
+    Can't Decide?
+  </span>
 
 
-      <p
-        style="
-          max-width:650px;
-          margin:0 auto 25px;
-          color:var(--ink-faint);
-        "
-      >
-        Tell us what you're looking for,
-        and our Tanzania experts will create
-        a personalised itinerary for you.
-      </p>
+  <h2>
+    Let Us Plan Your
+    <span class="italic">
+      Perfect Safari
+    </span>
+  </h2>
 
 
-      <a
-        href="plan-my-safari.html"
-        class="btn btn-gold"
-      >
-        Plan My Safari &rarr;
-      </a>
+  <p
+    style="
+      max-width:650px;
+      margin:0 auto 25px;
+      color:var(--ink-faint);
+    "
+  >
+    Tell us what you're looking for,
+    and our Tanzania experts will create
+    a personalised itinerary for you.
+  </p>
 
-    </div>
+
+  <a
+    href="plan-my-safari.html"
+    class="btn btn-gold"
+  >
+    Plan My Safari &rarr;
+  </a>
+
+</div>
+```
 
   </section>
-
-
 
   <!-- ================= FOOTER ================= -->
 
   <footer class="site-footer">
 
-    <div class="wrap">
+```
+<div class="wrap">
 
-      <div class="footer-grid">
+  <div class="footer-grid">
 
 
-        <!-- ================= FOOTER BRAND ================= -->
+    <div>
 
-        <div>
+      <div class="footer-brand">
 
-          <div class="footer-brand">
+        <i class="fa-solid fa-paw"></i>
 
-            <i class="fa-solid fa-paw"></i>
-
-            Simba Adventures
-
-          </div>
-
-
-          <p class="footer-desc">
-
-            Tanzania's premier safari specialist.
-            Crafting unforgettable wildlife journeys since 2006.
-
-          </p>
-
-
-          <div class="footer-social">
-
-            <a href="#">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-
-            <a href="#">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= EXPLORE ================= -->
-
-        <div>
-
-          <div class="footer-col-title">
-            Explore
-          </div>
-
-
-          <ul class="footer-menu">
-
-            <li>
-              <a href="tour.html">
-                Serengeti Safaris
-              </a>
-            </li>
-
-
-            <li>
-              <a href="tour.html">
-                Kilimanjaro Treks
-              </a>
-            </li>
-
-
-            <li>
-              <a href="tour.html">
-                Zanzibar Retreats
-              </a>
-            </li>
-
-
-            <li>
-              <a href="tour.html">
-                Ngorongoro Crater
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-
-        <!-- ================= COMPANY ================= -->
-
-        <div>
-
-          <div class="footer-col-title">
-            Company
-          </div>
-
-
-          <ul class="footer-menu">
-
-            <li>
-              <a href="about-us.html">
-                About Us
-              </a>
-            </li>
-
-
-            <li>
-              <a href="about-us.html">
-                Our Team
-              </a>
-            </li>
-
-
-            <li>
-              <a href="contact-us.html">
-                Contact
-              </a>
-            </li>
-
-
-            <li>
-              <a href="privacy-policy.html">
-                Privacy Policy
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <div>
-
-          <div class="footer-col-title">
-            Get In Touch
-          </div>
-
-
-          <div class="footer-contact-info">
-
-            <p>
-
-              <i class="fa-solid fa-location-dot"></i>
-
-              Arusha, Tanzania
-
-            </p>
-
-
-            <p>
-
-              <i class="fa-solid fa-phone"></i>
-
-              +255 700 123 456
-
-            </p>
-
-
-            <p>
-
-              <i class="fa-solid fa-envelope"></i>
-
-              hello@simbaadventures.co.tz
-
-            </p>
-
-          </div>
-
-        </div>
+        Simba Adventures
 
       </div>
 
 
+      <p class="footer-desc">
 
-      <!-- ================= FOOTER BOTTOM ================= -->
+        Tanzania's premier safari specialist.
+        Crafting unforgettable wildlife journeys since 2006.
 
-      <div class="footer-bottom">
-
-        <div>
-
-          &copy; 2006&ndash;2026 Simba Adventures.
-          All rights reserved.
-
-        </div>
+      </p>
 
 
-        <div>
+      <div class="footer-social">
 
-          <a href="privacy-policy.html">
-            Privacy Policy
-          </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
 
 
-          <a href="sitemap.html">
-            Sitemap
-          </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
 
-        </div>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
 
       </div>
 
     </div>
 
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Explore
+      </div>
+
+
+      <ul class="footer-menu">
+
+        <li>
+          <a href="tour.html">
+            Serengeti Safaris
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tour.html">
+            Kilimanjaro Treks
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tour.html">
+            Zanzibar Retreats
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tour.html">
+            Ngorongoro Crater
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Company
+      </div>
+
+
+      <ul class="footer-menu">
+
+        <li>
+          <a href="about-us.html">
+            About Us
+          </a>
+        </li>
+
+
+        <li>
+          <a href="about-us.html">
+            Our Team
+          </a>
+        </li>
+
+
+        <li>
+          <a href="contact-us.html">
+            Contact
+          </a>
+        </li>
+
+
+        <li>
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Get In Touch
+      </div>
+
+
+      <div class="footer-contact-info">
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Arusha, Tanzania
+        </p>
+
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +255 700 123 456
+        </p>
+
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          hello@simbaadventures.co.tz
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <div>
+
+      &copy; 2006&ndash;2026 Simba Adventures.
+      All rights reserved.
+
+    </div>
+
+
+    <div>
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+
+      <a href="sitemap.html">
+        Sitemap
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
   </footer>
-
-
 
   <!-- ================= JAVASCRIPT ================= -->
 
   <script>
 
-
-    /*
-      TOUR GRID
-    */
-
     const toursGrid =
-      document.getElementById(
-        'tours-grid'
-      );
-
-
-    /*
-      TOUR COUNT
-    */
+      document.getElementById('tours-grid');
 
     const tourCount =
-      document.getElementById(
-        'tour-count'
-      );
-
-
-    /*
-      FILTER BUTTONS
-    */
+      document.getElementById('tour-count');
 
     const filterButtons =
-      document.querySelectorAll(
-        '.tour-filter'
-      );
-
-
-    /*
-      STORE ALL TOURS
-    */
+      document.querySelectorAll('.tour-filter');
 
     let allTours = [];
 
 
-
     /*
       LOAD TOURS
-      FROM tours.json
+      Supports both:
+
+      [
+        {...},
+        {...}
+      ]
+
+      AND:
+
+      {
+        "tours": [
+          {...},
+          {...}
+        ]
+      }
     */
 
     fetch('tours.json')
@@ -646,9 +602,41 @@
       })
 
 
-      .then(function(tours) {
+      .then(function(data) {
 
-        allTours = tours;
+        /*
+          CMS format
+        */
+
+        if (
+          data &&
+          Array.isArray(data.tours)
+        ) {
+
+          allTours = data.tours;
+
+        }
+
+        /*
+          Old format
+        */
+
+        else if (
+          Array.isArray(data)
+        ) {
+
+          allTours = data;
+
+        }
+
+        else {
+
+          throw new Error(
+            'Invalid tours.json structure'
+          );
+
+        }
+
 
         renderTours(allTours);
 
@@ -699,17 +687,8 @@
 
     function renderTours(tours) {
 
-
-      /*
-        Clear existing cards
-      */
-
       toursGrid.innerHTML = '';
 
-
-      /*
-        Update count
-      */
 
       tourCount.textContent =
         tours.length +
@@ -720,11 +699,6 @@
         ) +
         ' available';
 
-
-
-      /*
-        No results
-      */
 
       if (tours.length === 0) {
 
@@ -756,39 +730,19 @@
 
 
 
-      /*
-        Create each tour card
-      */
-
       tours.forEach(function(tour) {
 
 
-        /*
-          Details URL
-        */
-
         const detailsURL =
           'tour-details.html?tour=' +
-          encodeURIComponent(
-            tour.title
-          );
+          encodeURIComponent(tour.title);
 
-
-        /*
-          Booking URL
-        */
 
         const tourURL =
           'plan-my-safari.html?tour=' +
-          encodeURIComponent(
-            tour.title
-          );
+          encodeURIComponent(tour.title);
 
 
-
-        /*
-          Badge
-        */
 
         const badgeHTML =
           tour.badge
@@ -814,12 +768,8 @@
 
 
 
-        /*
-          Categories
-        */
-
         const categoriesHTML =
-          tour.categories
+          (tour.categories || [])
             .map(function(category) {
 
               return `
@@ -843,12 +793,8 @@
 
 
 
-        /*
-          Tags
-        */
-
         const tagsHTML =
-          tour.tags
+          (tour.tags || [])
             .map(function(tag) {
 
               return `
@@ -868,13 +814,8 @@
 
 
 
-        /*
-          CREATE CARD
-        */
-
         const card =
           document.createElement('article');
-
 
         card.className =
           'itin-card';
@@ -882,8 +823,6 @@
 
 
         card.innerHTML = `
-
-          <!-- IMAGE -->
 
           <div
             style="
@@ -911,16 +850,11 @@
 
 
 
-          <!-- CARD CONTENT -->
-
           <div
             style="
               padding:22px;
             "
           >
-
-
-            <!-- LOCATION -->
 
             <div
               style="
@@ -938,8 +872,6 @@
 
 
 
-            <!-- TITLE -->
-
             <h3
               style="
                 margin-bottom:10px;
@@ -951,8 +883,6 @@
             </h3>
 
 
-
-            <!-- DESCRIPTION -->
 
             <p
               style="
@@ -969,8 +899,6 @@
 
 
 
-            <!-- CATEGORIES -->
-
             <div
               style="
                 margin-bottom:12px;
@@ -982,8 +910,6 @@
             </div>
 
 
-
-            <!-- ROUTE -->
 
             <p
               style="
@@ -1001,8 +927,6 @@
             </p>
 
 
-
-            <!-- TOUR INFO -->
 
             <div
               style="
@@ -1037,8 +961,6 @@
 
 
 
-            <!-- ACCOMMODATION -->
-
             <p
               style="
                 font-size:12px;
@@ -1056,8 +978,6 @@
 
 
 
-            <!-- TAGS -->
-
             <div
               style="
                 margin-bottom:18px;
@@ -1069,8 +989,6 @@
             </div>
 
 
-
-            <!-- PRICE -->
 
             <div
               style="
@@ -1100,8 +1018,6 @@
             </div>
 
 
-
-            <!-- ACTIONS -->
 
             <div
               style="
@@ -1134,11 +1050,6 @@
         `;
 
 
-
-        /*
-          ADD CARD TO GRID
-        */
-
         toursGrid.appendChild(card);
 
       });
@@ -1158,12 +1069,6 @@
           'click',
           function() {
 
-
-            /*
-              Remove active
-              from all buttons
-            */
-
             filterButtons.forEach(
               function(btn) {
 
@@ -1175,26 +1080,14 @@
             );
 
 
-            /*
-              Make clicked button active
-            */
-
             button.classList.add(
               'active'
             );
 
 
-            /*
-              Get selected filter
-            */
-
             const filter =
               button.dataset.filter;
 
-
-            /*
-              Show all
-            */
 
             if (filter === 'All') {
 
@@ -1205,25 +1098,17 @@
             }
 
 
-            /*
-              Filter tours
-            */
-
             const filteredTours =
               allTours.filter(
                 function(tour) {
 
-                  return tour.categories.includes(
-                    filter
-                  );
+                  return (
+                    tour.categories || []
+                  ).includes(filter);
 
                 }
               );
 
-
-            /*
-              Render filtered tours
-            */
 
             renderTours(
               filteredTours
@@ -1236,7 +1121,6 @@
     );
 
   </script>
-
 
 </body>
 
