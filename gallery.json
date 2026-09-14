@@ -1,0 +1,52 @@
+{
+  "gallery": [
+    {
+      "title": "Soft-footed mornings",
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80",
+      "location": "Maasai Mara, Kenya",
+      "category": "Kenya",
+      "height": "340px",
+      "alt": "Soft-footed mornings"
+    },
+    {
+      "title": "Roads without a rush",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
+      "location": "Serengeti, Tanzania",
+      "category": "Tanzania",
+      "height": "260px",
+      "alt": "Roads without a rush"
+    },
+    {
+      "title": "Tall tales",
+      "image": "https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=600&q=80",
+      "location": "Tarangire, Tanzania",
+      "category": "Tanzania",
+      "height": "240px",
+      "alt": "Tall tales"
+    },
+    {
+      "title": "Where the evening settles",
+      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=600&q=80",
+      "location": "Okavango Delta, Botswana",
+      "category": "Botswana",
+      "height": "320px",
+      "alt": "Where the evening settles"
+    },
+    {
+      "title": "The last light",
+      "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=600&q=80",
+      "location": "Laikipia, Kenya",
+      "category": "Kenya",
+      "height": "300px",
+      "alt": "The last light"
+    },
+    {
+      "title": "A moving pattern",
+      "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=600&q=80",
+      "location": "Ngorongoro, Tanzania",
+      "category": "Tanzania",
+      "height": "260px",
+      "alt": "A moving pattern"
+    }
+  ]
+}
