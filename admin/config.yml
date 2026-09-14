@@ -1,0 +1,72 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "tours"
+    label: "Safari Tours"
+    files:
+      - name: "tours"
+        label: "Safari Tours"
+        file: "tours.json"
+        format: "json"
+        fields:
+          - label: "Tours"
+            name: "tours"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+
+              - label: "Location"
+                name: "location"
+                widget: "string"
+
+              - label: "Route"
+                name: "route"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Duration"
+                name: "duration"
+                widget: "string"
+
+              - label: "Price"
+                name: "price"
+                widget: "string"
+
+              - label: "Badge"
+                name: "badge"
+                widget: "string"
+                required: false
+
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+
+              - label: "Accommodation"
+                name: "accommodation"
+                widget: "string"
+
+              - label: "Rating"
+                name: "rating"
+                widget: "string"
+
+              - label: "Reviews"
+                name: "reviews"
+                widget: "string"
