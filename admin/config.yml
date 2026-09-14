@@ -71,3 +71,51 @@ collections:
               - label: "Reviews"
                 name: "reviews"
                 widget: "string"
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery"
+        file: "gallery.json"
+        format: "json"
+        fields:
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+
+              - label: "Location"
+                name: "location"
+                widget: "string"
+
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Kenya"
+                  - "Tanzania"
+                  - "Botswana"
+
+              - label: "Height"
+                name: "height"
+                widget: "select"
+                options:
+                  - "240px"
+                  - "260px"
+                  - "280px"
+                  - "300px"
+                  - "320px"
+                  - "340px"
+
+              - label: "Alt Text"
+                name: "alt"
+                widget: "string"
