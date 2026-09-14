@@ -1,8 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Netlify Identity -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <title>Simba Adventures &mdash; Unforgettable Tanzanian Safaris</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -195,7 +200,7 @@
         <div class="testi-card" style="border-color:var(--line); background:var(--paper);">
           <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p style="color:var(--ink-soft);">Chose the Safari &amp; Zanzibar combo for our honeymoon. The transition from dusty savanna to turquoise sea was unforgettable. We're already planning to return.</p>
-          <div class="testi-person"><div class="testi-avatar">PM</div><div><div class="testi-name" style="color:var(--ink);">Priya &amp; Arjun Mehta</div><div class="testi-meta" style="color:var(--ink-faint);">Singapore &middot; Zanzibar Retreat, 12 Days</div></div></div>
+          <div class="testi-person"><div class="testi-avatar">PM</div><div><div class="testi-name" style="color:var(--ink);">Priya &amp; Arjun Mehta</div><div><div class="testi-meta" style="color:var(--ink-faint);">Singapore &middot; Zanzibar Retreat, 12 Days</div></div></div></div>
         </div>
       </div>
 
@@ -269,11 +274,17 @@
       </div>
     </div>
   </footer>
+
   <script>
     document.querySelectorAll('.faq-item').forEach(function(item){
       var q = item.querySelector('.faq-q');
-      if(q){ q.addEventListener('click', function(){ item.classList.toggle('open'); }); }
+      if(q){
+        q.addEventListener('click', function(){
+          item.classList.toggle('open');
+        });
+      }
     });
   </script>
 </body>
 </html>
+```
