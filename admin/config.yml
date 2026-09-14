@@ -80,6 +80,10 @@ collections:
         file: "gallery.json"
         format: "json"
         fields:
+          - label: "Hero Image"
+            name: "heroImage"
+            widget: "image"
+
           - label: "Gallery"
             name: "gallery"
             widget: "list"
