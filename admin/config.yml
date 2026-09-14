@@ -17,6 +17,7 @@ collections:
           - label: "Tours"
             name: "tours"
             widget: "list"
+            collapsed: true
             fields:
               - label: "Title"
                 name: "title"
