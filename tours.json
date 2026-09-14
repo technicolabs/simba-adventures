@@ -26,69 +26,80 @@
       "rating": "4.9"
     },
     {
-      "badge": "Top Rated",
+      "badge": "",
       "price": "1000",
-      "route": "Kilimanjaro → Tarangire → Serengeti → Crater",
+      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
       "accommodation": "Boutique Lodge",
-      "duration": "10 Days",
-      "location": "Kilimanjaro",
-      "title": "Big Five Safari & Kilimanjaro",
+      "duration": "7 Days / 6 Nights",
+      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti & Ngorongoro",
+      "title": "7 Days Migration Safari",
       "tags": [
-        "Big Five",
-        "Mountain View",
-        "Private Lodge",
-        "Night Drive"
+        "Great Migration",
+        "Serengeti",
+        "Safari",
+        "Wildlife",
+        "Tarangire",
+        "Lake Manyara",
+        "Ngorongoro",
+        "Camping"
       ],
       "reviews": "167",
       "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Big Five"
+        "Budget Safaris"
       ],
-      "description": "Africa's icons — all on one range, from savanna to summit views.",
+      "description": "A 7-day camping safari featuring extended Serengeti game drives focused on the wildebeest migration, followed by a Ngorongoro Crater game drive.",
       "rating": "4.8"
     },
     {
       "badge": "",
       "price": "3,980",
-      "route": "Arusha → Ngorongoro → Lake Manyara → Arusha",
-      "accommodation": "Crater Lodge",
-      "duration": "5 Days",
-      "location": "Ngorongoro",
-      "title": "Ngorongoro Crater Exclusive",
+      "route": "Arusha → Arusha National Park → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Lake Eyasi → Arusha",
+      "accommodation": "Campsite/Hotel; Nsya Camp; Eyasi Campsite",
+      "duration": "8 Days / 7 Nights",
+      "location": "Tanzania — Arusha, Tarangire, Lake Manyara, Serengeti, Ngorongoro & Lake Eyasi",
+      "title": "8 Days Discover Tanzania",
       "tags": [
-        "Crater Lodge",
-        "Big Five",
-        "Exclusive"
+        "Tanzania Safari",
+        "Wildlife",
+        "Culture",
+        "Hadzabe",
+        "Lake Eyasi",
+        "Serengeti",
+        "Ngorongoro",
+        "Camping"
       ],
       "reviews": "142",
       "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Big Five",
-        "Short Break"
+        "Budget Safaris"
       ],
-      "description": "The world's most stunning caldera — the densest wildlife concentration on Earth.",
+      "description": "An 8-day adventure combining walking and game drives with wildlife viewing and a cultural experience with the Hadzabe around Lake Eyasi.",
       "rating": "4.8"
     },
     {
-      "badge": "Beach Combo",
+      "badge": "",
       "price": "2,200",
-      "route": "Serengeti → Arusha → Zanzibar Island",
-      "accommodation": "Beach Villa + Tented Camp",
-      "duration": "6 Days",
-      "location": "Zanzibar",
-      "title": "Safari & Zanzibar Retreat",
+      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Arusha",
+      "accommodation": "Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro Ang'ata Tented Camp",
+      "duration": "5 Days / 4 Nights",
+      "location": "Tanzania — Lake Manyara, Serengeti & Ngorongoro",
+      "title": "5 Days Wild Discovery",
       "tags": [
+        "Wildlife",
         "Safari",
-        "Beach",
-        "Luxury Resort",
-        "Snorkeling"
+        "Serengeti",
+        "Lake Manyara",
+        "Ngorongoro",
+        "Big Five",
+        "Tented Camp"
       ],
       "reviews": "186",
       "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Beach Combo"
+        "Mid Range Safaris"
       ],
-      "description": "Bush moments and ocean bliss — plains to paradise in one journey.",
+      "description": "A 5-day tented-camp safari exploring Lake Manyara, the Serengeti and Ngorongoro Crater, with multiple game drives and opportunities to see the Big Five.",
       "rating": "4.9"
     },
     {
