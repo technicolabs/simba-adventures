@@ -103,92 +103,106 @@
       "rating": "4.9"
     },
     {
-      "badge": "Off the Beaten",
+      "badge": "",
       "price": "5,290",
-      "route": "Dar es Salaam → Ruaha NP → Selous GR → Dar",
-      "accommodation": "Remote Tented Camp",
-      "duration": "7 Days",
-      "location": "Ruaha",
-      "title": "Ruaha & Selous Wilderness",
+      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
+      "accommodation": "Roika Tented Camp; Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro",
+      "duration": "7 Days / 6 Nights",
+      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti & Ngorongoro",
+      "title": "7 Days Nature Explorer",
       "tags": [
-        "Walking Safari",
-        "Fly-in",
-        "Remote",
-        "Elephants"
+        "Nature",
+        "Safari",
+        "Wildlife",
+        "Migration",
+        "Serengeti",
+        "Tarangire",
+        "Ngorongoro"
       ],
       "reviews": "109",
       "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Short Break"
+        "Mid Range Safaris"
       ],
-      "description": "Tanzania's remote, wild heart — an untouched southern circuit.",
+      "description": "A 7-day safari through Tanzania's northern circuit with game drives in Tarangire, Lake Manyara and Serengeti, followed by a Ngorongoro Crater descent.",
       "rating": "4.8"
     },
     {
       "badge": "",
       "price": "3,190",
-      "route": "Arusha → Tarangire → Lake Natron → Arusha",
-      "accommodation": "Eco Tented Camp",
-      "duration": "6 Days",
-      "location": "Tarangire",
-      "title": "Tarangire & Lake Natron",
+      "route": "Arusha → Arusha National Park → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Lake Eyasi → Arusha",
+      "accommodation": "Meru View Lodge; Ang'ata Tarangire Tented Camp; Kirurumu Manyara Tented Camp; Ang'ata Serengeti Tented Camp; Ang'ata Ngorongoro Tented Camp; Kisima Ngeda Tented Camp",
+      "duration": "8 Days / 7 Nights",
+      "location": "Tanzania — Arusha, Tarangire, Lake Manyara, Serengeti, Ngorongoro & Lake Eyasi",
+      "title": "8 Days Special Africa",
       "tags": [
-        "Elephants",
-        "Flamingos",
-        "Cultural",
-        "Maasai"
+        "Tanzania",
+        "Safari",
+        "Culture",
+        "Hadzabe",
+        "Wildlife",
+        "Serengeti",
+        "Lake Eyasi",
+        "Tented Camp"
       ],
       "reviews": "98",
       "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Short Break"
+        "Mid Range Safaris"
       ],
-      "description": "Elephants, flamingos & volcanic vistas across two contrasting landscapes.",
+      "description": "An 8-day safari combining wildlife, walking, game drives and a Lake Eyasi cultural experience with the Hadzabe.",
       "rating": "4.7"
     },
     {
-      "badge": "Adventure",
+      "badge": "",
       "price": "7,490",
-      "route": "Machame Gate → Kilimanjaro Summit → Serengeti",
-      "accommodation": "Mountain Huts + Lodge",
-      "duration": "14 Days",
-      "location": "Kilimanjaro",
-      "title": "Kilimanjaro Trek & Safari",
+      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Zanzibar",
+      "accommodation": "Tarangire Acacia Tented Camp; Manyara Secret Lodge; Malaika Luxury Camp; Lion's Paw Ngorongoro Luxury Camp; Zanzibar accommodation",
+      "duration": "12 Days / 11 Nights",
+      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti, Ngorongoro & Zanzibar",
+      "title": "12 Days Romantic Honeymoon Safari Tanzania",
       "tags": [
-        "Trekking",
-        "Summit",
-        "Big Five",
-        "Altitude"
+        "Honeymoon",
+        "Romantic",
+        "Safari",
+        "Zanzibar",
+        "Beach",
+        "Serengeti",
+        "Ngorongoro",
+        "Wildlife"
       ],
       "reviews": "133",
       "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Big Five"
+        "Mid Range Safaris"
       ],
-      "description": "Summit Africa's highest peak — then meet its wildlife on the plains below.",
+      "description": "A 12-day honeymoon journey combining Tanzania's major safari destinations with relaxation on Zanzibar's beaches.",
       "rating": "4.8"
     },
     {
-      "badge": "Beach Only",
+      "badge": "",
       "price": "2,200",
-      "route": "Stone Town → Nungwi → Paje → Stone Town",
-      "accommodation": "Beach Resort",
-      "duration": "5 Days",
-      "location": "Zanzibar",
-      "title": "Zanzibar Island Escape",
+      "route": "Arusha → Kilimanjaro → Arusha National Park → Tarangire → Lake Natron → Serengeti → Lake Victoria → Ngorongoro → Arusha",
+      "accommodation": "Airport Planet Lodge; Arusha Planet Lodge; Ang'ata Tarangire Tented Camp; Lake Natron Tented Camp; Malaika Luxury Camp; Speke Bay Lodge; Lion's Paw Camp",
+      "duration": "14 Days / 13 Nights",
+      "location": "Tanzania — Kilimanjaro, Arusha, Tarangire, Lake Natron, Serengeti, Lake Victoria & Ngorongoro",
+      "title": "14 Days Tanzania Experience",
       "tags": [
-        "Beach",
-        "Snorkeling",
-        "Spice Tour",
-        "Dhow"
+        "Tanzania",
+        "Kilimanjaro",
+        "Safari",
+        "Migration",
+        "Lake Natron",
+        "Lake Victoria",
+        "Maasai",
+        "Ngorongoro"
       ],
       "reviews": "151",
       "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Beach Combo",
-        "Short Break"
+        "Mid Range Safaris"
       ],
-      "description": "Spice island, clear coves & coral reefs — a pure beach unwind.",
+      "description": "An extensive 14-day Tanzania journey combining a Kilimanjaro day hike, walking safari, wildlife viewing, Maasai and Lake Natron experiences, Serengeti migration, Lake Victoria and Ngorongoro.",
       "rating": "4.8"
     }
   ]
