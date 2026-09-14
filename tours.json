@@ -1,122 +1,182 @@
-[
-  {
-    "title": "Serengeti Great Migration",
-    "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
-    "location": "Serengeti",
-    "route": "Arusha → Serengeti → Ngorongoro → Arusha",
-    "description": "Witness nature's greatest spectacle as millions cross the Mara river.",
-    "duration": "8 Days",
-    "price": "4,420",
-    "badge": "Most Popular",
-    "categories": ["Big Five", "Migration"],
-    "tags": ["Big Five", "Migration", "Bush Camp", "Game Drive"],
-    "accommodation": "Luxury Tented Camp",
-    "rating": "4.9",
-    "reviews": "214"
-  },
-  {
-    "title": "Big Five Safari & Kilimanjaro",
-    "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
-    "location": "Kilimanjaro",
-    "route": "Kilimanjaro → Tarangire → Serengeti → Crater",
-    "description": "Africa's icons — all on one range, from savanna to summit views.",
-    "duration": "10 Days",
-    "price": "5,890",
-    "badge": "Top Rated",
-    "categories": ["Big Five"],
-    "tags": ["Big Five", "Mountain View", "Private Lodge", "Night Drive"],
-    "accommodation": "Boutique Lodge",
-    "rating": "4.8",
-    "reviews": "167"
-  },
-  {
-    "title": "Ngorongoro Crater Exclusive",
-    "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
-    "location": "Ngorongoro",
-    "route": "Arusha → Ngorongoro → Lake Manyara → Arusha",
-    "description": "The world's most stunning caldera — the densest wildlife concentration on Earth.",
-    "duration": "5 Days",
-    "price": "3,980",
-    "badge": "",
-    "categories": ["Big Five", "Short Break"],
-    "tags": ["Crater Lodge", "Big Five", "Exclusive"],
-    "accommodation": "Crater Lodge",
-    "rating": "4.8",
-    "reviews": "142"
-  },
-  {
-    "title": "Safari & Zanzibar Retreat",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
-    "location": "Zanzibar",
-    "route": "Serengeti → Arusha → Zanzibar Island",
-    "description": "Bush moments and ocean bliss — plains to paradise in one journey.",
-    "duration": "6 Days",
-    "price": "2,200",
-    "badge": "Beach Combo",
-    "categories": ["Beach Combo"],
-    "tags": ["Safari", "Beach", "Luxury Resort", "Snorkeling"],
-    "accommodation": "Beach Villa + Tented Camp",
-    "rating": "4.9",
-    "reviews": "186"
-  },
-  {
-    "title": "Ruaha & Selous Wilderness",
-    "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80",
-    "location": "Ruaha",
-    "route": "Dar es Salaam → Ruaha NP → Selous GR → Dar",
-    "description": "Tanzania's remote, wild heart — an untouched southern circuit.",
-    "duration": "7 Days",
-    "price": "5,290",
-    "badge": "Off the Beaten",
-    "categories": ["Short Break"],
-    "tags": ["Walking Safari", "Fly-in", "Remote", "Elephants"],
-    "accommodation": "Remote Tented Camp",
-    "rating": "4.8",
-    "reviews": "109"
-  },
-  {
-    "title": "Tarangire & Lake Natron",
-    "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80",
-    "location": "Tarangire",
-    "route": "Arusha → Tarangire → Lake Natron → Arusha",
-    "description": "Elephants, flamingos & volcanic vistas across two contrasting landscapes.",
-    "duration": "6 Days",
-    "price": "3,190",
-    "badge": "",
-    "categories": ["Short Break"],
-    "tags": ["Elephants", "Flamingos", "Cultural", "Maasai"],
-    "accommodation": "Eco Tented Camp",
-    "rating": "4.7",
-    "reviews": "98"
-  },
-  {
-    "title": "Kilimanjaro Trek & Safari",
-    "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
-    "location": "Kilimanjaro",
-    "route": "Machame Gate → Kilimanjaro Summit → Serengeti",
-    "description": "Summit Africa's highest peak — then meet its wildlife on the plains below.",
-    "duration": "14 Days",
-    "price": "7,490",
-    "badge": "Adventure",
-    "categories": ["Big Five"],
-    "tags": ["Trekking", "Summit", "Big Five", "Altitude"],
-    "accommodation": "Mountain Huts + Lodge",
-    "rating": "4.8",
-    "reviews": "133"
-  },
-  {
-    "title": "Zanzibar Island Escape",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
-    "location": "Zanzibar",
-    "route": "Stone Town → Nungwi → Paje → Stone Town",
-    "description": "Spice island, clear coves & coral reefs — a pure beach unwind.",
-    "duration": "5 Days",
-    "price": "2,200",
-    "badge": "Beach Only",
-    "categories": ["Beach Combo", "Short Break"],
-    "tags": ["Beach", "Snorkeling", "Spice Tour", "Dhow"],
-    "accommodation": "Beach Resort",
-    "rating": "4.8",
-    "reviews": "151"
-  }
+{
+"tours": [
+{
+"title": "Serengeti Great Migration",
+"image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
+"location": "Serengeti",
+"route": "Arusha → Serengeti → Ngorongoro → Arusha",
+"description": "Witness nature's greatest spectacle as millions cross the Mara river.",
+"duration": "8 Days",
+"price": "4,420",
+"badge": "Most Popular",
+"categories": [
+"Big Five",
+"Migration"
+],
+"tags": [
+"Big Five",
+"Migration",
+"Bush Camp",
+"Game Drive"
+],
+"accommodation": "Luxury Tented Camp",
+"rating": "4.9",
+"reviews": "214"
+},
+{
+"title": "Big Five Safari & Kilimanjaro",
+"image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
+"location": "Kilimanjaro",
+"route": "Kilimanjaro → Tarangire → Serengeti → Crater",
+"description": "Africa's icons — all on one range, from savanna to summit views.",
+"duration": "10 Days",
+"price": "5,890",
+"badge": "Top Rated",
+"categories": [
+"Big Five"
+],
+"tags": [
+"Big Five",
+"Mountain View",
+"Private Lodge",
+"Night Drive"
+],
+"accommodation": "Boutique Lodge",
+"rating": "4.8",
+"reviews": "167"
+},
+{
+"title": "Ngorongoro Crater Exclusive",
+"image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
+"location": "Ngorongoro",
+"route": "Arusha → Ngorongoro → Lake Manyara → Arusha",
+"description": "The world's most stunning caldera — the densest wildlife concentration on Earth.",
+"duration": "5 Days",
+"price": "3,980",
+"badge": "",
+"categories": [
+"Big Five",
+"Short Break"
+],
+"tags": [
+"Crater Lodge",
+"Big Five",
+"Exclusive"
+],
+"accommodation": "Crater Lodge",
+"rating": "4.8",
+"reviews": "142"
+},
+{
+"title": "Safari & Zanzibar Retreat",
+"image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
+"location": "Zanzibar",
+"route": "Serengeti → Arusha → Zanzibar Island",
+"description": "Bush moments and ocean bliss — plains to paradise in one journey.",
+"duration": "6 Days",
+"price": "2,200",
+"badge": "Beach Combo",
+"categories": [
+"Beach Combo"
+],
+"tags": [
+"Safari",
+"Beach",
+"Luxury Resort",
+"Snorkeling"
+],
+"accommodation": "Beach Villa + Tented Camp",
+"rating": "4.9",
+"reviews": "186"
+},
+{
+"title": "Ruaha & Selous Wilderness",
+"image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80",
+"location": "Ruaha",
+"route": "Dar es Salaam → Ruaha NP → Selous GR → Dar",
+"description": "Tanzania's remote, wild heart — an untouched southern circuit.",
+"duration": "7 Days",
+"price": "5,290",
+"badge": "Off the Beaten",
+"categories": [
+"Short Break"
+],
+"tags": [
+"Walking Safari",
+"Fly-in",
+"Remote",
+"Elephants"
+],
+"accommodation": "Remote Tented Camp",
+"rating": "4.8",
+"reviews": "109"
+},
+{
+"title": "Tarangire & Lake Natron",
+"image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80",
+"location": "Tarangire",
+"route": "Arusha → Tarangire → Lake Natron → Arusha",
+"description": "Elephants, flamingos & volcanic vistas across two contrasting landscapes.",
+"duration": "6 Days",
+"price": "3,190",
+"badge": "",
+"categories": [
+"Short Break"
+],
+"tags": [
+"Elephants",
+"Flamingos",
+"Cultural",
+"Maasai"
+],
+"accommodation": "Eco Tented Camp",
+"rating": "4.7",
+"reviews": "98"
+},
+{
+"title": "Kilimanjaro Trek & Safari",
+"image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
+"location": "Kilimanjaro",
+"route": "Machame Gate → Kilimanjaro Summit → Serengeti",
+"description": "Summit Africa's highest peak — then meet its wildlife on the plains below.",
+"duration": "14 Days",
+"price": "7,490",
+"badge": "Adventure",
+"categories": [
+"Big Five"
+],
+"tags": [
+"Trekking",
+"Summit",
+"Big Five",
+"Altitude"
+],
+"accommodation": "Mountain Huts + Lodge",
+"rating": "4.8",
+"reviews": "133"
+},
+{
+"title": "Zanzibar Island Escape",
+"image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
+"location": "Zanzibar",
+"route": "Stone Town → Nungwi → Paje → Stone Town",
+"description": "Spice island, clear coves & coral reefs — a pure beach unwind.",
+"duration": "5 Days",
+"price": "2,200",
+"badge": "Beach Only",
+"categories": [
+"Beach Combo",
+"Short Break"
+],
+"tags": [
+"Beach",
+"Snorkeling",
+"Spice Tour",
+"Dhow"
+],
+"accommodation": "Beach Resort",
+"rating": "4.8",
+"reviews": "151"
+}
 ]
+}
