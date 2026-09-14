@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -841,7 +842,7 @@
 
 
     /*
-      LOAD TOURS FROM tours.json
+      LOAD TOURS FROM CMS JSON
     */
 
     fetch('tours.json')
@@ -860,9 +861,26 @@
 
       })
 
-      .then(function(tours) {
+      .then(function(data) {
+
+        /*
+          SUPPORT CURRENT CMS FORMAT:
+
+          {
+            "tours": [...]
+          }
+
+          ALSO SUPPORT OLD ARRAY FORMAT
+        */
+
+        const tours =
+          Array.isArray(data)
+            ? data
+            : data.tours || [];
+
 
         tourSelect.innerHTML = '';
+
 
         const defaultOption =
           document.createElement('option');
@@ -870,12 +888,16 @@
         defaultOption.value = '';
 
         defaultOption.textContent =
-          'Select or type below…';
+          'Select a tour or destination…';
 
         tourSelect.appendChild(
           defaultOption
         );
 
+
+        /*
+          ADD ALL CMS TOURS
+        */
 
         tours.forEach(function(tour) {
 
@@ -895,10 +917,16 @@
         });
 
 
+        /*
+          AUTOMATICALLY SELECT TOUR
+          FROM URL
+        */
+
         if (selectedTour) {
 
           const decodedTour =
             selectedTour.trim();
+
 
           const matchingOption =
             Array.from(
@@ -1040,3 +1068,4 @@
 
 </body>
 </html>
+```
