@@ -3,24 +3,26 @@
     {
       "badge": "Most Popular",
       "price": "4",
-      "route": "Arusha → Serengeti → Ngorongoro → Arusha",
-      "accommodation": "Luxury Tented Camp",
-      "duration": "8 Days",
-      "location": "Serengeti",
-      "title": "Serengeti Great Migration",
+      "route": "Arusha → Tarangire National Park → Serengeti National Park → Ngorongoro Crater → Arusha",
+      "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
+      "duration": "5 Days / 4 Nights",
+      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
+      "title": "5 Days Big 5 Safari",
       "tags": [
         "Big Five",
-        "Migration",
-        "Bush Camp",
-        "Game Drive"
+        "Safari",
+        "Tarangire",
+        "Serengeti",
+        "Ngorongoro",
+        "Camping",
+        "Wildlife"
       ],
       "reviews": "214",
       "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Big Five",
-        "Migration"
+        "Budget Safaris"
       ],
-      "description": "Witness nature's greatest spectacle as millions cross the Mara river.",
+      "description": "A 5-day camping safari covering Tarangire, Serengeti and Ngorongoro, with game drives focused on elephants, predators, the Great Migration and the Big Five.",
       "rating": "4.9"
     },
     {
