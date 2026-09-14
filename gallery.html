@@ -1,174 +1,759 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Gallery &mdash; Simba Adventures</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="">
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
   <header class="site-header">
-    <div class="wrap">
-      <a href="index.html" class="brand"><i class="fa-solid fa-paw"></i>Simba Adventures</a>
-      <ul class="nav-menu nav-menu-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tour.html">Tours &amp; Safaris</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
-        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')"><i class="fa-solid fa-bars"></i></div>
-      </div>
-    </div>
-  </header>
 
-  <section class="section-tight" style="padding-top:56px;">
-    <div class="wrap">
-      <div class="gallery-hero-grid">
-        <div>
-          <span class="eyebrow">The Field Journal</span>
-          <h1 style="font-size:38px;">A closer look at the wild</h1>
-          <p class="lede" style="margin-top:14px;">From first light on the Mara to quiet fireside evenings, these are the moments that stay with you long after the journey ends.</p>
-          <p style="font-size:12px; color:var(--ink-faint); margin-top:16px; letter-spacing:.02em;">Kenya &middot; Tanzania &middot; Botswana</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=900&q=80" alt="Elephant at sunrise">
-      </div>
-    </div>
-  </section>
+```
+<div class="wrap">
 
-  <div class="wrap">
-    <div class="filter-bar">
-      <span style="font-size:12px; color:var(--ink-faint);">Browse the collection</span>
-      <div class="pill-group">
-        <button class="pill active" onclick="filterGallery('all', this)">All Moments</button>
-        <button class="pill" onclick="filterGallery('kenya', this)">Kenya</button>
-        <button class="pill" onclick="filterGallery('tanzania', this)">Tanzania</button>
-        <button class="pill" onclick="filterGallery('botswana', this)">Botswana</button>
-      </div>
+  <a href="index.html" class="brand">
+    <i class="fa-solid fa-paw"></i>
+    Simba Adventures
+  </a>
+
+  <ul class="nav-menu nav-menu-links" id="navMenu">
+
+    <li>
+      <a href="index.html">
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href="tour.html">
+        Tours &amp; Safaris
+      </a>
+    </li>
+
+    <li>
+      <a href="about-us.html">
+        About Us
+      </a>
+    </li>
+
+    <li>
+      <a href="gallery.html" class="active">
+        Gallery
+      </a>
+    </li>
+
+    <li>
+      <a href="contact-us.html">
+        Contact
+      </a>
+    </li>
+
+  </ul>
+
+  <div class="nav-right">
+
+    <a
+      href="plan-my-safari.html"
+      class="btn btn-gold btn-sm"
+    >
+      Plan My Safari
+    </a>
+
+    <div
+      class="menu-toggle"
+      onclick="document.getElementById('navMenu').classList.toggle('show')"
+    >
+      <i class="fa-solid fa-bars"></i>
     </div>
+
   </div>
 
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="section-header">
-        <span class="eyebrow">Collected From The Road</span>
-        <h2 style="font-size:26px;">The days in between</h2>
-      </div>
-      <div class="masonry" id="masonryGrid">
-        
-      <div class="mas-item kenya">
-        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" style="height:340px; object-fit:cover;" alt="Soft-footed mornings">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>Soft-footed mornings</h4><span>Maasai Mara, Kenya</span></div>
-      </div>
-      <div class="mas-item tanzania">
-        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80" style="height:260px; object-fit:cover;" alt="Roads without a rush">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>Roads without a rush</h4><span>Serengeti, Tanzania</span></div>
-      </div>
-      <div class="mas-item tanzania">
-        <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=600&q=80" style="height:240px; object-fit:cover;" alt="Tall tales">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>Tall tales</h4><span>Tarangire, Tanzania</span></div>
-      </div>
-      <div class="mas-item botswana">
-        <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=600&q=80" style="height:320px; object-fit:cover;" alt="Where the evening settles">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>Where the evening settles</h4><span>Okavango Delta, Botswana</span></div>
-      </div>
-      <div class="mas-item kenya">
-        <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=600&q=80" style="height:300px; object-fit:cover;" alt="The last light">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>The last light</h4><span>Laikipia, Kenya</span></div>
-      </div>
-      <div class="mas-item tanzania">
-        <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=600&q=80" style="height:260px; object-fit:cover;" alt="A moving pattern">
-        <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
-        <div class="mas-cap"><h4>A moving pattern</h4><span>Ngorongoro, Tanzania</span></div>
-      </div>
-      </div>
+</div>
+```
+
+  </header>
+
+  <!-- ================= GALLERY HERO ================= -->
+
+  <section
+    class="section-tight"
+    style="padding-top:56px;"
+  >
+
+```
+<div class="wrap">
+
+  <div class="gallery-hero-grid">
+
+    <div>
+
+      <span class="eyebrow">
+        The Field Journal
+      </span>
+
+      <h1 style="font-size:38px;">
+        A closer look at the wild
+      </h1>
+
+      <p
+        class="lede"
+        style="margin-top:14px;"
+      >
+        From first light on the Mara to quiet fireside evenings,
+        these are the moments that stay with you long after the journey ends.
+      </p>
+
+      <p
+        style="
+          font-size:12px;
+          color:var(--ink-faint);
+          margin-top:16px;
+          letter-spacing:.02em;
+        "
+      >
+        Kenya &middot; Tanzania &middot; Botswana
+      </p>
+
     </div>
+
+
+    <img
+      src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=900&q=80"
+      alt="Elephant at sunrise"
+    >
+
+  </div>
+
+</div>
+```
+
   </section>
 
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="cta-band">
-        <div>
-          <span class="eyebrow on-dark">Your Turn To Wander</span>
-          <h2>Every safari begins with a story worth following.</h2>
-          <p>Tell us what calls to you, and we'll shape a journey around the encounters you hope to have.</p>
-        </div>
-        <a href="plan-my-safari.html" class="btn btn-gold">Start Planning</a>
-      </div>
-    </div>
+  <!-- ================= FILTER BAR ================= -->
+
+  <div class="wrap">
+
+```
+<div class="filter-bar">
+
+  <span
+    style="
+      font-size:12px;
+      color:var(--ink-faint);
+    "
+  >
+    Browse the collection
+  </span>
+
+  <div class="pill-group">
+
+    <button
+      class="pill active"
+      onclick="filterGallery('all', this)"
+    >
+      All Moments
+    </button>
+
+    <button
+      class="pill"
+      onclick="filterGallery('kenya', this)"
+    >
+      Kenya
+    </button>
+
+    <button
+      class="pill"
+      onclick="filterGallery('tanzania', this)"
+    >
+      Tanzania
+    </button>
+
+    <button
+      class="pill"
+      onclick="filterGallery('botswana', this)"
+    >
+      Botswana
+    </button>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- ================= GALLERY ================= -->
+
+  <section
+    class="section"
+    style="padding-top:0;"
+  >
+
+```
+<div class="wrap">
+
+  <div class="section-header">
+
+    <span class="eyebrow">
+      Collected From The Road
+    </span>
+
+    <h2 style="font-size:26px;">
+      The days in between
+    </h2>
+
+  </div>
+
+
+  <div
+    class="masonry"
+    id="masonryGrid"
+  >
+
+    <!-- Gallery items loaded from gallery.json -->
+
+  </div>
+
+</div>
+```
+
   </section>
 
-  <script>
-    function filterGallery(cat, el){
-      document.querySelectorAll('.pill').forEach(function(p){ p.classList.remove('active'); });
-      el.classList.add('active');
-      document.querySelectorAll('.mas-item').forEach(function(item){
-        item.style.display = (cat === 'all' || item.classList.contains(cat)) ? '' : 'none';
-      });
-    }
-  </script>
+  <!-- ================= CTA ================= -->
+
+  <section
+    class="section"
+    style="padding-top:0;"
+  >
+
+```
+<div class="wrap">
+
+  <div class="cta-band">
+
+    <div>
+
+      <span class="eyebrow on-dark">
+        Your Turn To Wander
+      </span>
+
+      <h2>
+        Every safari begins with a story worth following.
+      </h2>
+
+      <p>
+        Tell us what calls to you, and we'll shape a journey
+        around the encounters you hope to have.
+      </p>
+
+    </div>
+
+    <a
+      href="plan-my-safari.html"
+      class="btn btn-gold"
+    >
+      Start Planning
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
 
   <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand"><i class="fa-solid fa-paw"></i>Simba Adventures</div>
-          <p class="footer-desc">Tanzania's premier safari specialist. Crafting unforgettable wildlife journeys since 2006.</p>
-          <div class="footer-social">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-        </div>
-        <div>
-          <div class="footer-col-title">Explore</div>
-          <ul class="footer-menu">
-            <li><a href="tour.html">Serengeti Safaris</a></li>
-            <li><a href="tour.html">Kilimanjaro Treks</a></li>
-            <li><a href="tour.html">Zanzibar Retreats</a></li>
-            <li><a href="tour.html">Ngorongoro Crater</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Company</div>
-          <ul class="footer-menu">
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="about-us.html">Our Team</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Get In Touch</div>
-          <div class="footer-contact-info">
-            <p><i class="fa-solid fa-location-dot"></i>Arusha, Tanzania</p>
-            <p><i class="fa-solid fa-phone"></i>+255 700 123 456</p>
-            <p><i class="fa-solid fa-envelope"></i>hello@simbaadventures.co.tz</p>
-          </div>
-        </div>
+
+```
+<div class="wrap">
+
+  <div class="footer-grid">
+
+
+    <div>
+
+      <div class="footer-brand">
+
+        <i class="fa-solid fa-paw"></i>
+
+        Simba Adventures
+
       </div>
-      <div class="footer-bottom">
-        <div>&copy; 2006&ndash;2026 Simba Adventures. All rights reserved.</div>
-        <div><a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.html">Sitemap</a></div>
+
+
+      <p class="footer-desc">
+
+        Tanzania's premier safari specialist.
+        Crafting unforgettable wildlife journeys since 2006.
+
+      </p>
+
+
+      <div class="footer-social">
+
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
       </div>
+
     </div>
+
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Explore
+      </div>
+
+      <ul class="footer-menu">
+
+        <li>
+          <a href="tour.html">
+            Serengeti Safaris
+          </a>
+        </li>
+
+        <li>
+          <a href="tour.html">
+            Kilimanjaro Treks
+          </a>
+        </li>
+
+        <li>
+          <a href="tour.html">
+            Zanzibar Retreats
+          </a>
+        </li>
+
+        <li>
+          <a href="tour.html">
+            Ngorongoro Crater
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Company
+      </div>
+
+      <ul class="footer-menu">
+
+        <li>
+          <a href="about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="about-us.html">
+            Our Team
+          </a>
+        </li>
+
+        <li>
+          <a href="contact-us.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-col-title">
+        Get In Touch
+      </div>
+
+      <div class="footer-contact-info">
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Arusha, Tanzania
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +255 700 123 456
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          hello@simbaadventures.co.tz
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <div>
+
+      &copy; 2006&ndash;2026 Simba Adventures.
+      All rights reserved.
+
+    </div>
+
+
+    <div>
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <a href="sitemap.html">
+        Sitemap
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
   </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+
   <script>
-    document.querySelectorAll('.faq-item').forEach(function(item){
-      var q = item.querySelector('.faq-q');
-      if(q){ q.addEventListener('click', function(){ item.classList.toggle('open'); }); }
-    });
+
+    const masonryGrid =
+      document.getElementById('masonryGrid');
+
+
+    let allGalleryItems = [];
+
+
+
+    /*
+      LOAD GALLERY
+
+      Supports:
+
+      [
+        {...}
+      ]
+
+      and:
+
+      {
+        "gallery": [
+          {...}
+        ]
+      }
+    */
+
+    fetch('gallery.json')
+
+      .then(function(response) {
+
+        if (!response.ok) {
+
+          throw new Error(
+            'Could not load gallery.json'
+          );
+
+        }
+
+        return response.json();
+
+      })
+
+
+      .then(function(data) {
+
+        if (
+          data &&
+          Array.isArray(data.gallery)
+        ) {
+
+          allGalleryItems = data.gallery;
+
+        }
+
+        else if (
+          Array.isArray(data)
+        ) {
+
+          allGalleryItems = data;
+
+        }
+
+        else {
+
+          throw new Error(
+            'Invalid gallery.json structure'
+          );
+
+        }
+
+
+        renderGallery(allGalleryItems);
+
+      })
+
+
+      .catch(function(error) {
+
+        console.error(
+          'Gallery loading error:',
+          error
+        );
+
+
+        masonryGrid.innerHTML = `
+
+          <div
+            style="
+              grid-column:1/-1;
+              text-align:center;
+              padding:50px 20px;
+            "
+          >
+
+            <h3>
+              Unable to load gallery
+            </h3>
+
+            <p>
+              Please try again later.
+            </p>
+
+          </div>
+
+        `;
+
+      });
+
+
+
+    /*
+      RENDER GALLERY
+    */
+
+    function renderGallery(items) {
+
+      masonryGrid.innerHTML = '';
+
+
+      if (!items.length) {
+
+        masonryGrid.innerHTML = `
+
+          <div
+            style="
+              grid-column:1/-1;
+              text-align:center;
+              padding:50px 20px;
+            "
+          >
+
+            <h3>
+              No gallery images found
+            </h3>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      items.forEach(function(item) {
+
+        const galleryItem =
+          document.createElement('div');
+
+
+        galleryItem.className =
+          'mas-item ' +
+          String(item.category || '')
+            .toLowerCase();
+
+
+        const imageHeight =
+          item.height || '280px';
+
+
+        galleryItem.innerHTML = `
+
+          <img
+            src="${item.image}"
+            style="
+              height:${imageHeight};
+              object-fit:cover;
+            "
+            alt="${item.alt || item.title || ''}"
+          >
+
+
+          <span class="mas-arrow">
+
+            <i class="fa-solid fa-arrow-up-right"></i>
+
+          </span>
+
+
+          <div class="mas-cap">
+
+            <h4>
+              ${item.title || ''}
+            </h4>
+
+            <span>
+              ${item.location || ''}
+            </span>
+
+          </div>
+
+        `;
+
+
+        masonryGrid.appendChild(
+          galleryItem
+        );
+
+      });
+
+    }
+
+
+
+    /*
+      FILTER GALLERY
+    */
+
+    function filterGallery(cat, el) {
+
+      document
+        .querySelectorAll('.pill')
+        .forEach(function(p) {
+
+          p.classList.remove('active');
+
+        });
+
+
+      el.classList.add('active');
+
+
+      if (cat === 'all') {
+
+        renderGallery(
+          allGalleryItems
+        );
+
+        return;
+
+      }
+
+
+      const filteredItems =
+        allGalleryItems.filter(
+          function(item) {
+
+            return String(
+              item.category || ''
+            ).toLowerCase() === cat;
+
+          }
+        );
+
+
+      renderGallery(
+        filteredItems
+      );
+
+    }
+
   </script>
+
+  <!-- ================= FAQ SCRIPT ================= -->
+
+  <script>
+
+    document
+      .querySelectorAll('.faq-item')
+      .forEach(function(item) {
+
+        var q =
+          item.querySelector('.faq-q');
+
+        if (q) {
+
+          q.addEventListener(
+            'click',
+            function() {
+
+              item.classList.toggle(
+                'open'
+              );
+
+            }
+          );
+
+        }
+
+      });
+
+  </script>
+
 </body>
 </html>
