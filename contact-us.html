@@ -11,13 +11,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="">
-  <header class="site-header">
+  <header class="site-header header-overlay">
     <div class="wrap">
       <a href="index.html" class="brand"><i class="fa-solid fa-paw"></i>Simba Adventures</a>
       <ul class="nav-menu nav-menu-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Tours &amp; Safaris</a></li>
         <li><a href="about-us.html">About Us</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact-us.html" class="active">Contact</a></li>
       </ul>
@@ -28,10 +29,13 @@
     </div>
   </header>
 
-  <section class="hero-banner">
+  <section
+    class="page-hero"
+    style="background-image:url('https://images.unsplash.com/photo-1535941339077-2dd1c7963098?auto=format&fit=crop&w=1600&q=80');"
+  >
     <div class="wrap">
       <span class="eyebrow on-dark">Start Your Journey</span>
-      <h1>Contact Us</h1>
+      <h1>Contact <span class="italic">Us</span></h1>
       <p class="lede">Tell us what you have in mind and we'll help shape a Tanzania safari that feels made for you.</p>
     </div>
   </section>
@@ -42,13 +46,13 @@
         <div class="form-card">
           <h3 style="margin-bottom:4px;">Safari <span class="italic">Enquiry</span></h3>
           <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;">Fill in what you know &mdash; we'll handle the rest.</p>
-          <form action="#" method="POST">
+          <form action="https://formspree.io/f/mjyvqlnr" method="POST">
             <div class="form-row">
-              <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Your name" required></div>
-              <div class="form-group"><label>Email <span class="req">*</span></label><input type="email" placeholder="you@email.com" required></div>
+              <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" name="name" placeholder="Your name" required></div>
+              <div class="form-group"><label>Email <span class="req">*</span></label><input type="email" name="email" placeholder="you@email.com" required></div>
             </div>
-            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 000-0000"></div>
-            <div class="form-group"><label>Message <span class="req">*</span></label><textarea placeholder="Tell us where you would like to go, when you would like to travel, and anything that would make this trip special..."></textarea></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000"></div>
+            <div class="form-group"><label>Message <span class="req">*</span></label><textarea name="message" placeholder="Tell us where you would like to go, when you would like to travel, and anything that would make this trip special..." required></textarea></div>
             <button type="submit" class="btn btn-gold btn-block">Send My Enquiry &rarr;</button>
             <p class="form-note">We typically reply within 24 hours.</p>
           </form>
@@ -118,12 +122,14 @@
           </ul>
         </div>
         <div>
-          <div class="footer-col-title">Company</div>
+          <div class="footer-col-title">Main Navigation</div>
           <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tour.html">Tours &amp; Safaris</a></li>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="about-us.html">Our Team</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
