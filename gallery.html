@@ -24,9 +24,7 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-
-  <header class="site-header">
+  <header class="site-header header-overlay">
 
     <div class="wrap">
 
@@ -52,6 +50,12 @@
         <li>
           <a href="about-us.html">
             About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#testimonials">
+            Reviews
           </a>
         </li>
 
@@ -91,66 +95,35 @@
 
   </header>
 
-
-  <!-- ================= GALLERY HERO ================= -->
-
   <section
-    class="section-tight"
-    style="padding-top:56px;"
+    class="page-hero"
+    id="pageHero"
+    style="background-image:url('https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=1600&q=80');"
   >
 
     <div class="wrap">
 
-      <div class="gallery-hero-grid">
+      <span class="eyebrow on-dark">
+        The Field Journal
+      </span>
 
-        <div>
+      <h1>
+        A closer look at
+        <span class="italic">the wild</span>
+      </h1>
 
-          <span class="eyebrow">
-            The Field Journal
-          </span>
+      <p class="lede">
+        From first light on the Mara to quiet fireside evenings,
+        these are the moments that stay with you long after the journey ends.
+      </p>
 
-          <h1 style="font-size:38px;">
-            A closer look at the wild
-          </h1>
-
-          <p
-            class="lede"
-            style="margin-top:14px;"
-          >
-            From first light on the Mara to quiet fireside evenings,
-            these are the moments that stay with you long after the journey ends.
-          </p>
-
-          <p
-            style="
-              font-size:12px;
-              color:var(--ink-faint);
-              margin-top:16px;
-              letter-spacing:.02em;
-            "
-          >
-            Kenya &middot; Tanzania &middot; Botswana
-          </p>
-
-        </div>
-
-
-        <!-- Hero image loaded from gallery.json -->
-
-        <img
-          id="galleryHeroImage"
-          src=""
-          alt="Elephant at sunrise"
-        >
-
-      </div>
+      <p class="lede" style="font-size:12px; margin-top:-12px; letter-spacing:.02em; opacity:.55;">
+        Kenya &middot; Tanzania &middot; Botswana
+      </p>
 
     </div>
 
   </section>
-
-
-  <!-- ================= FILTER BAR ================= -->
 
   <div class="wrap">
 
@@ -201,9 +174,6 @@
 
   </div>
 
-
-  <!-- ================= GALLERY ================= -->
-
   <section
     class="section"
     style="padding-top:0;"
@@ -229,16 +199,11 @@
         id="masonryGrid"
       >
 
-        <!-- Gallery items loaded from gallery.json -->
-
-      </div>
+        </div>
 
     </div>
 
   </section>
-
-
-  <!-- ================= CTA ================= -->
 
   <section
     class="section"
@@ -278,9 +243,6 @@
     </div>
 
   </section>
-
-
-  <!-- ================= FOOTER ================= -->
 
   <footer class="site-footer">
 
@@ -359,10 +321,22 @@
         <div>
 
           <div class="footer-col-title">
-            Company
+            Main Navigation
           </div>
 
           <ul class="footer-menu">
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Tours &amp; Safaris
+              </a>
+            </li>
 
             <li>
               <a href="about-us.html">
@@ -371,20 +345,20 @@
             </li>
 
             <li>
-              <a href="about-us.html">
-                Our Team
+              <a href="index.html#testimonials">
+                Reviews
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
               </a>
             </li>
 
             <li>
               <a href="contact-us.html">
                 Contact
-              </a>
-            </li>
-
-            <li>
-              <a href="privacy-policy.html">
-                Privacy Policy
               </a>
             </li>
 
@@ -448,314 +422,98 @@
 
   </footer>
 
-
-  <!-- ================= JAVASCRIPT ================= -->
+  <script src="data-embedded.js"></script>
 
   <script>
+    function resolveImagePath(path) {
+      if (!path || path.indexOf('/images') !== 0) return path;
+      return path.slice(1);
+    }
 
-    const masonryGrid =
-      document.getElementById('masonryGrid');
-
-    const galleryHeroImage =
-      document.getElementById('galleryHeroImage');
-
-    let allGalleryItems = [];
-
-
-    /*
-      LOAD GALLERY
-
-      Supports:
-
-      {
-        "heroImage": "...",
-        "gallery": [
-          {...}
-        ]
-      }
-
-      and:
-
-      [
-        {...}
-      ]
-    */
-
-    fetch('gallery.json')
-
-      .then(function(response) {
-
-        if (!response.ok) {
-
-          throw new Error(
-            'Could not load gallery.json'
-          );
-
-        }
-
-        return response.json();
-
-      })
-
-
-      .then(function(data) {
-
-        /*
-          LOAD HERO IMAGE
-        */
-
-        if (
-          data &&
-          data.heroImage
-        ) {
-
-          galleryHeroImage.src =
-            data.heroImage;
-
-        }
-
-
-        /*
-          LOAD GALLERY ITEMS
-        */
-
-        if (
-          data &&
-          Array.isArray(data.gallery)
-        ) {
-
-          allGalleryItems =
-            data.gallery;
-
-        }
-
-        else if (
-          Array.isArray(data)
-        ) {
-
-          allGalleryItems =
-            data;
-
-        }
-
-        else {
-
-          throw new Error(
-            'Invalid gallery.json structure'
-          );
-
-        }
-
-
-        renderGallery(
-          allGalleryItems
-        );
-
-      })
-
-
-      .catch(function(error) {
-
-        console.error(
-          'Gallery loading error:',
-          error
-        );
-
-
-        masonryGrid.innerHTML = `
-
-          <div
-            style="
-              grid-column:1/-1;
-              text-align:center;
-              padding:50px 20px;
-            "
-          >
-
-            <h3>
-              Unable to load gallery
-            </h3>
-
-            <p>
-              Please try again later.
-            </p>
-
-          </div>
-
-        `;
-
-      });
-
-
-    /*
-      RENDER GALLERY
-    */
+    var masonryGrid = document.getElementById('masonryGrid');
+    var pageHero = document.getElementById('pageHero');
+    var allGalleryItems = [];
 
     function renderGallery(items) {
-
       masonryGrid.innerHTML = '';
-
-
       if (!items.length) {
-
         masonryGrid.innerHTML = `
-
-          <div
-            style="
-              grid-column:1/-1;
-              text-align:center;
-              padding:50px 20px;
-            "
-          >
-
-            <h3>
-              No gallery images found
-            </h3>
-
-          </div>
-
-        `;
-
+          <div style="grid-column:1/-1; text-align:center; padding:50px 20px;">
+            <h3>No gallery images found</h3>
+          </div>`;
         return;
-
       }
-
-
       items.forEach(function(item) {
-
-        const galleryItem =
-          document.createElement('div');
-
-
-        galleryItem.className =
-          'mas-item ' +
-          String(item.category || '')
-            .toLowerCase();
-
-
-        const imageHeight =
-          item.height || '280px';
-
-
+        var galleryItem = document.createElement('div');
+        galleryItem.className = 'mas-item ' + String(item.category || '').toLowerCase();
+        var imageHeight = item.height || '280px';
         galleryItem.innerHTML = `
-
-          <img
-            src="${item.image}"
-            style="
-              height:${imageHeight};
-              object-fit:cover;
-            "
-            alt="${item.alt || item.title || ''}"
-          >
-
-          <span class="mas-arrow">
-
-            <i class="fa-solid fa-arrow-up-right"></i>
-
-          </span>
-
+          <img src="${resolveImagePath(item.image)}" style="height:${imageHeight}; object-fit:cover;" alt="${item.alt || item.title || ''}">
+          <span class="mas-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
           <div class="mas-cap">
-
-            <h4>
-              ${item.title || ''}
-            </h4>
-
-            <span>
-              ${item.location || ''}
-            </span>
-
-          </div>
-
-        `;
-
-
-        masonryGrid.appendChild(
-          galleryItem
-        );
-
+            <h4>${item.title || ''}</h4>
+            <span>${item.location || ''}</span>
+          </div>`;
+        masonryGrid.appendChild(galleryItem);
       });
-
     }
-
-
-    /*
-      FILTER GALLERY
-    */
 
     function filterGallery(cat, el) {
-
-      document
-        .querySelectorAll('.pill')
-        .forEach(function(p) {
-
-          p.classList.remove('active');
-
-        });
-
-
+      document.querySelectorAll('.pill').forEach(function(p) { p.classList.remove('active'); });
       el.classList.add('active');
-
-
       if (cat === 'all') {
-
-        renderGallery(
-          allGalleryItems
-        );
-
+        renderGallery(allGalleryItems);
         return;
-
       }
-
-
-      const filteredItems =
-        allGalleryItems.filter(
-          function(item) {
-
-            return String(
-              item.category || ''
-            ).toLowerCase() === cat;
-
-          }
-        );
-
-
-      renderGallery(
-        filteredItems
-      );
-
+      var filtered = allGalleryItems.filter(function(item) {
+        return String(item.category || '').toLowerCase() === cat;
+      });
+      renderGallery(filtered);
     }
 
+    fetch('gallery.json')
+      .then(function(response) {
+        if (!response.ok) throw new Error('Could not load gallery.json');
+        return response.json();
+      })
+      .then(function(data) {
+        if (data && data.heroImage && pageHero) {
+          pageHero.style.backgroundImage = "url('" + resolveImagePath(data.heroImage) + "')";
+        }
+        if (data && Array.isArray(data.gallery)) {
+          allGalleryItems = data.gallery;
+        } else if (Array.isArray(data)) {
+          allGalleryItems = data;
+        } else {
+          throw new Error('Invalid gallery.json structure');
+        }
+        renderGallery(allGalleryItems);
+      })
+      .catch(function(error) {
+        console.error('Gallery loading error:', error);
+        if (window.SIMBA_GALLERY) {
+          if (pageHero && window.SIMBA_GALLERY.heroImage) {
+            pageHero.style.backgroundImage = "url('" + resolveImagePath(window.SIMBA_GALLERY.heroImage) + "')";
+          }
+          if (window.SIMBA_GALLERY.gallery && Array.isArray(window.SIMBA_GALLERY.gallery)) {
+            allGalleryItems = window.SIMBA_GALLERY.gallery;
+            renderGallery(allGalleryItems);
+            return;
+          }
+        }
+        masonryGrid.innerHTML = `
+          <div style="grid-column:1/-1; text-align:center; padding:50px 20px;">
+            <h3>Unable to load gallery</h3>
+            <p>Please try again later.</p>
+          </div>`;
+      });
   </script>
 
-
-  <!-- ================= FAQ SCRIPT ================= -->
-
   <script>
-
-    document
-      .querySelectorAll('.faq-item')
-      .forEach(function(item) {
-
-        var q =
-          item.querySelector('.faq-q');
-
-        if (q) {
-
-          q.addEventListener(
-            'click',
-            function() {
-
-              item.classList.toggle(
-                'open'
-              );
-
-            }
-          );
-
-        }
-
-      });
-
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      var q = item.querySelector('.faq-q');
+      if (q) q.addEventListener('click', function() { item.classList.toggle('open'); });
+    });
   </script>
 
 </body>
