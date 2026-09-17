@@ -6,120 +6,49 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "tours"
-    label: "Safari Tours"
+  - name: "content"
+    label: "Site Content"
     files:
       - name: "tours"
-        label: "Safari Tours"
+        label: "Safari Tours Data"
         file: "tours.json"
         format: "json"
         fields:
-          - label: "Tours"
+          - label: "Tours List"
             name: "tours"
             widget: "list"
+            summary: "{{fields.title}} - {{fields.location}}"
             collapsed: true
             fields:
-              - label: "Title"
-                name: "title"
-                widget: "string"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Tour Image", name: "image", widget: "image" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Route", name: "route", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Badge", name: "badge", widget: "string", required: false }
+              - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", name: "category", widget: "string" } }
+              - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
+              - { label: "Accommodation", name: "accommodation", widget: "string" }
+              - { label: "Rating", name: "rating", widget: "number", value_type: "float", min: 1, max: 5, step: 0.1 }
+              - { label: "Reviews Count", name: "reviews", widget: "string" }
 
-              - label: "Image"
-                name: "image"
-                widget: "image"
-
-              - label: "Location"
-                name: "location"
-                widget: "string"
-
-              - label: "Route"
-                name: "route"
-                widget: "string"
-
-              - label: "Description"
-                name: "description"
-                widget: "text"
-
-              - label: "Duration"
-                name: "duration"
-                widget: "string"
-
-              - label: "Price"
-                name: "price"
-                widget: "string"
-
-              - label: "Badge"
-                name: "badge"
-                widget: "string"
-                required: false
-
-              - label: "Categories"
-                name: "categories"
-                widget: "list"
-
-              - label: "Tags"
-                name: "tags"
-                widget: "list"
-
-              - label: "Accommodation"
-                name: "accommodation"
-                widget: "string"
-
-              - label: "Rating"
-                name: "rating"
-                widget: "string"
-
-              - label: "Reviews"
-                name: "reviews"
-                widget: "string"
-
-  - name: "gallery"
-    label: "Gallery"
-    files:
       - name: "gallery"
-        label: "Gallery"
+        label: "Gallery Page Data"
         file: "gallery.json"
         format: "json"
         fields:
-          - label: "Hero Image"
-            name: "heroImage"
-            widget: "image"
-
-          - label: "Gallery"
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - label: "Gallery Photos"
             name: "gallery"
             widget: "list"
+            summary: "{{fields.title}} ({{fields.category}})"
             collapsed: true
             fields:
-              - label: "Title"
-                name: "title"
-                widget: "string"
-
-              - label: "Image"
-                name: "image"
-                widget: "image"
-
-              - label: "Location"
-                name: "location"
-                widget: "string"
-
-              - label: "Category"
-                name: "category"
-                widget: "select"
-                options:
-                  - "Kenya"
-                  - "Tanzania"
-                  - "Botswana"
-
-              - label: "Height"
-                name: "height"
-                widget: "select"
-                options:
-                  - "240px"
-                  - "260px"
-                  - "280px"
-                  - "300px"
-                  - "320px"
-                  - "340px"
-
-              - label: "Alt Text"
-                name: "alt"
-                widget: "string"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Kenya", "Tanzania", "Botswana"] }
+              - { label: "Height", name: "height", widget: "select", options: ["240px", "260px", "280px", "300px", "320px", "340px"] }
+              - { label: "Alt Text", name: "alt", widget: "string" }
