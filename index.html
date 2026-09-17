@@ -6,7 +6,8 @@
 <title>Simba Adventures — Unforgettable Tanzanian Safaris</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -27,7 +28,6 @@
 
   .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-  /* ============ BUTTONS ============ */
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     padding: 12px 26px; border-radius: 100px;
@@ -44,19 +44,38 @@
   .btn-solid-dark:hover { background: #0f1c14; }
   .btn-sm { padding: 10px 20px; font-size: 0.8rem; }
 
-  /* ============ NAVBAR ============ */
   .navbar {
     position: absolute; top: 0; left: 0; right: 0; z-index: 100;
     padding: 22px 0;
   }
   .navbar .container { display: flex; align-items: center; justify-content: space-between; }
-  .logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.15rem; font-weight: 500; }
-  .logo-mark { font-size: 1.4rem; }
-  .nav-menu { display: flex; gap: 38px; color: #fff; font-size: 0.9rem; }
-  .nav-menu a { opacity: 0.92; transition: opacity 0.2s; }
-  .nav-menu a:hover { opacity: 1; }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600;
+    color: #eae4cf;
+  }
+  .brand i { color: #C89B3C; font-size: 16px; }
 
-  /* ============ HERO ============ */
+  .nav-menu {
+    display: flex; align-items: center; gap: 30px;
+    list-style: none; font-size: 0.8rem;
+  }
+  .nav-menu a {
+    letter-spacing: 0.02em;
+    color: rgba(234,228,207,0.78);
+    transition: color 0.2s ease;
+  }
+  .nav-menu a:hover, .nav-menu a.active { color: #D9B564; }
+
+  .nav-right { display: flex; align-items: center; gap: 18px; }
+
+  .menu-toggle {
+    display: none;
+    font-size: 20px; color: #D9B564;
+    cursor: pointer; background: none; border: none;
+  }
+  .menu-toggle svg { display: block; }
+
   .hero {
     position: relative;
     min-height: 100vh;
@@ -88,7 +107,6 @@
     opacity: 0.92; line-height: 1.6;
   }
 
-  /* Search bar */
   .search-bar {
     display: flex; align-items: stretch;
     background: rgba(20,30,20,0.42);
@@ -128,7 +146,6 @@
   }
   .search-btn:hover { background: #c19d2c; }
 
-  /* ============ STATS ============ */
   .stats {
     background: #14241a; color: #fff;
     padding: 34px 0;
@@ -150,7 +167,6 @@
     opacity: 0.7; margin-top: 6px;
   }
 
-  /* ============ PACKAGES SECTION ============ */
   .packages { padding: 100px 0 90px; background: #faf8f4; }
 
   .packages-header {
@@ -252,7 +268,6 @@
 
   .view-all-wrap { text-align: center; margin-top: 56px; }
 
-  /* ============ ABOUT ============ */
   .about {
     background: #14241a; color: #fff;
     padding: 100px 0;
@@ -293,7 +308,6 @@
     color: rgba(255,255,255,0.6);
   }
 
-  /* ============ TESTIMONIALS ============ */
   .testimonials { padding: 100px 0 90px; background: #faf8f4; }
   .test-head { text-align: center; margin-bottom: 56px; }
   .test-head .eyebrow { justify-content: center; }
@@ -340,7 +354,6 @@
   }
   .test-card.dark .test-trip { border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); }
 
-  /* ============ CERTIFICATIONS ============ */
   .certs { padding: 60px 0 90px; background: #faf8f4; }
   .certs-label {
     text-align: center; font-size: 0.7rem; letter-spacing: 0.18em;
@@ -362,7 +375,6 @@
   }
   .cert-item p { font-size: 0.68rem; color: #7a8880; line-height: 1.4; }
 
-  /* ============ CTA ============ */
   .cta {
     position: relative;
     padding: 130px 0;
@@ -387,7 +399,6 @@
   }
   .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
-  /* ============ FOOTER ============ */
   .footer { background: #14241a; color: #fff; padding: 64px 0 28px; }
   .footer-grid {
     display: grid; grid-template-columns: 1.7fr 1fr 1fr;
@@ -423,7 +434,6 @@
     flex-wrap: wrap; gap: 12px;
   }
 
-  /* ============ RESPONSIVE ============ */
   @media (max-width: 1024px) {
     .packages-header { grid-template-columns: 1fr; gap: 24px; }
     .cards-grid { grid-template-columns: 1fr; }
@@ -433,8 +443,14 @@
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
 
+  @media (max-width: 900px) {
+    .nav-menu { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #14241a; flex-direction: column; align-items: stretch; gap: 4px; padding: 18px 28px 24px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .nav-menu.show { display: flex; }
+    .nav-menu li { padding: 6px 0; }
+    .menu-toggle { display: block; }
+  }
+
   @media (max-width: 768px) {
-    .nav-menu { display: none; }
     .hero { padding: 110px 0 70px; }
     .hero h1 { font-size: 2.6rem; }
     .search-bar { flex-direction: column; gap: 0; padding: 12px; border-radius: 16px; }
@@ -461,35 +477,48 @@
     .cta h2 { font-size: 2rem; }
     .cta-btns { flex-direction: column; align-items: stretch; }
     .cta-btns .btn { justify-content: center; }
+    .navbar { padding: 14px 0; }
+    .navbar .container { padding: 0 16px; }
+    .brand { font-size: 17px; gap: 8px; }
+    .brand i { font-size: 14px; }
+    .nav-right { gap: 10px; }
+    .btn-sm { padding: 8px 14px; font-size: 0.72rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- ==================== NAVBAR ==================== -->
 <nav class="navbar">
   <div class="container">
-    <a href="#" class="logo">
-      <span class="logo-mark">🐾</span>
-      <span>Simba Adventures</span>
+    <a href="index.html" class="brand">
+      <i class="fa-solid fa-paw"></i>
+      Simba Adventures
     </a>
-    <div class="nav-menu">
-      <a href="#">Tours & Safaris</a>
-      <a href="#">About Us</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+    <ul class="nav-menu nav-menu-links" id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="tour.html">Tours & Safaris</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
+      <div class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('navMenu').classList.toggle('show')">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
     </div>
-    <a href="#" class="btn btn-gold btn-sm">Plan My Safari</a>
   </div>
 </nav>
 
-<!-- ==================== HERO ==================== -->
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
-      <div class="hero-eyebrow">📍 Tanzania, East Africa</div>
-      <h1>Unforgettable<br><em>Tanzanian</em> Safaris</h1>
-      <p class="hero-sub">Bespoke wildlife journeys crafted by experts with 18 years in East Africa. From Serengeti migrations to Zanzibar shores, your adventure begins here.</p>
+      <div class="hero-eyebrow">Bespoke East African Journeys Crafted by Local Experts</div>
+      <h1>Exclusive<br><em>Journeys to Africa</em></h1>
+      <p class="hero-sub">Experience unforgettable Tanzanian safaris through the eyes of local experts with 18+ years on the ground.</p>
 
       <div class="search-bar">
         <div class="search-field">
@@ -522,13 +551,12 @@
             <option>Cultural</option>
           </select>
         </div>
-        <button class="search-btn">🔍 Search Safari Packages</button>
+        <a href="tour.html" class="search-btn">🔍 Search Safari Packages</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== STATS ==================== -->
 <section class="stats">
   <div class="container">
     <div class="stat-item">
@@ -536,7 +564,7 @@
       <div class="stat-lbl">Safaris Led</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">18</div>
+      <div class="stat-num">18+</div>
       <div class="stat-lbl">Years of Excellence</div>
     </div>
     <div class="stat-item">
@@ -544,13 +572,12 @@
       <div class="stat-lbl">Average Rating</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">62</div>
+      <div class="stat-num">5</div>
       <div class="stat-lbl">Countries Represented</div>
     </div>
   </div>
 </section>
 
-<!-- ==================== PACKAGES ==================== -->
 <section class="packages">
   <div class="container">
 
@@ -563,17 +590,16 @@
     </div>
 
     <div class="filter-tabs">
-      <button class="filter-tab active">All</button>
-      <button class="filter-tab">Big Five</button>
-      <button class="filter-tab">Migration</button>
-      <button class="filter-tab">Beach Combo</button>
-      <button class="filter-tab">Short Break</button>
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="big-five">Big Five</button>
+      <button class="filter-tab" data-filter="migration">Migration</button>
+      <button class="filter-tab" data-filter="beach-combo">Beach Combo</button>
+      <button class="filter-tab" data-filter="short-break">Short Break</button>
     </div>
 
     <div class="cards-grid">
 
-      <!-- Card 1 -->
-      <article class="card">
+      <article class="card" data-cat="big-five migration">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1547970810-dc1eac37d174?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-gold">Most Popular</span>
           <span class="card-days">📅 7 Days</span>
@@ -590,15 +616,14 @@
               <div class="price-val">$2,450 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Card 2 -->
-      <article class="card">
+      <article class="card" data-cat="big-five migration">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-dark">Editor's Choice</span>
           <span class="card-days">📅 10 Days</span>
@@ -615,15 +640,14 @@
               <div class="price-val">$3,850 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Card 3 -->
-      <article class="card">
+      <article class="card" data-cat="big-five short-break">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1534177616072-ef7dc120449d?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-gold">Short Break</span>
           <span class="card-days">📅 5 Days</span>
@@ -640,15 +664,14 @@
               <div class="price-val">$1,850 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Card 4 -->
-      <article class="card">
+      <article class="card" data-cat="beach-combo">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-dark">Honeymoon</span>
           <span class="card-days">📅 12 Days</span>
@@ -665,15 +688,14 @@
               <div class="price-val">$4,650 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Card 5 -->
-      <article class="card">
+      <article class="card" data-cat="migration">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-gold">Off the Beaten Path</span>
           <span class="card-days">📅 8 Days</span>
@@ -690,15 +712,14 @@
               <div class="price-val">$3,120 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Card 6 -->
-      <article class="card">
+      <article class="card" data-cat="big-five">
         <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1400&auto=format&fit=crop');">
           <span class="card-badge badge-gold">Wildlife Safari</span>
           <span class="card-days">📅 6 Days</span>
@@ -715,8 +736,8 @@
               <div class="price-val">$2,100 <small>/ person</small></div>
             </div>
             <div class="card-btns">
-              <button class="btn btn-outline-dark btn-sm">Get Quote</button>
-              <button class="btn btn-solid-dark btn-sm">View Itinerary →</button>
+              <a href="plan-my-safari.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+              <a href="tour.html" class="btn btn-solid-dark btn-sm">View Itinerary →</a>
             </div>
           </div>
         </div>
@@ -725,13 +746,12 @@
     </div>
 
     <div class="view-all-wrap">
-      <button class="btn btn-outline-dark">View All Packages →</button>
+      <a href="tour.html" class="btn btn-outline-dark">View All Packages →</a>
     </div>
 
   </div>
 </section>
 
-<!-- ==================== ABOUT ==================== -->
 <section class="about">
   <div class="container">
     <div class="about-grid">
@@ -766,8 +786,7 @@
   </div>
 </section>
 
-<!-- ==================== TESTIMONIALS ==================== -->
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="container">
     <div class="test-head">
       <div class="eyebrow">Traveller Stories</div>
@@ -817,7 +836,6 @@
   </div>
 </section>
 
-<!-- ==================== CERTIFICATIONS ==================== -->
 <section class="certs">
   <div class="container">
     <div class="certs-label">Recognized & Certified By</div>
@@ -846,20 +864,18 @@
   </div>
 </section>
 
-<!-- ==================== CTA ==================== -->
 <section class="cta">
   <div class="container">
     <div class="eyebrow">Begin Your Journey</div>
     <h2>Ready for the<br><em>adventure of a lifetime?</em></h2>
     <p>Speak with our safari specialists — no obligation, just honest advice from people who live and breathe Tanzania. We'll craft an itinerary around your timeline, passions, and budget.</p>
     <div class="cta-btns">
-      <button class="btn btn-gold">Plan My Safari</button>
-      <button class="btn btn-ghost-light">Download Brochure</button>
+      <a href="plan-my-safari.html" class="btn btn-gold">Plan My Safari</a>
+      <a href="gallery.html" class="btn btn-ghost-light">Download Brochure</a>
     </div>
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -869,37 +885,55 @@
           <span>Simba Adventures</span>
         </div>
         <p>Arusha-based luxury safari operator. TATO certified. 18 years guiding guests through Tanzania's greatest wilderness.</p>
-        <p>Plot 42, Serengeti Road, Arusha, Tanzania<br>+255 27 250 8354 · info@simbaadventures.tz</p>
+        <p>Plot 58, Block E, Sokoine Road, Arusha, Tanzania<br>+255 755 753 576, +255 788 753 576<br>info@simbaadventures.com</p>
       </div>
       <div>
         <h5>Explore</h5>
         <div class="footer-links">
-          <a href="#">Serengeti Safaris</a>
-          <a href="#">Kilimanjaro Treks</a>
-          <a href="#">Zanzibar Escapes</a>
-          <a href="#">Ngorongoro Crater</a>
-          <a href="#">Private Safaris</a>
-          <a href="#">Conservation Trips</a>
+          <a href="tour.html">Serengeti Safaris</a>
+          <a href="tour.html">Kilimanjaro Treks</a>
+          <a href="tour.html">Zanzibar Retreats</a>
+          <a href="tour.html">Ngorongoro Crater</a>
         </div>
       </div>
       <div>
-        <h5>Company</h5>
+        <h5>Main Navigation</h5>
         <div class="footer-links">
-          <a href="#">About Us</a>
-          <a href="#">Our Guides</a>
-          <a href="#">Sustainability</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="tour.html">Tours & Safaris</a>
+          <a href="about-us.html">About Us</a>
+          <a href="index.html#testimonials">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact-us.html">Contact</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 Simba Adventures Ltd. All rights reserved.</span>
-      <span>TATO License #1234 · VAT No. 40-123456-X</span>
+      <span>© 2026 Simba Adventures Ltd. All rights reserved.</span>
+      <span>Company Reg #113663 · VAT No. 40319680K</span>
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('.filter-tab');
+    var cards = document.querySelectorAll('.card');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.getAttribute('data-filter') || 'all';
+        cards.forEach(function (card) {
+          var cats = (card.getAttribute('data-cat') || '').split(' ');
+          card.style.display =
+            (filter === 'all' || cats.indexOf(filter) !== -1) ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>
