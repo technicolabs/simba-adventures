@@ -24,9 +24,7 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-
-  <header class="site-header">
+  <header class="site-header header-overlay">
 
     <div class="wrap">
 
@@ -52,6 +50,12 @@
         <li>
           <a href="about-us.html">
             About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#testimonials">
+            Reviews
           </a>
         </li>
 
@@ -91,12 +95,9 @@
 
   </header>
 
-
-  <!-- ================= HERO ================= -->
-
   <section
-    class="hero-photo"
-    style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1600&q=80'); min-height:300px;"
+    class="page-hero"
+    style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1600&q=80');"
   >
 
     <div class="wrap">
@@ -105,14 +106,11 @@
         Start Your Journey
       </span>
 
-      <h1 style="font-size:42px;">
+      <h1>
 
         Plan My
 
-        <span
-          class="italic"
-          style="font-style:italic;color:#D9B564;"
-        >
+        <span class="italic">
           Safari
         </span>
 
@@ -126,9 +124,6 @@
 
   </section>
 
-
-  <!-- ================= ENQUIRY SECTION ================= -->
-
   <section class="section">
 
     <div class="wrap">
@@ -136,8 +131,6 @@
       <div
         style="display:grid; grid-template-columns:1fr 340px; gap:30px; align-items:start;"
       >
-
-        <!-- ================= FORM ================= -->
 
         <div class="form-card">
 
@@ -158,7 +151,7 @@
             id="safari-enquiry-form"
           >
 
-            <!-- NAME + EMAIL -->
+            
 
             <div class="form-row">
 
@@ -196,7 +189,7 @@
             </div>
 
 
-            <!-- PHONE + GUESTS -->
+            
 
             <div class="form-row">
 
@@ -233,7 +226,7 @@
             </div>
 
 
-            <!-- TOUR + DATE -->
+            
 
             <div class="form-row">
 
@@ -274,7 +267,7 @@
             </div>
 
 
-            <!-- BUDGET -->
+            
 
             <div class="form-group">
 
@@ -309,7 +302,7 @@
             </div>
 
 
-            <!-- MESSAGE -->
+            
 
             <div class="form-group">
 
@@ -325,7 +318,7 @@
             </div>
 
 
-            <!-- SUBMIT -->
+            
 
             <button
               type="submit"
@@ -338,7 +331,7 @@
           </form>
 
 
-          <!-- SUCCESS MESSAGE -->
+          
 
           <div
             id="form-success"
@@ -365,7 +358,7 @@
           </div>
 
 
-          <!-- ERROR MESSAGE -->
+          
 
           <div
             id="form-error"
@@ -376,9 +369,6 @@
           </div>
 
         </div>
-
-
-        <!-- ================= SIDEBAR ================= -->
 
         <div>
 
@@ -518,9 +508,6 @@
 
   </section>
 
-
-  <!-- ================= FAQ ================= -->
-
   <section
     class="section"
     style="padding-top:0;"
@@ -624,9 +611,6 @@
 
   </section>
 
-
-  <!-- ================= FOOTER ================= -->
-
   <footer class="site-footer">
 
     <div class="wrap">
@@ -704,10 +688,22 @@
         <div>
 
           <div class="footer-col-title">
-            Company
+            Main Navigation
           </div>
 
           <ul class="footer-menu">
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Tours &amp; Safaris
+              </a>
+            </li>
 
             <li>
               <a href="about-us.html">
@@ -716,20 +712,20 @@
             </li>
 
             <li>
-              <a href="about-us.html">
-                Our Team
+              <a href="index.html#testimonials">
+                Reviews
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
               </a>
             </li>
 
             <li>
               <a href="contact-us.html">
                 Contact
-              </a>
-            </li>
-
-            <li>
-              <a href="privacy-policy.html">
-                Privacy Policy
               </a>
             </li>
 
@@ -793,276 +789,91 @@
 
   </footer>
 
-
-  <!-- ================= JAVASCRIPT ================= -->
+  <script src="data-embedded.js"></script>
 
   <script>
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      var q = item.querySelector('.faq-q');
+      if (q) q.addEventListener('click', function() { item.classList.toggle('open'); });
+    });
 
-    /*
-      FAQ ACCORDION
-    */
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedTour = urlParams.get('tour');
+    var tourSelect = document.getElementById('tour-select');
 
-    document
-      .querySelectorAll('.faq-item')
-      .forEach(function(item) {
+    function populateTours(tours) {
+      tourSelect.innerHTML = '';
+      var defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'Select a tour or destination…';
+      tourSelect.appendChild(defaultOption);
 
-        var q = item.querySelector('.faq-q');
-
-        if (q) {
-
-          q.addEventListener('click', function() {
-
-            item.classList.toggle('open');
-
-          });
-
-        }
-
+      tours.forEach(function(tour) {
+        var option = document.createElement('option');
+        option.value = tour.title;
+        option.textContent = tour.title;
+        tourSelect.appendChild(option);
       });
 
-
-    /*
-      GET TOUR FROM URL
-    */
-
-    const urlParams =
-      new URLSearchParams(window.location.search);
-
-    const selectedTour =
-      urlParams.get('tour');
-
-
-    /*
-      TOUR DROPDOWN
-    */
-
-    const tourSelect =
-      document.getElementById('tour-select');
-
-
-    /*
-      LOAD TOURS FROM CMS JSON
-    */
+      if (selectedTour) {
+        var decoded = selectedTour.trim();
+        var match = Array.from(tourSelect.options).find(function(option) { return option.value === decoded; });
+        if (match) tourSelect.value = decoded;
+      }
+    }
 
     fetch('tours.json')
-
       .then(function(response) {
-
-        if (!response.ok) {
-
-          throw new Error(
-            'Could not load tours.json'
-          );
-
-        }
-
+        if (!response.ok) throw new Error('Could not load tours.json');
         return response.json();
-
       })
-
       .then(function(data) {
-
-        /*
-          SUPPORT CURRENT CMS FORMAT:
-
-          {
-            "tours": [...]
-          }
-
-          ALSO SUPPORT OLD ARRAY FORMAT
-        */
-
-        const tours =
-          Array.isArray(data)
-            ? data
-            : data.tours || [];
-
-
-        tourSelect.innerHTML = '';
-
-
-        const defaultOption =
-          document.createElement('option');
-
-        defaultOption.value = '';
-
-        defaultOption.textContent =
-          'Select a tour or destination…';
-
-        tourSelect.appendChild(
-          defaultOption
-        );
-
-
-        /*
-          ADD ALL CMS TOURS
-        */
-
-        tours.forEach(function(tour) {
-
-          const option =
-            document.createElement('option');
-
-          option.value =
-            tour.title;
-
-          option.textContent =
-            tour.title;
-
-          tourSelect.appendChild(
-            option
-          );
-
-        });
-
-
-        /*
-          AUTOMATICALLY SELECT TOUR
-          FROM URL
-        */
-
-        if (selectedTour) {
-
-          const decodedTour =
-            selectedTour.trim();
-
-
-          const matchingOption =
-            Array.from(
-              tourSelect.options
-            ).find(function(option) {
-
-              return option.value === decodedTour;
-
-            });
-
-
-          if (matchingOption) {
-
-            tourSelect.value =
-              decodedTour;
-
-          }
-
-        }
-
+        var tours = Array.isArray(data) ? data : data.tours || [];
+        populateTours(tours);
       })
-
       .catch(function(error) {
-
-        console.error(
-          'Tour loading error:',
-          error
-        );
-
+        console.error('Tour loading error:', error);
+        if (window.SIMBA_TOURS && Array.isArray(window.SIMBA_TOURS)) {
+          populateTours(window.SIMBA_TOURS);
+          return;
+        }
         tourSelect.innerHTML = '';
-
-        const errorOption =
-          document.createElement('option');
-
-        errorOption.textContent =
-          'Unable to load tours';
-
-        tourSelect.appendChild(
-          errorOption
-        );
-
+        var errorOption = document.createElement('option');
+        errorOption.textContent = 'Unable to load tours';
+        tourSelect.appendChild(errorOption);
       });
 
+    var safariForm = document.getElementById('safari-enquiry-form');
+    var submitButton = document.getElementById('submit-button');
+    var successMessage = document.getElementById('form-success');
+    var errorMessage = document.getElementById('form-error');
 
-    /*
-      FORM SUBMISSION
-    */
+    safariForm.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      errorMessage.style.display = 'none';
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
 
-    const safariForm =
-      document.getElementById(
-        'safari-enquiry-form'
-      );
+      try {
+        var response = await fetch(safariForm.action, {
+          method: 'POST',
+          body: new FormData(safariForm),
+          headers: { 'Accept': 'application/json' }
+        });
 
-    const submitButton =
-      document.getElementById(
-        'submit-button'
-      );
-
-    const successMessage =
-      document.getElementById(
-        'form-success'
-      );
-
-    const errorMessage =
-      document.getElementById(
-        'form-error'
-      );
-
-
-    safariForm.addEventListener(
-      'submit',
-      async function(event) {
-
-        event.preventDefault();
-
-        errorMessage.style.display =
-          'none';
-
-        submitButton.disabled =
-          true;
-
-        submitButton.textContent =
-          'Sending...';
-
-
-        try {
-
-          const response =
-            await fetch(
-              safariForm.action,
-              {
-                method: 'POST',
-                body: new FormData(safariForm),
-                headers: {
-                  'Accept': 'application/json'
-                }
-              }
-            );
-
-
-          if (response.ok) {
-
-            safariForm.style.display =
-              'none';
-
-            successMessage.style.display =
-              'block';
-
-          } else {
-
-            throw new Error(
-              'Form submission failed'
-            );
-
-          }
-
-        } catch (error) {
-
-          console.error(
-            'Form submission error:',
-            error
-          );
-
-          errorMessage.style.display =
-            'block';
-
-          submitButton.disabled =
-            false;
-
-          submitButton.textContent =
-            'Send My Safari Enquiry →';
-
+        if (response.ok) {
+          safariForm.style.display = 'none';
+          successMessage.style.display = 'block';
+        } else {
+          throw new Error('Form submission failed');
         }
-
+      } catch (error) {
+        console.error('Form submission error:', error);
+        errorMessage.style.display = 'block';
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send My Safari Enquiry →';
       }
-    );
-
+    });
   </script>
 
 </body>
