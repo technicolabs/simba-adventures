@@ -41,11 +41,9 @@ content="width=device-width, initial-scale=1.0"
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <header class="site-header header-overlay">
 
-  <header class="site-header">
 
-```
 <div class="wrap">
 
   <a
@@ -90,6 +88,13 @@ content="width=device-width, initial-scale=1.0"
 
 
     <li>
+      <a href="index.html#testimonials">
+        Reviews
+      </a>
+    </li>
+
+
+    <li>
       <a href="gallery.html">
         Gallery
       </a>
@@ -127,63 +132,44 @@ content="width=device-width, initial-scale=1.0"
   </div>
 
 </div>
-```
+
 
   </header>
 
-  <!-- ================= HERO ================= -->
-
   <section
-    class="hero-photo"
-    style="
-      background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80');
-      min-height:360px;
-    "
+    class="page-hero"
+    style="background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80');"
   >
 
-```
+
 <div class="wrap">
 
   <span class="eyebrow on-dark">
-    Our Journeys
+    Explore Tanzania
   </span>
 
 
   <h1>
 
-    Find Your
-
-    <span
-      class="italic"
-      style="
-        font-style:italic;
-        color:#D9B564;
-      "
-    >
-      Adventure
-    </span>
+    Our Signature Safaris
 
   </h1>
 
 
   <p class="lede">
 
-    Handcrafted Tanzanian safaris,
-    from the Serengeti plains to
-    the beaches of Zanzibar.
+    Browse our popular safari packages or get in touch to build a trip that's fully yours.
 
   </p>
 
 </div>
-```
+
 
   </section>
 
-  <!-- ================= TOURS SECTION ================= -->
-
   <section class="section">
 
-```
+
 <div class="wrap">
 
 
@@ -200,15 +186,10 @@ content="width=device-width, initial-scale=1.0"
 
 
     <p>
-      Choose a journey or let us create
-      something completely bespoke.
+Browse our popular safari packages or get in touch to build a trip that's fully yours.
     </p>
 
   </div>
-
-
-
-  <!-- ================= FILTERS ================= -->
 
   <div
     style="
@@ -260,10 +241,6 @@ content="width=device-width, initial-scale=1.0"
 
   </div>
 
-
-
-  <!-- ================= TOUR COUNT ================= -->
-
   <p
     id="tour-count"
     style="
@@ -275,26 +252,18 @@ content="width=device-width, initial-scale=1.0"
     Loading tours...
   </p>
 
-
-
-  <!-- ================= TOUR GRID ================= -->
-
   <div
     class="itin-grid"
     id="tours-grid"
   >
 
-    <!-- Tours loaded from tours.json -->
-
   </div>
 
 
 </div>
-```
+
 
   </section>
-
-  <!-- ================= CTA ================= -->
 
   <section
     class="section"
@@ -304,7 +273,7 @@ content="width=device-width, initial-scale=1.0"
     "
   >
 
-```
+
 <div
   class="wrap"
   style="
@@ -347,15 +316,13 @@ content="width=device-width, initial-scale=1.0"
   </a>
 
 </div>
-```
+
 
   </section>
 
-  <!-- ================= FOOTER ================= -->
-
   <footer class="site-footer">
 
-```
+
 <div class="wrap">
 
   <div class="footer-grid">
@@ -447,11 +414,25 @@ content="width=device-width, initial-scale=1.0"
     <div>
 
       <div class="footer-col-title">
-        Company
+        Main Navigation
       </div>
 
 
       <ul class="footer-menu">
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+
+        <li>
+          <a href="tour.html">
+            Tours &amp; Safaris
+          </a>
+        </li>
+
 
         <li>
           <a href="about-us.html">
@@ -461,8 +442,15 @@ content="width=device-width, initial-scale=1.0"
 
 
         <li>
-          <a href="about-us.html">
-            Our Team
+          <a href="index.html#testimonials">
+            Reviews
+          </a>
+        </li>
+
+
+        <li>
+          <a href="gallery.html">
+            Gallery
           </a>
         </li>
 
@@ -470,13 +458,6 @@ content="width=device-width, initial-scale=1.0"
         <li>
           <a href="contact-us.html">
             Contact
-          </a>
-        </li>
-
-
-        <li>
-          <a href="privacy-policy.html">
-            Privacy Policy
           </a>
         </li>
 
@@ -497,19 +478,19 @@ content="width=device-width, initial-scale=1.0"
 
         <p>
           <i class="fa-solid fa-location-dot"></i>
-          Arusha, Tanzania
+          Plot 58, Block E, Sokoine Road, Arusha, Tanzania
         </p>
 
 
         <p>
           <i class="fa-solid fa-phone"></i>
-          +255 700 123 456
+          +255 755 753 576, +255 788 753 576
         </p>
 
 
         <p>
           <i class="fa-solid fa-envelope"></i>
-          hello@simbaadventures.co.tz
+          info@simbaadventures.com
         </p>
 
       </div>
@@ -523,10 +504,7 @@ content="width=device-width, initial-scale=1.0"
   <div class="footer-bottom">
 
     <div>
-
-      &copy; 2006&ndash;2026 Simba Adventures.
-      All rights reserved.
-
+      &copy; 2026 Simba Adventures Ltd. All rights reserved.
     </div>
 
 
@@ -546,580 +524,150 @@ content="width=device-width, initial-scale=1.0"
   </div>
 
 </div>
-```
+
 
   </footer>
 
-  <!-- ================= JAVASCRIPT ================= -->
+  <script src="data-embedded.js"></script>
 
   <script>
-
-    const toursGrid =
-      document.getElementById('tours-grid');
-
-    const tourCount =
-      document.getElementById('tour-count');
-
-    const filterButtons =
-      document.querySelectorAll('.tour-filter');
-
-    let allTours = [];
-
-
-    /*
-      LOAD TOURS
-      Supports both:
-
-      [
-        {...},
-        {...}
-      ]
-
-      AND:
-
-      {
-        "tours": [
-          {...},
-          {...}
-        ]
-      }
-    */
-
-    fetch('tours.json')
-
-      .then(function(response) {
-
-        if (!response.ok) {
-
-          throw new Error(
-            'Could not load tours.json'
-          );
-
-        }
-
-        return response.json();
-
-      })
-
-
-      .then(function(data) {
-
-        /*
-          CMS format
-        */
-
-        if (
-          data &&
-          Array.isArray(data.tours)
-        ) {
-
-          allTours = data.tours;
-
-        }
-
-        /*
-          Old format
-        */
-
-        else if (
-          Array.isArray(data)
-        ) {
-
-          allTours = data;
-
-        }
-
-        else {
-
-          throw new Error(
-            'Invalid tours.json structure'
-          );
-
-        }
-
-
-        renderTours(allTours);
-
-      })
-
-
-      .catch(function(error) {
-
-        console.error(
-          'Tour loading error:',
-          error
-        );
-
-
-        toursGrid.innerHTML = `
-
-          <div
-            style="
-              grid-column:1/-1;
-              text-align:center;
-              padding:50px 20px;
-            "
-          >
-
-            <h3>
-              Unable to load tours
-            </h3>
-
-            <p>
-              Please try again later.
-            </p>
-
-          </div>
-
-        `;
-
-
-        tourCount.textContent =
-          'Unable to load tours';
-
-      });
-
-
-
-    /*
-      RENDER TOURS
-    */
+    var toursGrid = document.getElementById('tours-grid');
+    var tourCount = document.getElementById('tour-count');
+    var filterButtons = document.querySelectorAll('.tour-filter');
+    var allTours = [];
 
     function renderTours(tours) {
-
       toursGrid.innerHTML = '';
-
-
-      tourCount.textContent =
-        tours.length +
-        (
-          tours.length === 1
-            ? ' tour'
-            : ' tours'
-        ) +
-        ' available';
-
+      tourCount.textContent = tours.length + (tours.length === 1 ? ' tour' : ' tours') + ' available';
 
       if (tours.length === 0) {
-
         toursGrid.innerHTML = `
-
-          <div
-            style="
-              grid-column:1/-1;
-              text-align:center;
-              padding:50px 20px;
-            "
-          >
-
-            <h3>
-              No tours found
-            </h3>
-
-            <p>
-              Try another category.
-            </p>
-
-          </div>
-
-        `;
-
+          <div style="grid-column:1/-1; text-align:center; padding:50px 20px;">
+            <h3>No tours found</h3>
+            <p>Try another category.</p>
+          </div>`;
         return;
-
       }
-
-
 
       tours.forEach(function(tour) {
+        var detailsURL = 'tour-details.html?tour=' + encodeURIComponent(tour.title);
+        var tourURL = 'plan-my-safari.html?tour=' + encodeURIComponent(tour.title);
 
+        var badgeHTML = tour.badge ? `
+          <span style="position:absolute; top:15px; left:15px; z-index:2; background:#D9B564; color:#1b1b1b; padding:6px 10px; border-radius:20px; font-size:11px; font-weight:600;">
+            ${tour.badge}
+          </span>` : '';
 
-        const detailsURL =
-          'tour-details.html?tour=' +
-          encodeURIComponent(tour.title);
+        var categoriesHTML = (tour.categories || []).map(function(category) {
+          return `
+            <span style="display:inline-block; margin-right:5px; margin-bottom:5px; padding:5px 9px; border-radius:15px; background:#f2eee5; font-size:11px;">
+              ${category}
+            </span>`;
+        }).join('');
 
+        var tagsHTML = (tour.tags || []).map(function(tag) {
+          return `
+            <span style="font-size:11px; color:var(--ink-faint); margin-right:8px;">
+              ${tag}
+            </span>`;
+        }).join('');
 
-        const tourURL =
-          'plan-my-safari.html?tour=' +
-          encodeURIComponent(tour.title);
-
-
-
-        const badgeHTML =
-          tour.badge
-            ? `
-              <span
-                style="
-                  position:absolute;
-                  top:15px;
-                  left:15px;
-                  z-index:2;
-                  background:#D9B564;
-                  color:#1b1b1b;
-                  padding:6px 10px;
-                  border-radius:20px;
-                  font-size:11px;
-                  font-weight:600;
-                "
-              >
-                ${tour.badge}
-              </span>
-            `
-            : '';
-
-
-
-        const categoriesHTML =
-          (tour.categories || [])
-            .map(function(category) {
-
-              return `
-                <span
-                  style="
-                    display:inline-block;
-                    margin-right:5px;
-                    margin-bottom:5px;
-                    padding:5px 9px;
-                    border-radius:15px;
-                    background:#f2eee5;
-                    font-size:11px;
-                  "
-                >
-                  ${category}
-                </span>
-              `;
-
-            })
-            .join('');
-
-
-
-        const tagsHTML =
-          (tour.tags || [])
-            .map(function(tag) {
-
-              return `
-                <span
-                  style="
-                    font-size:11px;
-                    color:var(--ink-faint);
-                    margin-right:8px;
-                  "
-                >
-                  ${tag}
-                </span>
-              `;
-
-            })
-            .join('');
-
-
-
-        const card =
-          document.createElement('article');
-
-        card.className =
-          'itin-card';
-
-
+        var card = document.createElement('article');
+        card.className = 'itin-card';
 
         card.innerHTML = `
-
-          <div
-            style="
-              position:relative;
-              overflow:hidden;
-              border-radius:12px 12px 0 0;
-            "
-          >
-
+          <div style="position:relative; overflow:hidden; border-radius:12px 12px 0 0;">
             ${badgeHTML}
-
-
-            <img
-              src="${tour.image}"
-              alt="${tour.title}"
-              style="
-                width:100%;
-                height:240px;
-                object-fit:cover;
-                display:block;
-              "
-            >
-
+            <img src="${tour.image}" alt="${tour.title}" style="width:100%; height:240px; object-fit:cover; display:block;">
           </div>
 
-
-
-          <div
-            style="
-              padding:22px;
-            "
-          >
-
-            <div
-              style="
-                font-size:12px;
-                color:var(--ink-faint);
-                margin-bottom:8px;
-              "
-            >
-
+          <div style="padding:22px;">
+            <div style="font-size:12px; color:var(--ink-faint); margin-bottom:8px;">
               <i class="fa-solid fa-location-dot"></i>
-
               ${tour.location}
-
             </div>
 
+            <h3 style="margin-bottom:10px;">${tour.title}</h3>
 
-
-            <h3
-              style="
-                margin-bottom:10px;
-              "
-            >
-
-              ${tour.title}
-
-            </h3>
-
-
-
-            <p
-              style="
-                font-size:13px;
-                line-height:1.6;
-                color:var(--ink-faint);
-                margin-bottom:15px;
-              "
-            >
-
+            <p style="font-size:13px; line-height:1.6; color:var(--ink-faint); margin-bottom:15px;">
               ${tour.description}
-
             </p>
 
+            <div style="margin-bottom:12px;">${categoriesHTML}</div>
 
+            <p style="font-size:12px; margin-bottom:12px;"><strong>Route:</strong> ${tour.route}</p>
 
-            <div
-              style="
-                margin-bottom:12px;
-              "
-            >
-
-              ${categoriesHTML}
-
+            <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px; font-size:12px;">
+              <span><i class="fa-regular fa-clock"></i> ${tour.duration}</span>
+              <span><i class="fa-solid fa-star"></i> ${tour.rating} (${tour.reviews})</span>
             </div>
 
+            <p style="font-size:12px; margin-bottom:12px;"><strong>Stay:</strong> ${tour.accommodation}</p>
 
+            <div style="margin-bottom:18px;">${tagsHTML}</div>
 
-            <p
-              style="
-                font-size:12px;
-                margin-bottom:12px;
-              "
-            >
-
-              <strong>
-                Route:
-              </strong>
-
-              ${tour.route}
-
-            </p>
-
-
-
-            <div
-              style="
-                display:flex;
-                flex-wrap:wrap;
-                gap:12px;
-                margin-bottom:12px;
-                font-size:12px;
-              "
-            >
-
-              <span>
-
-                <i class="fa-regular fa-clock"></i>
-
-                ${tour.duration}
-
-              </span>
-
-
-              <span>
-
-                <i class="fa-solid fa-star"></i>
-
-                ${tour.rating}
-
-                (${tour.reviews})
-
-              </span>
-
+            <div style="margin-bottom:18px;">
+              <span style="font-size:12px; color:var(--ink-faint);">From</span>
+              <strong style="font-size:22px; margin-left:4px;">$${tour.price}</strong>
             </div>
 
-
-
-            <p
-              style="
-                font-size:12px;
-                margin-bottom:12px;
-              "
-            >
-
-              <strong>
-                Stay:
-              </strong>
-
-              ${tour.accommodation}
-
-            </p>
-
-
-
-            <div
-              style="
-                margin-bottom:18px;
-              "
-            >
-
-              ${tagsHTML}
-
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <a href="${detailsURL}" class="btn btn-outline">View Details</a>
+              <a href="${tourURL}" class="btn btn-gold">Book Now</a>
             </div>
-
-
-
-            <div
-              style="
-                margin-bottom:18px;
-              "
-            >
-
-              <span
-                style="
-                  font-size:12px;
-                  color:var(--ink-faint);
-                "
-              >
-                From
-              </span>
-
-
-              <strong
-                style="
-                  font-size:22px;
-                  margin-left:4px;
-                "
-              >
-                $${tour.price}
-              </strong>
-
-            </div>
-
-
-
-            <div
-              style="
-                display:flex;
-                flex-wrap:wrap;
-                gap:8px;
-              "
-            >
-
-              <a
-                href="${detailsURL}"
-                class="btn btn-outline"
-              >
-                View Details
-              </a>
-
-
-              <a
-                href="${tourURL}"
-                class="btn btn-primary"
-              >
-                Book Now
-              </a>
-
-            </div>
-
-
-          </div>
-
-        `;
-
+          </div>`;
 
         toursGrid.appendChild(card);
-
       });
-
     }
 
+    fetch('tours.json')
+      .then(function(response) {
+        if (!response.ok) throw new Error('Could not load tours.json');
+        return response.json();
+      })
+      .then(function(data) {
+        if (data && Array.isArray(data.tours)) {
+          allTours = data.tours;
+        } else if (Array.isArray(data)) {
+          allTours = data;
+        } else {
+          throw new Error('Invalid tours.json structure');
+        }
+        renderTours(allTours);
+      })
+      .catch(function(error) {
+        console.error('Tour loading error:', error);
+        if (window.SIMBA_TOURS && Array.isArray(window.SIMBA_TOURS)) {
+          allTours = window.SIMBA_TOURS;
+          renderTours(allTours);
+          return;
+        }
+        toursGrid.innerHTML = `
+          <div style="grid-column:1/-1; text-align:center; padding:50px 20px;">
+            <h3>Unable to load tours</h3>
+            <p>Please try again later.</p>
+          </div>`;
+        tourCount.textContent = 'Unable to load tours';
+      });
 
+    filterButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        filterButtons.forEach(function(btn) { btn.classList.remove('active'); });
+        button.classList.add('active');
 
-    /*
-      FILTER SYSTEM
-    */
+        var filter = button.dataset.filter;
+        if (filter === 'All') {
+          renderTours(allTours);
+          return;
+        }
 
-    filterButtons.forEach(
-      function(button) {
-
-        button.addEventListener(
-          'click',
-          function() {
-
-            filterButtons.forEach(
-              function(btn) {
-
-                btn.classList.remove(
-                  'active'
-                );
-
-              }
-            );
-
-
-            button.classList.add(
-              'active'
-            );
-
-
-            const filter =
-              button.dataset.filter;
-
-
-            if (filter === 'All') {
-
-              renderTours(allTours);
-
-              return;
-
-            }
-
-
-            const filteredTours =
-              allTours.filter(
-                function(tour) {
-
-                  return (
-                    tour.categories || []
-                  ).includes(filter);
-
-                }
-              );
-
-
-            renderTours(
-              filteredTours
-            );
-
-          }
-        );
-
-      }
-    );
-
+        var filtered = allTours.filter(function(tour) {
+          return (tour.categories || []).includes(filter);
+        });
+        renderTours(filtered);
+      });
+    });
   </script>
 
 </body>
