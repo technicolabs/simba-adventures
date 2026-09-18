@@ -2,7 +2,7 @@
   "tours": [
     {
       "badge": "Classic Safari",
-      "price": "Request a Quote",
+      "price": "1,957 per person",
       "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro Crater → Tarangire → Arusha",
       "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
       "duration": "6 Days",
@@ -27,7 +27,7 @@
     },
     {
       "badge": "Big Five",
-      "price": "Request a Quote",
+      "price": "1,693 per person",
       "route": "Arusha → Tarangire → Serengeti → Ngorongoro Crater → Arusha",
       "accommodation": "Boutique Lodge",
       "duration": "5 Days",
@@ -53,7 +53,7 @@
     },
     {
       "badge": "Request a Quote",
-      "price": "Request a Quote",
+      "price": "3,121 per person",
       "route": "Arusha → Tarangire → Central Serengeti → Migration Areas → Ngorongoro Crater → Lake Manyara → Arusha",
       "accommodation": "Campsite/Hotel; Nsya Camp; Eyasi Campsite",
       "duration": "8 Days",
@@ -79,7 +79,7 @@
     },
     {
       "badge": "Wild South",
-      "price": "Request a Quote",
+      "price": "2,565 per person",
       "route": "Dar es Salaam → Nyerere National Park → Ruaha National Park → Mikumi / Morogoro → Dar es Salaam",
       "accommodation": "Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro Ang'ata Tented Camp",
       "duration": "8 Days",
@@ -104,7 +104,7 @@
     },
     {
       "badge": "Family Friendly",
-      "price": "Request a Quote",
+      "price": "1,689 per person",
       "route": "Arusha → Tarangire → Mto wa Mbu → Lake Manyara → Maasai Boma → Ngorongoro → Lake Eyasi → Arusha",
       "accommodation": "Roika Tented Camp; Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro",
       "duration": "6 Days",
@@ -129,7 +129,7 @@
     },
     {
       "badge": "Safari & Beach",
-      "price": "Request a Quote",
+      "price": "5,850 per person",
       "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha → Zanzibar → Stone Town → Nungwi / Kendwa",
       "accommodation": "Meru View Lodge; Ang'ata Tarangire Tented Camp; Kirurumu Manyara Tented Camp; Ang'ata Serengeti Tented Camp; Ang'ata Ngorongoro Tented Camp; Kisima Ngeda Tented Camp",
       "duration": "13 Days",
@@ -155,7 +155,7 @@
     },
     {
       "badge": "Culture & Wildlife",
-      "price": "Request a Quote",
+      "price": "1,120 per person",
       "route": "Arusha → Lake Manyara → Ngorongoro Crater → Lake Eyasi → Mto wa Mbu → Arusha",
       "accommodation": "Tarangire Acacia Tented Camp; Manyara Secret Lodge; Malaika Luxury Camp; Lion's Paw Ngorongoro Luxury Camp; Zanzibar accommodation",
       "duration": "4 Days",
@@ -181,7 +181,7 @@
     },
     {
       "badge": "Romantic Escape",
-      "price": "Request a Quote",
+      "price": "3,220 per person",
       "route": "Arusha → Tarangire → Serengeti → Ngorongoro Crater → Karatu → Arusha",
       "accommodation": "Airport Planet Lodge; Arusha Planet Lodge; Ang'ata Tarangire Tented Camp; Lake Natron Tented Camp; Malaika Luxury Camp; Speke Bay Lodge; Lion's Paw Camp",
       "duration": "7 Days",
@@ -207,7 +207,7 @@
     },
     {
       "badge": "Adventure Combo",
-      "price": "Request a Quote",
+      "price": "2,999 per person",
       "route": "Moshi → Mount Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
       "duration": "10 Days",
       "location": "Tanzania",
@@ -220,7 +220,7 @@
     },
     {
       "badge": "Luxury Safari",
-      "price": "Request a Quote",
+      "price": "2,384 per person",
       "route": "Arusha → Serengeti → Migration Areas → Arusha",
       "duration": "4 Days",
       "location": "Serengeti National Park, Tanzania",
@@ -233,7 +233,7 @@
     },
     {
       "badge": "Summit Expedition",
-      "price": "Request a Quote",
+      "price": "2,450 per person",
       "route": "Moshi / Arusha → Londorossi Gate → Mti Mkubwa → Shira 2 → Lava Tower → Barranco → Karanga → Barafu → Uhuru Peak → Mweka → Moshi / Arusha",
       "duration": "8 Days",
       "location": "Mount Kilimanjaro, Tanzania",
@@ -246,7 +246,7 @@
     },
     {
       "badge": "Short Safari",
-      "price": "Request a Quote",
+      "price": "698 per person",
       "route": "Arusha → Tarangire → Ngorongoro Crater → Lake Manyara → Arusha",
       "duration": "3 Days",
       "location": "Tanzania",
