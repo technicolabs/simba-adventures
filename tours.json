@@ -1,13 +1,13 @@
 {
   "tours": [
     {
-      "badge": "Most Popular",
-      "price": "4",
-      "route": "Arusha → Tarangire National Park → Serengeti National Park → Ngorongoro Crater → Arusha",
+      "badge": "Classic Safari",
+      "price": "Request a Quote",
+      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro Crater → Tarangire → Arusha",
       "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
-      "duration": "5 Days / 4 Nights",
-      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
-      "title": "5 Days Big 5 Safari",
+      "duration": "6 Days",
+      "location": "Tanzania",
+      "title": "The Serengeti Symphony",
       "tags": [
         "Big Five",
         "Safari",
@@ -20,9 +20,9 @@
       "reviews": "214",
       "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Budget Safaris"
+        "Big Five, Migration, Short Breaks"
       ],
-      "description": "A 5-day camping safari covering Tarangire, Serengeti and Ngorongoro, with game drives focused on elephants, predators, the Great Migration and the Big Five.",
+      "description": "A classic 6-day Northern Circuit safari combining Lake Manyara, the Serengeti, Ngorongoro Crater, and Tarangire. Experience diverse landscapes, the Big Five, large elephant herds, predators, and the possibility of witnessing the Great Migration.\n",
       "rating": "4.9"
     },
     {
