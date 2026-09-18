@@ -172,7 +172,7 @@
         "Wildlife"
       ],
       "reviews": "133",
-      "image": "https://images.unsplash.com/photo-1641161774424-9d3d4f7b6f5e?auto=format&fit=crop&w=700&q=80",
+      "image": "https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?q=80&w=952&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "categories": [
         "Cultural, Big Five, Short Breaks"
       ],
@@ -204,6 +204,58 @@
       ],
       "description": "An extensive 14-day Tanzania journey combining a Kilimanjaro day hike, walking safari, wildlife viewing, Maasai and Lake Natron experiences, Serengeti migration, Lake Victoria and Ngorongoro.",
       "rating": "4.8"
+    },
+    {
+      "badge": "Adventure Combo",
+      "price": "Request a Quote",
+      "route": "Moshi → Mount Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "duration": "10 Days",
+      "location": "Tanzania",
+      "title": "The Roof of Africa & Beyond",
+      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=700&q=80",
+      "categories": [
+        "Kilimanjaro, Combos, Big Five, Migration"
+      ],
+      "description": "A 10-day Tanzania adventure combining Mount Kilimanjaro experiences with a classic wildlife safari. Trek through Kilimanjaro's rainforest, visit Materuni Waterfalls, explore Tarangire and Serengeti, and discover the wildlife of Ngorongoro Crater.\n"
+    },
+    {
+      "badge": "Luxury Safari",
+      "price": "Request a Quote",
+      "route": "Arusha → Serengeti → Migration Areas → Arusha",
+      "duration": "4 Days",
+      "location": "Serengeti National Park, Tanzania",
+      "title": "Serengeti Under Canvas",
+      "image": "https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=700&q=80",
+      "categories": [
+        "Migration, Short Breaks"
+      ],
+      "description": "A 4-day fly-in Serengeti experience focused on maximizing time in the wilderness. Stay in an intimate canvas camp, enjoy game drives across the plains, track the Great Migration, and experience the Serengeti under the stars.\n"
+    },
+    {
+      "badge": "Summit Expedition",
+      "price": "Request a Quote",
+      "route": "Moshi / Arusha → Londorossi Gate → Mti Mkubwa → Shira 2 → Lava Tower → Barranco → Karanga → Barafu → Uhuru Peak → Mweka → Moshi / Arusha",
+      "duration": "8 Days",
+      "location": "Mount Kilimanjaro, Tanzania",
+      "title": "Kilimanjaro Expedition",
+      "image": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=700&q=80",
+      "categories": [
+        "Kilimanjaro, Adventure"
+      ],
+      "description": "An 8-day summit-focused Mount Kilimanjaro expedition using the Lemosho or Machame route. Trek through rainforest, moorland, alpine desert, and high-altitude terrain before attempting the summit of Uhuru Peak at 5,895 meters.\n"
+    },
+    {
+      "badge": "Short Safari",
+      "price": "Request a Quote",
+      "route": "Arusha → Tarangire → Ngorongoro Crater → Lake Manyara → Arusha",
+      "duration": "3 Days",
+      "location": "Tanzania",
+      "title": "Echoes of the Ngorongoro",
+      "image": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=700&q=80",
+      "categories": [
+        "Big Five, Short Breaks"
+      ],
+      "description": "A compact 3-day Northern Circuit safari combining Tarangire, Ngorongoro Crater, and Lake Manyara. Experience elephants, lions, leopards, flamingos, tree-climbing lions, and the unique wildlife of the Ngorongoro ecosystem.\n"
     }
   ]
 }
