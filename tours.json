@@ -26,13 +26,13 @@
       "rating": "4.9"
     },
     {
-      "badge": "",
-      "price": "1000",
-      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
+      "badge": "Big Five",
+      "price": "Request a Quote",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro Crater → Arusha",
       "accommodation": "Boutique Lodge",
-      "duration": "7 Days / 6 Nights",
-      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti & Ngorongoro",
-      "title": "7 Days Migration Safari",
+      "duration": "5 Days",
+      "location": "Tanzania",
+      "title": "Tanzania Big Five Signature",
       "tags": [
         "Great Migration",
         "Serengeti",
@@ -44,21 +44,21 @@
         "Camping"
       ],
       "reviews": "167",
-      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
+      "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Budget Safaris"
+        "Big Five, Short Breaks"
       ],
       "description": "A 7-day camping safari featuring extended Serengeti game drives focused on the wildebeest migration, followed by a Ngorongoro Crater game drive.",
       "rating": "4.8"
     },
     {
-      "badge": "",
-      "price": "3,980",
-      "route": "Arusha → Arusha National Park → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Lake Eyasi → Arusha",
+      "badge": "Request a Quote",
+      "price": "Request a Quote",
+      "route": "Arusha → Tarangire → Central Serengeti → Migration Areas → Ngorongoro Crater → Lake Manyara → Arusha",
       "accommodation": "Campsite/Hotel; Nsya Camp; Eyasi Campsite",
-      "duration": "8 Days / 7 Nights",
-      "location": "Tanzania — Arusha, Tarangire, Lake Manyara, Serengeti, Ngorongoro & Lake Eyasi",
-      "title": "8 Days Discover Tanzania",
+      "duration": "8 Days",
+      "location": "Tanzania",
+      "title": "The Great Migration Horizon",
       "tags": [
         "Tanzania Safari",
         "Wildlife",
@@ -70,21 +70,21 @@
         "Camping"
       ],
       "reviews": "142",
-      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Budget Safaris"
+        "Migration, Big Five"
       ],
       "description": "An 8-day adventure combining walking and game drives with wildlife viewing and a cultural experience with the Hadzabe around Lake Eyasi.",
       "rating": "4.8"
     },
     {
-      "badge": "",
-      "price": "2,200",
-      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Arusha",
+      "badge": "Wild South",
+      "price": "Request a Quote",
+      "route": "Dar es Salaam → Nyerere National Park → Ruaha National Park → Mikumi / Morogoro → Dar es Salaam",
       "accommodation": "Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro Ang'ata Tented Camp",
-      "duration": "5 Days / 4 Nights",
-      "location": "Tanzania — Lake Manyara, Serengeti & Ngorongoro",
-      "title": "5 Days Wild Discovery",
+      "duration": "8 Days",
+      "location": "Tanzania",
+      "title": "The Untamed South",
       "tags": [
         "Wildlife",
         "Safari",
@@ -95,9 +95,9 @@
         "Tented Camp"
       ],
       "reviews": "186",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
+      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=700&q=80",
       "categories": [
-        "Mid Range Safaris"
+        "Big Five, Short Breaks"
       ],
       "description": "A 5-day tented-camp safari exploring Lake Manyara, the Serengeti and Ngorongoro Crater, with multiple game drives and opportunities to see the Big Five.",
       "rating": "4.9"
