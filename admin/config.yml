@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: technicolabs/simba-adventures
   branch: main
 
 media_folder: "images"
