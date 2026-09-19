@@ -426,6 +426,15 @@
     transition: color 0.2s;
   }
   .footer-links a:hover { color: #fff; }
+  .footer-social { display: flex; gap: 12px; }
+  .footer-social a {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.18);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem; color: rgba(255,255,255,0.72);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .footer-social a:hover { color: #fff; border-color: #fff; }
   .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: 24px;
@@ -886,6 +895,10 @@
         </div>
         <p>Arusha-based luxury safari operator. TATO certified. 18 years guiding guests through Tanzania's greatest wilderness.</p>
         <p>Plot 58, Block E, Sokoine Road, Arusha, Tanzania<br>+255 755 753 576, +255 788 753 576<br>info@simbaadventures.com</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/simbaadventures" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
       <div>
         <h5>Explore</h5>
