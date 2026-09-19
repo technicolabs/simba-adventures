@@ -12,7 +12,6 @@
 
   <title>Tours & Safaris — Simba Adventures</title>
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link
@@ -36,53 +35,38 @@
     href="styles.css"
   >
 
-
   <style>
 
     .tour-card-image-wrap {
-
       position: relative;
       overflow: hidden;
       border-radius: 12px 12px 0 0;
       background: #ddd;
-
     }
 
-
     .tour-card-image {
-
       width: 100%;
       height: 240px;
       object-fit: cover;
       display: block;
-
     }
 
-
     .tour-card-description {
-
       font-size: 13px;
       line-height: 1.7;
       color: var(--ink-faint);
       margin-bottom: 15px;
-
     }
-
 
     .tour-price-empty {
-
       font-size: 13px;
       color: var(--ink-faint);
-
     }
 
-
     .tour-buttons {
-
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-
     }
 
   </style>
@@ -98,7 +82,6 @@
 <header class="site-header header-overlay">
 
   <div class="wrap">
-
 
     <a
       href="index.html"
@@ -123,7 +106,6 @@
         </a>
       </li>
 
-
       <li>
         <a
           href="tour.html"
@@ -133,13 +115,11 @@
         </a>
       </li>
 
-
       <li>
         <a href="about-us.html">
           About Us
         </a>
       </li>
-
 
       <li>
         <a href="index.html#testimonials">
@@ -147,13 +127,11 @@
         </a>
       </li>
 
-
       <li>
         <a href="gallery.html">
           Gallery
         </a>
       </li>
-
 
       <li>
         <a href="contact-us.html">
@@ -213,18 +191,14 @@
       Explore Tanzania
     </span>
 
-
     <h1>
       Our Signature Safaris
     </h1>
 
-
     <p class="lede">
-
       Browse our popular safari packages
       or get in touch to build a trip
       that's fully yours.
-
     </p>
 
   </div>
@@ -239,25 +213,20 @@
 
   <div class="wrap">
 
-
     <div class="section-header">
 
       <span class="eyebrow">
         Explore Tanzania
       </span>
 
-
       <h2>
         Our Signature Safaris
       </h2>
 
-
       <p>
-
         Browse our popular safari packages
         or get in touch to build a trip
         that's fully yours.
-
       </p>
 
     </div>
@@ -282,14 +251,12 @@
         All Tours
       </button>
 
-
       <button
         class="btn btn-outline tour-filter"
         data-filter="Big Five"
       >
         Big Five
       </button>
-
 
       <button
         class="btn btn-outline tour-filter"
@@ -298,14 +265,12 @@
         Migration
       </button>
 
-
       <button
         class="btn btn-outline tour-filter"
         data-filter="Beach"
       >
         Beach Combos
       </button>
-
 
       <button
         class="btn btn-outline tour-filter"
@@ -337,7 +302,6 @@
     >
     </div>
 
-
   </div>
 
 </section>
@@ -366,17 +330,12 @@
       Can't Decide?
     </span>
 
-
     <h2>
-
       Let Us Plan Your
-
       <span class="italic">
         Perfect Safari
       </span>
-
     </h2>
-
 
     <p
       style="
@@ -385,13 +344,10 @@
         color:var(--ink-faint);
       "
     >
-
       Tell us what you're looking for,
       and our Tanzania experts will create
       a personalised itinerary for you.
-
     </p>
-
 
     <a
       href="plan-my-safari.html"
@@ -414,25 +370,17 @@
 
     <div class="footer-grid">
 
-
       <div>
 
         <div class="footer-brand">
-
           <i class="fa-solid fa-paw"></i>
-
           Simba Adventures
-
         </div>
 
-
         <p class="footer-desc">
-
           Tanzania's premier safari specialist.
           Crafting unforgettable wildlife journeys since 2006.
-
         </p>
-
 
         <div class="footer-social">
 
@@ -451,7 +399,6 @@
         </div>
 
       </div>
-
 
 
       <div>
@@ -489,7 +436,6 @@
         </ul>
 
       </div>
-
 
 
       <div>
@@ -541,13 +487,11 @@
       </div>
 
 
-
       <div>
 
         <div class="footer-col-title">
           Get In Touch
         </div>
-
 
         <div class="footer-contact-info">
 
@@ -556,12 +500,10 @@
             Arusha, Tanzania
           </p>
 
-
           <p>
             <i class="fa-solid fa-phone"></i>
             +255 700 123 456
           </p>
-
 
           <p>
             <i class="fa-solid fa-envelope"></i>
@@ -571,7 +513,6 @@
         </div>
 
       </div>
-
 
     </div>
 
@@ -583,13 +524,11 @@
         All rights reserved.
       </div>
 
-
       <div>
 
         <a href="privacy-policy.html">
           Privacy Policy
         </a>
-
 
         <a href="sitemap.html">
           Sitemap
@@ -607,28 +546,14 @@
 
 <script>
 
-
-/* =========================================
-   ELEMENTS
-========================================= */
-
 var toursGrid =
-  document.getElementById(
-    "tours-grid"
-  );
-
+  document.getElementById("tours-grid");
 
 var tourCount =
-  document.getElementById(
-    "tour-count"
-  );
-
+  document.getElementById("tour-count");
 
 var filterButtons =
-  document.querySelectorAll(
-    ".tour-filter"
-  );
-
+  document.querySelectorAll(".tour-filter");
 
 var allTours = [];
 
@@ -666,22 +591,14 @@ function escapeHTML(value) {
     value === null ||
     value === undefined
   ) {
-
     return "";
-
   }
 
-
   return String(value)
-
     .replace(/&/g, "&amp;")
-
     .replace(/</g, "&lt;")
-
     .replace(/>/g, "&gt;")
-
     .replace(/"/g, "&quot;")
-
     .replace(/'/g, "&#039;");
 
 }
@@ -692,25 +609,18 @@ function escapeHTML(value) {
    IMAGE
 ========================================= */
 
-function getImage(
-  tour,
-  index
-) {
+function getImage(tour, index) {
 
   if (
     tour.image &&
     typeof tour.image === "string" &&
     tour.image.trim() !== ""
   ) {
-
     return tour.image;
-
   }
 
-
   return fallbackImages[
-    index %
-    fallbackImages.length
+    index % fallbackImages.length
   ];
 
 }
@@ -751,7 +661,6 @@ function getPrice(tour) {
 
   }
 
-
   return `
     <span class="tour-price-empty">
       Contact us for pricing
@@ -763,15 +672,12 @@ function getPrice(tour) {
 
 
 /* =========================================
-   RENDER
+   RENDER TOURS
 ========================================= */
 
-function renderTours(
-  tours
-) {
+function renderTours(tours) {
 
   toursGrid.innerHTML = "";
-
 
   tourCount.textContent =
     tours.length +
@@ -812,368 +718,310 @@ function renderTours(
   }
 
 
+  tours.forEach(function(tour, index) {
 
-  tours.forEach(
-    function(
-      tour,
-      index
-    ) {
+    var image =
+      getImage(tour, index);
 
 
-      var image =
-        getImage(
-          tour,
-          index
-        );
+    var detailsURL =
+      "tour-details.html?tour=" +
+      encodeURIComponent(tour.title);
 
 
-      var detailsURL =
-        "tour-details.html?tour=" +
-        encodeURIComponent(
-          tour.title
-        );
+    var bookingURL =
+      "plan-my-safari.html?tour=" +
+      encodeURIComponent(tour.title);
 
 
-      var bookingURL =
-        "plan-my-safari.html?tour=" +
-        encodeURIComponent(
-          tour.title
-        );
+    /*
+      IMPORTANT:
+      Cards ONLY use shortDescription.
+      detailedDescription stays on the detail page.
+    */
+
+    var shortDescription =
+      tour.shortDescription ||
+      "Discover Tanzania with Simba Adventures.";
 
 
-      var shortDescription =
-        tour.shortDescription ||
-        tour.description ||
-        "Discover Tanzania with Simba Adventures.";
+    var categories =
+      Array.isArray(tour.categories)
+        ? tour.categories
+        : [];
 
 
-      var categories =
-        Array.isArray(
-          tour.categories
-        )
-          ? tour.categories
-          : [];
+    var tags =
+      Array.isArray(tour.tags)
+        ? tour.tags
+        : [];
 
 
-      var tags =
-        Array.isArray(
-          tour.tags
-        )
-          ? tour.tags
-          : [];
+    var categoriesHTML =
+      categories
+        .map(function(category) {
 
-
-      var categoriesHTML =
-        categories
-          .map(
-            function(category) {
-
-              return `
-                <span
-                  style="
-                    display:inline-block;
-                    margin-right:5px;
-                    margin-bottom:5px;
-                    padding:5px 9px;
-                    border-radius:15px;
-                    background:#f2eee5;
-                    font-size:11px;
-                  "
-                >
-                  ${escapeHTML(category)}
-                </span>
-              `;
-
-            }
-          )
-          .join("");
-
-
-      var tagsHTML =
-        tags
-          .map(
-            function(tag) {
-
-              return `
-                <span
-                  style="
-                    font-size:11px;
-                    color:var(--ink-faint);
-                    margin-right:8px;
-                  "
-                >
-                  ${escapeHTML(tag)}
-                </span>
-              `;
-
-            }
-          )
-          .join("");
-
-
-      var badgeHTML =
-        tour.badge
-          ? `
+          return `
             <span
               style="
-                position:absolute;
-                top:15px;
-                left:15px;
-                z-index:2;
-                background:#D9B564;
-                color:#1b1b1b;
-                padding:6px 10px;
-                border-radius:20px;
+                display:inline-block;
+                margin-right:5px;
+                margin-bottom:5px;
+                padding:5px 9px;
+                border-radius:15px;
+                background:#f2eee5;
                 font-size:11px;
-                font-weight:600;
               "
             >
-              ${escapeHTML(tour.badge)}
+              ${escapeHTML(category)}
             </span>
-          `
-          : "";
+          `;
+
+        })
+        .join("");
 
 
-      var card =
-        document.createElement(
-          "article"
-        );
+    var tagsHTML =
+      tags
+        .map(function(tag) {
+
+          return `
+            <span
+              style="
+                font-size:11px;
+                color:var(--ink-faint);
+                margin-right:8px;
+              "
+            >
+              ${escapeHTML(tag)}
+            </span>
+          `;
+
+        })
+        .join("");
 
 
-      card.className =
-        "itin-card";
-
-
-      card.innerHTML = `
-
-        <div class="tour-card-image-wrap">
-
-          ${badgeHTML}
-
-
-          <img
-            src="${escapeHTML(image)}"
-            alt="${escapeHTML(tour.title)}"
-            class="tour-card-image"
-
-            onerror="
-              this.onerror=null;
-              this.src='${fallbackImages[0]}';
+    var badgeHTML =
+      tour.badge
+        ? `
+          <span
+            style="
+              position:absolute;
+              top:15px;
+              left:15px;
+              z-index:2;
+              background:#D9B564;
+              color:#1b1b1b;
+              padding:6px 10px;
+              border-radius:20px;
+              font-size:11px;
+              font-weight:600;
             "
           >
+            ${escapeHTML(tour.badge)}
+          </span>
+        `
+        : "";
+
+
+    var card =
+      document.createElement("article");
+
+
+    card.className =
+      "itin-card";
+
+
+    card.innerHTML = `
+
+      <div class="tour-card-image-wrap">
+
+        ${badgeHTML}
+
+        <img
+          src="${escapeHTML(image)}"
+          alt="${escapeHTML(tour.title)}"
+          class="tour-card-image"
+          loading="lazy"
+          onerror="
+            this.onerror=null;
+            this.src='${fallbackImages[0]}';
+          "
+        >
+
+      </div>
+
+
+      <div
+        style="
+          padding:22px;
+        "
+      >
+
+        <div
+          style="
+            font-size:12px;
+            color:var(--ink-faint);
+            margin-bottom:8px;
+          "
+        >
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          ${escapeHTML(
+            tour.location ||
+            "Tanzania"
+          )}
 
         </div>
+
+
+        <h3 style="margin-bottom:10px;">
+
+          ${escapeHTML(
+            tour.title ||
+            "Safari"
+          )}
+
+        </h3>
+
+
+        <p class="tour-card-description">
+
+          ${escapeHTML(shortDescription)}
+
+        </p>
+
+
+        <div style="margin-bottom:12px;">
+
+          ${categoriesHTML}
+
+        </div>
+
+
+        <p
+          style="
+            font-size:12px;
+            margin-bottom:12px;
+          "
+        >
+
+          <strong>
+            Route:
+          </strong>
+
+          ${escapeHTML(
+            tour.route ||
+            "Tanzania"
+          )}
+
+        </p>
 
 
         <div
           style="
-            padding:22px;
+            display:flex;
+            flex-wrap:wrap;
+            gap:12px;
+            margin-bottom:12px;
+            font-size:12px;
           "
         >
 
+          <span>
 
-          <div
-            style="
-              font-size:12px;
-              color:var(--ink-faint);
-              margin-bottom:8px;
-            "
-          >
-
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-regular fa-clock"></i>
 
             ${escapeHTML(
-              tour.location ||
-              "Tanzania"
+              tour.duration ||
+              "Flexible"
             )}
 
-          </div>
+          </span>
 
 
+          <span>
 
-          <h3
-            style="
-              margin-bottom:10px;
-            "
-          >
+            <i class="fa-solid fa-star"></i>
 
             ${escapeHTML(
-              tour.title ||
-              "Safari"
+              tour.rating ||
+              "—"
             )}
 
-          </h3>
+            ${
+              tour.reviews
+                ? "(" +
+                  escapeHTML(tour.reviews) +
+                  ")"
+                : ""
+            }
 
-
-
-          <p class="tour-card-description">
-
-            ${escapeHTML(
-              shortDescription
-            )}
-
-          </p>
-
-
-
-          <div
-            style="
-              margin-bottom:12px;
-            "
-          >
-
-            ${categoriesHTML}
-
-          </div>
-
-
-
-          <p
-            style="
-              font-size:12px;
-              margin-bottom:12px;
-            "
-          >
-
-            <strong>
-              Route:
-            </strong>
-
-            ${escapeHTML(
-              tour.route ||
-              "Tanzania"
-            )}
-
-          </p>
-
-
-
-          <div
-            style="
-              display:flex;
-              flex-wrap:wrap;
-              gap:12px;
-              margin-bottom:12px;
-              font-size:12px;
-            "
-          >
-
-            <span>
-
-              <i
-                class="fa-regular fa-clock"
-              ></i>
-
-              ${escapeHTML(
-                tour.duration ||
-                "Flexible"
-              )}
-
-            </span>
-
-
-            <span>
-
-              <i
-                class="fa-solid fa-star"
-              ></i>
-
-              ${escapeHTML(
-                tour.rating ||
-                "—"
-              )}
-
-              ${
-                tour.reviews
-                  ? "(" +
-                    escapeHTML(
-                      tour.reviews
-                    ) +
-                    ")"
-                  : ""
-              }
-
-            </span>
-
-          </div>
-
-
-
-          <p
-            style="
-              font-size:12px;
-              margin-bottom:12px;
-            "
-          >
-
-            <strong>
-              Stay:
-            </strong>
-
-            ${escapeHTML(
-              tour.accommodation ||
-              "Contact us for accommodation options"
-            )}
-
-          </p>
-
-
-
-          <div
-            style="
-              margin-bottom:18px;
-            "
-          >
-
-            ${tagsHTML}
-
-          </div>
-
-
-
-          <div
-            style="
-              margin-bottom:18px;
-            "
-          >
-
-            ${getPrice(tour)}
-
-          </div>
-
-
-
-          <div class="tour-buttons">
-
-            <a
-              href="${detailsURL}"
-              class="btn btn-outline"
-            >
-              View Details
-            </a>
-
-
-            <a
-              href="${bookingURL}"
-              class="btn btn-gold"
-            >
-              Book Now
-            </a>
-
-          </div>
-
+          </span>
 
         </div>
 
-      `;
+
+        <p
+          style="
+            font-size:12px;
+            margin-bottom:12px;
+          "
+        >
+
+          <strong>
+            Stay:
+          </strong>
+
+          ${escapeHTML(
+            tour.accommodation ||
+            "Contact us for accommodation options"
+          )}
+
+        </p>
 
 
-      toursGrid.appendChild(
-        card
-      );
+        <div style="margin-bottom:18px;">
 
-    }
-  );
+          ${tagsHTML}
+
+        </div>
+
+
+        <div style="margin-bottom:18px;">
+
+          ${getPrice(tour)}
+
+        </div>
+
+
+        <div class="tour-buttons">
+
+          <a
+            href="${detailsURL}"
+            class="btn btn-outline"
+          >
+            View Details
+          </a>
+
+          <a
+            href="${bookingURL}"
+            class="btn btn-gold"
+          >
+            Book Now
+          </a>
+
+        </div>
+
+      </div>
+
+    `;
+
+
+    toursGrid.appendChild(card);
+
+  });
 
 }
 
@@ -1183,106 +1031,83 @@ function renderTours(
    LOAD JSON
 ========================================= */
 
-fetch(
-  "tours.json"
-)
+fetch("tours.json")
 
-  .then(
-    function(response) {
+  .then(function(response) {
 
-      if (!response.ok) {
+    if (!response.ok) {
 
-        throw new Error(
-          "Could not load tours.json"
-        );
-
-      }
-
-
-      return response.json();
-
-    }
-  )
-
-
-  .then(
-    function(data) {
-
-      if (
-        data &&
-        Array.isArray(
-          data.tours
-        )
-      ) {
-
-        allTours =
-          data.tours;
-
-      }
-
-      else if (
-        Array.isArray(data)
-      ) {
-
-        allTours =
-          data;
-
-      }
-
-      else {
-
-        throw new Error(
-          "Invalid tours.json"
-        );
-
-      }
-
-
-      renderTours(
-        allTours
+      throw new Error(
+        "Could not load tours.json"
       );
 
     }
-  )
 
+    return response.json();
 
-  .catch(
-    function(error) {
+  })
 
-      console.error(
-        error
-      );
+  .then(function(data) {
 
+    if (
+      data &&
+      Array.isArray(data.tours)
+    ) {
 
-      toursGrid.innerHTML = `
-
-        <div
-          style="
-            grid-column:1/-1;
-            text-align:center;
-            padding:60px 20px;
-          "
-        >
-
-          <h3>
-            Unable to load tours
-          </h3>
-
-          <p>
-            Please refresh the page
-            and try again.
-          </p>
-
-        </div>
-
-      `;
-
-
-      tourCount.textContent =
-        "Unable to load tours";
+      allTours = data.tours;
 
     }
-  );
+
+    else if (Array.isArray(data)) {
+
+      allTours = data;
+
+    }
+
+    else {
+
+      throw new Error(
+        "Invalid tours.json"
+      );
+
+    }
+
+
+    renderTours(allTours);
+
+  })
+
+  .catch(function(error) {
+
+    console.error(error);
+
+    toursGrid.innerHTML = `
+
+      <div
+        style="
+          grid-column:1/-1;
+          text-align:center;
+          padding:60px 20px;
+        "
+      >
+
+        <h3>
+          Unable to load tours
+        </h3>
+
+        <p>
+          Please refresh the page
+          and try again.
+        </p>
+
+      </div>
+
+    `;
+
+    tourCount.textContent =
+      "Unable to load tours";
+
+  });
 
 
 
@@ -1290,81 +1115,64 @@ fetch(
    FILTERS
 ========================================= */
 
-filterButtons.forEach(
-  function(button) {
+filterButtons.forEach(function(button) {
 
-    button.addEventListener(
-      "click",
-      function() {
+  button.addEventListener(
+    "click",
+    function() {
 
+      filterButtons.forEach(function(btn) {
 
-        filterButtons.forEach(
-          function(btn) {
+        btn.classList.remove("active");
 
-            btn.classList.remove(
-              "active"
-            );
-
-          }
-        );
+      });
 
 
-        button.classList.add(
-          "active"
-        );
+      button.classList.add("active");
 
 
-        var filter =
-          button.dataset.filter;
+      var filter =
+        button.dataset.filter;
 
 
-        if (
-          filter === "All"
-        ) {
+      if (filter === "All") {
 
-          renderTours(
-            allTours
-          );
+        renderTours(allTours);
 
-          return;
-
-        }
-
-
-        var filtered =
-          allTours.filter(
-            function(tour) {
-
-              var categories =
-                tour.categories || [];
-
-
-              var tags =
-                tour.tags || [];
-
-
-              return (
-                categories.includes(
-                  filter
-                ) ||
-                tags.includes(
-                  filter
-                )
-              );
-
-            }
-          );
-
-
-        renderTours(
-          filtered
-        );
+        return;
 
       }
-    );
 
-  }
-);
+
+      var filtered =
+        allTours.filter(function(tour) {
+
+          var categories =
+            Array.isArray(tour.categories)
+              ? tour.categories
+              : [];
+
+
+          var tags =
+            Array.isArray(tour.tags)
+              ? tour.tags
+              : [];
+
+
+          return (
+            categories.includes(filter) ||
+            tags.includes(filter)
+          );
+
+        });
+
+
+      renderTours(filtered);
+
+    }
+  );
+
+});
 
 </script>
 
