@@ -1,261 +1,224 @@
+```json
 {
   "tours": [
     {
-      "badge": "Classic Safari",
-      "price": "1,957 per person",
-      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro Crater → Tarangire → Arusha",
-      "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
-      "duration": "6 Days",
-      "location": "Tanzania",
       "title": "The Serengeti Symphony",
-      "tags": [
-        "Big Five",
-        "Safari",
-        "Tarangire",
-        "Serengeti",
-        "Ngorongoro",
-        "Camping",
-        "Wildlife"
-      ],
-      "reviews": "214",
-      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Big Five, Migration, Short Breaks"
-      ],
-      "description": "A classic 6-day Northern Circuit safari combining Lake Manyara, the Serengeti, Ngorongoro Crater, and Tarangire. Experience diverse landscapes, the Big Five, large elephant herds, predators, and the possibility of witnessing the Great Migration.\n",
-      "rating": "4.9"
-    },
-    {
-      "badge": "Big Five",
-      "price": "1,693 per person",
-      "route": "Arusha → Tarangire → Serengeti → Ngorongoro Crater → Arusha",
-      "accommodation": "Boutique Lodge",
-      "duration": "5 Days",
+      "image": "",
       "location": "Tanzania",
-      "title": "Tanzania Big Five Signature",
-      "tags": [
-        "Great Migration",
-        "Serengeti",
-        "Safari",
-        "Wildlife",
-        "Tarangire",
-        "Lake Manyara",
-        "Ngorongoro",
-        "Camping"
-      ],
-      "reviews": "167",
-      "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Big Five, Short Breaks"
-      ],
-      "description": "A fast-paced 5-day Northern Circuit safari designed around Tanzania's legendary Big Five. Explore Tarangire's elephant country, the predator-rich Serengeti, and the wildlife-filled Ngorongoro Crater.\n",
-      "rating": "4.8"
-    },
-    {
-      "badge": "Request a Quote",
-      "price": "3,121 per person",
-      "route": "Arusha → Tarangire → Central Serengeti → Migration Areas → Ngorongoro Crater → Lake Manyara → Arusha",
-      "accommodation": "Campsite/Hotel; Nsya Camp; Eyasi Campsite",
-      "duration": "8 Days",
-      "location": "Tanzania",
-      "title": "The Great Migration Horizon",
-      "tags": [
-        "Tanzania Safari",
-        "Wildlife",
-        "Culture",
-        "Hadzabe",
-        "Lake Eyasi",
-        "Serengeti",
-        "Ngorongoro",
-        "Camping"
-      ],
-      "reviews": "142",
-      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Migration, Big Five"
-      ],
-      "description": "An 8-day safari focused on experiencing the Great Migration across the Serengeti. Spend multiple days tracking wildebeest and zebra herds while exploring predator-rich plains, followed by Ngorongoro Crater and Lake Manyara.\n",
-      "rating": "4.8"
-    },
-    {
-      "badge": "Wild South",
-      "price": "2,565 per person",
-      "route": "Dar es Salaam → Nyerere National Park → Ruaha National Park → Mikumi / Morogoro → Dar es Salaam",
-      "accommodation": "Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro Ang'ata Tented Camp",
-      "duration": "8 Days",
-      "location": "Tanzania",
-      "title": "The Untamed South",
-      "tags": [
-        "Wildlife",
-        "Safari",
-        "Serengeti",
-        "Lake Manyara",
-        "Ngorongoro",
-        "Big Five",
-        "Tented Camp"
-      ],
-      "reviews": "186",
-      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Big Five, Short Breaks"
-      ],
-      "description": "An 8-day Southern Circuit adventure through the wild landscapes of Nyerere and Ruaha National Parks. Experience boat safaris, walking experiences, remote game drives, African wild dogs, lions, elephants, and rugged southern wilderness.\n",
-      "rating": "4.9"
-    },
-    {
-      "badge": "Family Friendly",
-      "price": "1,689 per person",
-      "route": "Arusha → Tarangire → Mto wa Mbu → Lake Manyara → Maasai Boma → Ngorongoro → Lake Eyasi → Arusha",
-      "accommodation": "Roika Tented Camp; Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro",
+      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Tarangire → Arusha",
+      "description": "## The Serengeti Symphony — Detailed Description\n\nThe 6-Day Serengeti Symphony is a classic Northern Circuit safari through some of Tanzania's most remarkable wildlife destinations. The journey combines the diverse landscapes of Lake Manyara National Park, the endless plains of the Serengeti, the spectacular Ngorongoro Crater, and the elephant-rich wilderness of Tarangire National Park.\n\nBeginning in Arusha, the safari travels through Lake Manyara, where guests can encounter large elephant herds, baboons, flamingos, and the park's famous tree-climbing lions. The journey then continues into the Serengeti, with game drives through the Central Seronera Valley, one of Tanzania's renowned areas for lions, leopards, cheetahs, and other wildlife.\n\nA full day in the Serengeti provides time to explore different wildlife corridors and search for predators and migrating herds. Depending on the season, travelers may have opportunities to encounter the Great Migration. An optional sunrise hot-air-balloon experience can also provide a spectacular view of the plains from above.\n\nThe safari continues toward the Ngorongoro Conservation Area, with optional opportunities to visit a Maasai community or Olduvai Gorge. The following morning, guests descend into the Ngorongoro Crater for an extended game drive, where the enclosed ecosystem supports a remarkable concentration of wildlife, including elephants, lions, buffalo, hippos, and the endangered black rhino.\n\nThe final day takes travelers through Tarangire National Park, famous for its ancient baobab trees and large elephant populations, before returning to Arusha or Kilimanjaro International Airport.\n\nThis itinerary offers a well-rounded introduction to Tanzania's northern safari circuit, combining varied landscapes, iconic wildlife, cultural possibilities, and multiple national parks in one 6-day adventure.",
       "duration": "6 Days",
-      "location": "Tanzania",
-      "title": "The Family Karibu Safari",
+      "price": "",
+      "badge": "",
+      "categories": [],
       "tags": [
-        "Nature",
-        "Safari",
-        "Wildlife",
-        "Migration",
-        "Serengeti",
-        "Tarangire",
-        "Ngorongoro"
+        "All Tours",
+        "Big Five"
       ],
-      "reviews": "109",
-      "image": "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Family, Big Five, Cultural, Short Breaks"
-      ],
-      "description": "A family-focused 6-day Tanzania adventure combining wildlife, culture, and interactive experiences. Explore Tarangire, Lake Manyara, Ngorongoro, Mto wa Mbu, and Lake Eyasi with activities designed to keep families and younger travelers engaged.\n",
-      "rating": "4.8"
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
     },
     {
-      "badge": "Safari & Beach",
-      "price": "5,850 per person",
-      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha → Zanzibar → Stone Town → Nungwi / Kendwa",
-      "accommodation": "Meru View Lodge; Ang'ata Tarangire Tented Camp; Kirurumu Manyara Tented Camp; Ang'ata Serengeti Tented Camp; Ang'ata Ngorongoro Tented Camp; Kisima Ngeda Tented Camp",
-      "duration": "13 Days",
-      "location": "Tanzania & Zanzibar",
-      "title": "The Bush & Blue Escape",
-      "tags": [
-        "Tanzania",
-        "Safari",
-        "Culture",
-        "Hadzabe",
-        "Wildlife",
-        "Serengeti",
-        "Lake Eyasi",
-        "Tented Camp"
-      ],
-      "reviews": "98",
-      "image": "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Combos, Beach, Big Five, Migration"
-      ],
-      "description": "A 13-day Tanzania holiday combining an unforgettable Northern Circuit safari with a relaxing Zanzibar beach escape. Experience Tarangire, Serengeti, Ngorongoro, Stone Town, spice farms, tropical beaches, snorkeling, and island adventures.\n",
-      "rating": "4.7"
-    },
-    {
-      "badge": "Culture & Wildlife",
-      "price": "1,120 per person",
-      "route": "Arusha → Lake Manyara → Ngorongoro Crater → Lake Eyasi → Mto wa Mbu → Arusha",
-      "accommodation": "Tarangire Acacia Tented Camp; Manyara Secret Lodge; Malaika Luxury Camp; Lion's Paw Ngorongoro Luxury Camp; Zanzibar accommodation",
-      "duration": "4 Days",
+      "title": "Tanzania Big Five Signature",
+      "image": "",
       "location": "Tanzania",
-      "title": "Rhythms of the Rift Valley",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "description": "## Tanzania Big Five Signature — Detailed Description\n\nThe 5-Day Tanzania Big Five Signature is a fast-paced Northern Circuit safari designed around some of Tanzania's most celebrated wildlife destinations. The route connects Tarangire National Park, the Serengeti National Park, and the Ngorongoro Crater, giving travelers the opportunity to search for lions, leopards, elephants, buffalo, rhinos, and many other species across very different ecosystems.\n\nThe adventure begins in Arusha with a drive to Tarangire National Park. The park is particularly known for its large elephant herds, ancient baobab trees, and wildlife concentrated around the Tarangire River. The first game drive introduces travelers to the landscapes and wildlife of northern Tanzania before continuing toward the Serengeti.\n\nOn the second day, the route passes through the Ngorongoro highlands before entering the Serengeti through Naabi Hill Gate. The afternoon is spent exploring the Central Seronera Valley, an area known for its resident big cats and diverse wildlife. Guests stay within or near the Serengeti, allowing them to experience the sounds and atmosphere of the African bush after sunset.\n\nA full day in the Serengeti provides additional time for sunrise game drives, predator sightings, and exploration of riverbanks and granite kopjes. Depending on the season, travelers may also encounter portions of the Great Wildebeest Migration. An optional hot-air-balloon safari can provide another perspective of the Serengeti plains.\n\nThe final part of the journey focuses on the Ngorongoro Crater. Guests descend into the crater for an extended game drive across its grasslands and wetlands, searching for black rhinos, lions, elephants, buffalo, hippos, and other wildlife. After exploring the crater floor, the journey returns to Arusha for hotel drop-off or transfer to Kilimanjaro International Airport.",
+      "duration": "5 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
       "tags": [
-        "Honeymoon",
-        "Romantic",
-        "Safari",
-        "Zanzibar",
-        "Beach",
-        "Serengeti",
-        "Ngorongoro",
-        "Wildlife"
+        "All Tours",
+        "Big Five"
       ],
-      "reviews": "133",
-      "image": "https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?q=80&w=952&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "categories": [
-        "Cultural, Big Five, Short Breaks"
-      ],
-      "description": "A 4-day journey through Tanzania's Great Rift Valley combining wildlife, dramatic landscapes, birdwatching, and cultural experiences. Discover Lake Manyara, Ngorongoro Crater, and the communities around Lake Eyasi and Mto wa Mbu.\n",
-      "rating": "4.8"
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
     },
     {
-      "badge": "Romantic Escape",
-      "price": "3,220 per person",
-      "route": "Arusha → Tarangire → Serengeti → Ngorongoro Crater → Karatu → Arusha",
-      "accommodation": "Airport Planet Lodge; Arusha Planet Lodge; Ang'ata Tarangire Tented Camp; Lake Natron Tented Camp; Malaika Luxury Camp; Speke Bay Lodge; Lion's Paw Camp",
-      "duration": "7 Days",
+      "title": "The Great Migration Horizon",
+      "image": "",
       "location": "Tanzania",
-      "title": "Timeless Savannah Romance",
-      "tags": [
-        "Tanzania",
-        "Kilimanjaro",
-        "Safari",
-        "Migration",
-        "Lake Natron",
-        "Lake Victoria",
-        "Maasai",
-        "Ngorongoro"
-      ],
-      "reviews": "151",
-      "image": "https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Romance, Big Five, Migration"
-      ],
-      "description": "A romantic 7-day safari designed for couples, honeymooners, and anniversary celebrations. Enjoy intimate luxury camps, private game drives, sunset sundowners, optional balloon safaris, Serengeti wildlife, and spectacular Ngorongoro views.\n",
-      "rating": "4.8"
-    },
-    {
-      "badge": "Adventure Combo",
-      "price": "2,999 per person",
-      "route": "Moshi → Mount Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
-      "duration": "10 Days",
-      "location": "Tanzania",
-      "title": "The Roof of Africa & Beyond",
-      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Kilimanjaro, Combos, Big Five, Migration"
-      ],
-      "description": "A 10-day Tanzania adventure combining Mount Kilimanjaro experiences with a classic wildlife safari. Trek through Kilimanjaro's rainforest, visit Materuni Waterfalls, explore Tarangire and Serengeti, and discover the wildlife of Ngorongoro Crater.\n"
-    },
-    {
-      "badge": "Luxury Safari",
-      "price": "2,384 per person",
-      "route": "Arusha → Serengeti → Migration Areas → Arusha",
-      "duration": "4 Days",
-      "location": "Serengeti National Park, Tanzania",
-      "title": "Serengeti Under Canvas",
-      "image": "https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Migration, Short Breaks"
-      ],
-      "description": "A 4-day fly-in Serengeti experience focused on maximizing time in the wilderness. Stay in an intimate canvas camp, enjoy game drives across the plains, track the Great Migration, and experience the Serengeti under the stars.\n"
-    },
-    {
-      "badge": "Summit Expedition",
-      "price": "2,450 per person",
-      "route": "Moshi / Arusha → Londorossi Gate → Mti Mkubwa → Shira 2 → Lava Tower → Barranco → Karanga → Barafu → Uhuru Peak → Mweka → Moshi / Arusha",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Lake Manyara → Arusha",
+      "description": "## The Great Migration Horizon — Detailed Description\n\nThe 8-Day Great Migration Horizon is an extended Serengeti safari created for travelers who want to dedicate significant time to tracking the Great Migration. Rather than rushing through the Serengeti, this itinerary provides multiple full days for exploring different areas and following the movement of wildebeest and zebra herds according to seasonal conditions.\n\nThe journey begins in Arusha with a visit to Tarangire National Park, where travelers can explore the baobab-filled landscape and search for large elephant herds around the Tarangire River. The route then continues through the Ngorongoro highlands into the Serengeti.\n\nAfter entering the Serengeti through Naabi Hill Gate, travelers spend the afternoon exploring the Central Seronera Valley. The following three full days are dedicated primarily to tracking wildlife and, when conditions and seasonal movements allow, following the Great Migration.\n\nThe exact experience can vary according to the time of year. Depending on the location of the herds, travelers may explore different Serengeti sectors and search for large concentrations of wildebeest and zebra, predator activity, and dramatic river environments. Mobile migration camps can provide accommodation closer to the seasonal movement of the herds.\n\nAfter the Serengeti experience, the journey continues toward the Ngorongoro Conservation Area. Guests have opportunities for a final Serengeti game drive and optional cultural or historical stops before reaching the Ngorongoro Crater rim.\n\nThe following morning is dedicated to exploring the Ngorongoro Crater floor, where travelers can encounter large concentrations of wildlife in the enclosed volcanic ecosystem. The final day includes a visit to Lake Manyara National Park, offering another opportunity to see elephants, birds, flamingos, and the park's famous tree-climbing lions before returning to Arusha.",
       "duration": "8 Days",
-      "location": "Mount Kilimanjaro, Tanzania",
-      "title": "Kilimanjaro Expedition",
-      "image": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Kilimanjaro, Adventure"
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Migration"
       ],
-      "description": "An 8-day summit-focused Mount Kilimanjaro expedition using the Lemosho or Machame route. Trek through rainforest, moorland, alpine desert, and high-altitude terrain before attempting the summit of Uhuru Peak at 5,895 meters.\n"
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
     },
     {
-      "badge": "Short Safari",
-      "price": "698 per person",
-      "route": "Arusha → Tarangire → Ngorongoro Crater → Lake Manyara → Arusha",
-      "duration": "3 Days",
-      "location": "Tanzania",
-      "title": "Echoes of the Ngorongoro",
-      "image": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Big Five, Short Breaks"
+      "title": "The Untamed South",
+      "image": "",
+      "location": "Southern Tanzania",
+      "route": "Dar es Salaam → Nyerere National Park → Ruaha National Park → Dar es Salaam",
+      "description": "## The Untamed South — Detailed Description\n\nThe 8-Day Untamed South safari explores Tanzania's less-traveled Southern Circuit, combining Nyerere National Park and Ruaha National Park for a wilderness experience away from the classic Northern Circuit. The itinerary is designed around remote landscapes, diverse wildlife, river environments, walking experiences, and extended game viewing.\n\nThe adventure begins in Dar es Salaam before traveling toward Nyerere National Park, formerly known as the Selous Game Reserve. Guests can reach the park by road or, depending on arrangements, by bush flight. After settling into a riverside camp, the first evening features a sunset boat safari along the Rufiji River, where travelers can observe hippos, crocodiles, elephants, and birdlife around the waterways.\n\nA full day in Nyerere combines a guided walking experience with a traditional 4x4 game drive. Walking through the bush provides an opportunity to learn about animal tracks, vegetation, birds, and the smaller details of the ecosystem. The park is also known for African wild dogs, along with elephants, lions, buffalo, leopards, and numerous bird species.\n\nThe journey then continues toward Ruaha National Park, Tanzania's largest national park and one of the country's major wilderness destinations. The landscape changes dramatically, with rugged terrain, open woodland, baobabs, and the Great Ruaha River creating a distinctive southern safari environment.\n\nTwo full days are dedicated to exploring Ruaha's wilderness. Travelers can search for lions, elephants, cheetahs, leopards, wild dogs, kudus, and other wildlife while enjoying the quieter atmosphere of the Southern Circuit. The final stages of the journey take travelers toward Mikumi or the Morogoro highlands before returning to Dar es Salaam, with fly-in and fly-out options available depending on the chosen travel arrangement.",
+      "duration": "8 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Short Breaks"
       ],
-      "description": "A compact 3-day Northern Circuit safari combining Tarangire, Ngorongoro Crater, and Lake Manyara. Experience elephants, lions, leopards, flamingos, tree-climbing lions, and the unique wildlife of the Ngorongoro ecosystem.\n"
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "The Family Karibu Safari",
+      "image": "",
+      "location": "Northern Tanzania",
+      "route": "Arusha → Tarangire → Lake Manyara → Mto wa Mbu → Ngorongoro → Lake Eyasi → Arusha",
+      "description": "## The Family Karibu Safari — Detailed Description\n\nThe 6-Day Family Karibu Safari is designed for families traveling with children or teenagers who want to combine Tanzania's wildlife with cultural and interactive experiences. The itinerary balances game drives with activities that provide children and parents with opportunities to learn, explore, and experience local communities.\n\nThe safari begins in Arusha with a comfortable drive to Tarangire National Park. The park's large elephant herds and enormous baobab trees provide an exciting introduction to Tanzania's wildlife. The relaxed game drive allows families to enjoy the landscape while searching for elephants, lions, and other animals.\n\nThe second day combines cultural and nature-based activities around Mto wa Mbu and Lake Manyara. Families can explore local agricultural areas by bicycle or tuk-tuk before continuing into Lake Manyara National Park. The Manyara Treetop Walkway provides an elevated perspective through the forest canopy, where travelers can observe birds and monkeys.\n\nThe itinerary then introduces families to Maasai culture through an interactive village experience. Rather than focusing only on sightseeing, children can participate in activities such as learning about traditional crafts, tracking animal footprints, and discovering aspects of daily life in the community.\n\nA full day at Ngorongoro Crater turns wildlife viewing into an engaging family adventure. The crater's concentrated wildlife makes it possible to encounter elephants, lions, buffalo, hippos, and other species during the game drive. A family scavenger-hunt approach can add an interactive element to the experience.\n\nThe journey continues to Lake Eyasi for a cultural experience with Hadzabe and Datoga communities, followed by a final stop near Arusha. Depending on arrangements, families can visit a reptile park before enjoying a final meal and transferring to their hotel or Kilimanjaro International Airport.",
+      "duration": "6 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Short Breaks"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "The Bush & Blue Escape",
+      "image": "",
+      "location": "Tanzania & Zanzibar",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Zanzibar → Stone Town → Nungwi/Kendwa",
+      "description": "## The Bush & Blue Escape — Detailed Description\n\nThe 13-Day Bush & Blue Escape combines a classic Tanzania safari with a relaxing Zanzibar beach holiday. The itinerary is designed to give travelers the opportunity to experience the country's wildlife, landscapes, culture, and tropical coastline in one extended journey.\n\nThe adventure begins in Arusha, where travelers settle in before starting the safari portion of the trip. The route then continues to Tarangire National Park, famous for its giant baobabs and large elephant populations. From Tarangire, the journey continues through the Ngorongoro highlands and into the Serengeti.\n\nA full day in the Serengeti provides time to explore the plains, search for predators, observe migrating herds when seasonally present, and enjoy the atmosphere of the African bush. Optional experiences such as a sunrise hot-air-balloon flight can add another dimension to the safari.\n\nThe journey continues to the Ngorongoro Crater, where travelers descend into the crater floor for an extended game drive. The enclosed ecosystem offers opportunities to encounter a wide range of wildlife before the group returns to Arusha and boards a flight to Zanzibar.\n\nThe second half of the holiday shifts from safari to island exploration. Travelers begin with Stone Town, exploring its historic streets and cultural landmarks before visiting a spice farm to learn about Zanzibar's famous cloves, vanilla, nutmeg, and other spices.\n\nThe journey then continues north toward the beaches of Nungwi or Kendwa. Several days are reserved for relaxing beside the Indian Ocean, with optional activities including snorkeling, diving, boat trips, visits to Prison Island, and other island excursions.\n\nThe final days include a Safari Blue-style boat excursion featuring sailing, snorkeling, swimming, and a beach or sandbank experience before the final transfer to Zanzibar's international airport. This itinerary combines wildlife adventure, cultural discovery, relaxation, and tropical island experiences in a single 13-day holiday.",
+      "duration": "13 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Beach",
+        "Combos"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "Rhythms of the Rift Valley",
+      "image": "",
+      "location": "Northern Tanzania",
+      "route": "Arusha → Lake Manyara → Ngorongoro → Lake Eyasi → Mto wa Mbu → Arusha",
+      "description": "## Rhythms of the Rift Valley — Detailed Description\n\nThe 4-Day Rhythms of the Rift Valley is a compact Tanzania itinerary combining wildlife, dramatic geological landscapes, birdwatching, and cultural encounters. The route focuses on Lake Manyara, Ngorongoro Crater, Lake Eyasi, and Mto wa Mbu, making it suitable for travelers who want a varied experience without spending as much time on long road journeys.\n\nThe journey begins in Arusha with a drive toward Lake Manyara National Park. The park sits along the Great Rift Valley and contains groundwater forests, open grasslands, and lake environments. During the game drive, travelers can search for elephants, baboons, birds, flamingos, and, when conditions allow, the park's famous tree-climbing lions.\n\nThe second day focuses on Ngorongoro Crater. Travelers descend into the volcanic caldera for several hours of wildlife viewing. The crater's enclosed ecosystem supports a high concentration of animals, including lions, elephants, buffalo, hippos, hyenas, and opportunities to search for black rhinos.\n\nThe journey then moves toward Lake Eyasi, where the focus changes from wildlife to cultural discovery. Travelers can visit Hadzabe communities and learn about traditional hunting, gathering, and survival practices. A visit to the Datoga community provides another perspective on local culture, including traditional metalworking and craftsmanship.\n\nOn the final day, the route passes through Mto wa Mbu, a culturally diverse town surrounded by agricultural landscapes. Travelers can explore local plantations, markets, villages, and food traditions before returning to Arusha.\n\nThis short itinerary brings together wildlife, the Rift Valley landscape, local communities, agriculture, and cultural experiences within four days.",
+      "duration": "4 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Short Breaks"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "Timeless Savannah Romance",
+      "image": "",
+      "location": "Northern Tanzania",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "description": "## Timeless Savannah Romance — Detailed Description\n\nThe 7-Day Timeless Savannah Romance is a safari itinerary designed around couples, honeymooners, anniversaries, and travelers looking for a more intimate style of Tanzania experience. The route combines classic Northern Circuit wildlife destinations with private game drives, scenic lodges, romantic dinners, sundowners, and optional luxury experiences.\n\nThe journey begins in Arusha with a private transfer toward Tarangire National Park. Travelers explore the park's baobab landscapes and elephant-rich river valleys before settling into a comfortable lodge or tented camp. The evening can include a private deck experience, dinner, and time to relax beneath the African sky.\n\nThe second day continues toward the Serengeti, passing through the Ngorongoro highlands before reaching the Central Seronera Valley. An afternoon game drive provides opportunities to search for lions, leopards, cheetahs, and other wildlife before returning to an intimate camp.\n\nA highlight of the itinerary is an optional sunrise hot-air-balloon safari over the Serengeti. From above, travelers can watch the plains awaken before enjoying a bush breakfast. Later, a private game drive explores the Serengeti at a more relaxed pace.\n\nAnother full day in the Serengeti allows couples to explore river areas, wildlife corridors, and granite kopjes while enjoying a private picnic and sunset sundowner. The experience then continues toward the Ngorongoro Crater rim, where dramatic caldera views provide a memorable setting for the evening.\n\nThe following morning, travelers descend into Ngorongoro Crater for a wildlife-focused game drive. The crater is home to large populations of wildlife, including elephants, lions, buffalo, hippos, and opportunities to search for black rhinos.\n\nThe final day provides a relaxed journey back toward Arusha, with optional coffee-estate, gallery, or market experiences before departure. The itinerary combines Tanzania's major wildlife destinations with a slower pace and experiences suited to couples.",
+      "duration": "7 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Combos"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "The Roof of Africa & Beyond",
+      "image": "",
+      "location": "Tanzania",
+      "route": "Moshi → Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "description": "## The Roof of Africa & Beyond — Detailed Description\n\nThe 10-Day Roof of Africa & Beyond combines a Mount Kilimanjaro experience with a Northern Circuit wildlife safari. The itinerary is designed for travelers who want to experience Tanzania's mountain landscapes, local culture, and iconic wildlife destinations during one journey.\n\nThe adventure begins in Moshi, the gateway to Mount Kilimanjaro. After arriving at Kilimanjaro International Airport, travelers transfer to their lodge and prepare for the mountain experience.\n\nThe second day features a guided trek on the Marangu Route, traveling through Kilimanjaro's lush montane rainforest toward Mandara Huts. The trek provides an introduction to the mountain environment before returning to lower elevations.\n\nThe following day introduces travelers to the culture and landscapes around Moshi with a visit to Materuni Waterfalls and a traditional Chagga coffee experience. Guests can learn about the process of harvesting, roasting, grinding, and brewing local coffee.\n\nThe safari portion begins with Tarangire National Park, where travelers explore landscapes dominated by baobab trees and large elephant herds. The route then continues into the Serengeti through the Ngorongoro highlands.\n\nTwo full days are dedicated to exploring the Serengeti. Travelers can search for lions, cheetahs, leopards, elephants, wildebeest, zebra, and other wildlife while experiencing the open savannah landscapes. Depending on the season, the Great Migration may also be encountered.\n\nThe final safari stages include a journey toward the Ngorongoro Crater rim followed by a descent into the crater floor for an extended wildlife experience. Travelers can search for black rhinos, lions, elephants, buffalo, hippos, and other species within the volcanic caldera.\n\nThe final day allows time for a cultural walk, local market, or shopping experience in Arusha before transferring to Kilimanjaro International Airport. The itinerary combines mountain scenery, cultural experiences, safari wildlife, and Tanzania's major Northern Circuit landscapes.",
+      "duration": "10 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Combos"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "Serengeti Under Canvas",
+      "image": "",
+      "location": "Serengeti, Tanzania",
+      "route": "Arusha/Kilimanjaro → Serengeti → Arusha",
+      "description": "## Serengeti Under Canvas — Detailed Description\n\nThe 4-Day Serengeti Under Canvas is a focused Serengeti safari designed to maximize time inside the national park while minimizing long road transfers. Travelers fly from Arusha or Kilimanjaro directly toward the Serengeti, allowing them to spend more of the itinerary exploring the wilderness.\n\nAfter arriving by light aircraft, travelers meet their safari guide and continue by 4x4 vehicle toward their canvas camp. The first afternoon includes an introductory game drive through the Serengeti, followed by an evening around the campfire and dinner beneath the African sky.\n\nThe following two full days are dedicated to exploring the Serengeti and tracking wildlife. Depending on the season and location of the herds, travelers may search for wildebeest and zebra concentrations, predator activity, river crossings, newborn animals, lions, cheetahs, and leopards.\n\nThe mobile canvas-camp concept allows accommodation to be positioned in different areas according to seasonal wildlife movements. Daily activities can include early morning game drives, afternoon drives, full-day excursions, and bush picnics.\n\nEvenings provide an opportunity to experience the quieter side of the Serengeti, with campfire gatherings, stargazing, and the sounds of the surrounding wilderness.\n\nOn the final morning, travelers enjoy a dawn game drive before returning to camp for breakfast and transferring to the airstrip. A scheduled flight then returns the group to Arusha, concluding the short but immersive Serengeti experience.",
+      "duration": "4 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Migration",
+        "Short Breaks"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "Kilimanjaro Expedition",
+      "image": "",
+      "location": "Mount Kilimanjaro, Tanzania",
+      "route": "Moshi → Londorossi Gate → Mti Mkubwa → Shira → Barranco → Karanga → Barafu → Uhuru Peak → Mweka → Moshi",
+      "description": "## Kilimanjaro Expedition — Detailed Description\n\nThe 8-Day Kilimanjaro Expedition is a summit-focused mountain adventure designed for travelers aiming to reach Uhuru Peak, the highest point of Mount Kilimanjaro at 5,895 meters. The itinerary provides multiple days for gradual ascent and acclimatization while passing through several distinct ecological zones.\n\nThe expedition begins with arrival in Tanzania and transfer to Moshi or Arusha. Before the climb, travelers meet their mountain guide for a gear check, safety briefing, and preparation for the trek.\n\nThe mountain journey begins at Londorossi Gate on the western side of Kilimanjaro. The trail enters the montane rainforest before reaching Mti Mkubwa Camp. The following day continues toward the Shira Plateau, where the landscape transitions from rainforest into higher-altitude moorland with expansive views toward Kibo.\n\nAn important acclimatization day follows the principle of climbing high and sleeping lower. Travelers ascend toward Lava Tower at approximately 4,630 meters before descending toward Barranco Camp. This stage allows the body to gradually adjust to increasing altitude while providing spectacular mountain scenery.\n\nThe next stage tackles the famous Barranco Wall before continuing toward Karanga Camp. From there, the route climbs steadily toward Barafu Camp, the high camp used before the summit attempt.\n\nSummit night begins around midnight. Travelers climb through the alpine desert toward Stella Point before continuing along the crater rim toward Uhuru Peak at 5,895 meters. After reaching the summit, the group begins the long descent toward Mweka Camp.\n\nThe final day continues through Kilimanjaro's rainforest to Mweka Gate. After completing the trek, travelers can celebrate with their guides and porters before transferring back to Moshi or Arusha for a well-earned rest.",
+      "duration": "8 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Short Breaks"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
+    },
+    {
+      "title": "Echoes of the Ngorongoro",
+      "image": "",
+      "location": "Northern Tanzania",
+      "route": "Arusha → Tarangire → Ngorongoro → Lake Manyara → Arusha",
+      "description": "## Echoes of the Ngorongoro — Detailed Description\n\nThe 3-Day Echoes of the Ngorongoro is a compact Northern Circuit safari designed for travelers with limited time who still want to experience several of Tanzania's most distinctive wildlife environments. The itinerary combines Tarangire National Park, Ngorongoro Crater, and Lake Manyara National Park.\n\nThe safari begins in Arusha with a drive to Tarangire National Park. The park is known for its ancient baobab trees, seasonal river systems, and large elephant populations. During the afternoon game drive, travelers can search for elephants, lions, leopards, giraffes, zebras, and other wildlife across the savannah.\n\nThe evening is spent at a lodge or tented camp in the surrounding area before continuing toward Ngorongoro.\n\nDay two focuses on the Ngorongoro Crater. Travelers descend approximately 610 meters into the crater for an extended game drive across the grasslands, wetlands, and wildlife-rich areas of the caldera. The crater provides opportunities to see lions, elephants, buffalo, hippos, hyenas, and, with some luck, the endangered black rhino.\n\nAfter exploring the crater floor, travelers ascend the crater walls and return to their accommodation to relax.\n\nThe final day is dedicated to Lake Manyara National Park. The park's groundwater forest provides habitat for baboons, blue monkeys, elephants, and numerous bird species. Travelers can also search the lake shore for flamingos and keep an eye out for the park's famous tree-climbing lions.\n\nAfter the final game drive and lunch, the safari returns to Arusha in the afternoon, with the option of hotel drop-off or a transfer to Kilimanjaro International Airport for departure.",
+      "duration": "3 Days",
+      "price": "",
+      "badge": "",
+      "categories": [],
+      "tags": [
+        "All Tours",
+        "Short Breaks"
+      ],
+      "accommodation": "",
+      "rating": 5,
+      "reviews": ""
     }
   ]
 }
+```
