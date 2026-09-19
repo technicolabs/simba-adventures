@@ -10,7 +10,7 @@ backend:
   auth_token_endpoint: /sites/3f7b0bd1-5ac1-4263-906e-9502144a6488/token
   gateway_url: https://gateway.decapbridge.com
 
-  # See who did what (optional)
+  # See who did what
   commit_messages:
     create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
     update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
@@ -29,7 +29,7 @@ auth:
 # DecapBridge logo
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
-# Your website
+# Website
 site_url: https://technicolabs.github.io
 
 # Media settings
@@ -37,10 +37,6 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-
-  # ============================================================
-  # SITE CONTENT
-  # ============================================================
 
   - name: "content"
     label: "Site Content"
@@ -82,11 +78,14 @@ collections:
                 name: "route"
                 widget: "string"
 
-              # IMPORTANT:
-              # Markdown allows multiple paragraphs,
-              # headings, bullet points, bold text, etc.
-              - label: "Description"
-                name: "description"
+              # Short text shown on the tour card
+              - label: "Short Description"
+                name: "shortDescription"
+                widget: "text"
+
+              # Full description shown inside View Details
+              - label: "Detailed Description"
+                name: "detailedDescription"
                 widget: "markdown"
 
               - label: "Duration"
