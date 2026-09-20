@@ -7,7 +7,7 @@
 window.SIMBA_TOURS = [
   {
     "badge": "Most Popular",
-    "price": "4",
+    "price": "1,350",
     "route": "Arusha → Tarangire National Park → Serengeti National Park → Ngorongoro Crater → Arusha",
     "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
     "duration": "5 Days / 4 Nights",
@@ -16,13 +16,13 @@ window.SIMBA_TOURS = [
     "tags": ["Big Five", "Safari", "Tarangire", "Serengeti", "Ngorongoro", "Camping", "Wildlife"],
     "reviews": "214",
     "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Budget Safaris"],
-    "description": "A 5-day camping safari covering Tarangire, Serengeti and Ngorongoro, with game drives focused on elephants, predators, the Great Migration and the Big Five.",
+    "categories": ["Budget Safaris", "Big Five", "Short Break"],
+    "description": "Five days camping through Tarangire, the Serengeti and Ngorongoro. Plenty of elephant sightings in Tarangire, predator action in the Serengeti plains, and a full morning down on the crater floor.",
     "rating": "4.9"
   },
   {
     "badge": "",
-    "price": "1000",
+    "price": "1,750",
     "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
     "accommodation": "Boutique Lodge",
     "duration": "7 Days / 6 Nights",
@@ -31,8 +31,8 @@ window.SIMBA_TOURS = [
     "tags": ["Great Migration", "Serengeti", "Safari", "Wildlife", "Tarangire", "Lake Manyara", "Ngorongoro", "Camping"],
     "reviews": "167",
     "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Budget Safaris"],
-    "description": "A 7-day camping safari featuring extended Serengeti game drives focused on the wildebeest migration, followed by a Ngorongoro Crater game drive.",
+    "categories": ["Budget Safaris", "Migration"],
+    "description": "A week tracking the wildebeest herds through the Serengeti, with stops at Manyara's tree-climbing lions and a day in the Ngorongoro Crater. Classic migration timing.",
     "rating": "4.8"
   },
   {
@@ -47,7 +47,7 @@ window.SIMBA_TOURS = [
     "reviews": "142",
     "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
     "categories": ["Budget Safaris"],
-    "description": "An 8-day adventure combining walking and game drives with wildlife viewing and a cultural experience with the Hadzabe around Lake Eyasi.",
+    "description": "Eight days mixing big game with something different — a walk with the Hadzabe hunters around Lake Eyasi, known spots for the biggest herds, and the crater to round it off.",
     "rating": "4.8"
   },
   {
@@ -61,8 +61,8 @@ window.SIMBA_TOURS = [
     "tags": ["Wildlife", "Safari", "Serengeti", "Lake Manyara", "Ngorongoro", "Big Five", "Tented Camp"],
     "reviews": "186",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Mid Range Safaris"],
-    "description": "A 5-day tented-camp safari exploring Lake Manyara, the Serengeti and Ngorongoro Crater, with multiple game drives and opportunities to see the Big Five.",
+    "categories": ["Mid Range Safaris", "Big Five", "Short Break"],
+    "description": "Five days in comfortable tented camps across Manyara, the Serengeti and Ngorongoro. Good balance of long game drives and lazy bush evenings.",
     "rating": "4.9"
   },
   {
@@ -76,8 +76,8 @@ window.SIMBA_TOURS = [
     "tags": ["Nature", "Safari", "Wildlife", "Migration", "Serengeti", "Tarangire", "Ngorongoro"],
     "reviews": "109",
     "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Mid Range Safaris"],
-    "description": "A 7-day safari through Tanzania's northern circuit with game drives in Tarangire, Lake Manyara and Serengeti, followed by a Ngorongoro Crater descent.",
+    "categories": ["Mid Range Safaris", "Migration"],
+    "description": "The northern circuit done at a relaxed pace — Tarangire's elephants, Manyara's flamingos, the Serengeti's endless plains and a slow descent into the crater.",
     "rating": "4.8"
   },
   {
@@ -92,7 +92,7 @@ window.SIMBA_TOURS = [
     "reviews": "98",
     "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80",
     "categories": ["Mid Range Safaris"],
-    "description": "An 8-day safari combining wildlife, walking, game drives and a Lake Eyasi cultural experience with the Hadzabe.",
+    "description": "Eight days that blend classic parks with a quieter side of Tanzania — a Lake Eyasi morning with the Hadzabe, plus the usual suspects across Tarangire, Manyara, Serengeti and Ngorongoro.",
     "rating": "4.7"
   },
   {
@@ -106,8 +106,8 @@ window.SIMBA_TOURS = [
     "tags": ["Honeymoon", "Romantic", "Safari", "Zanzibar", "Beach", "Serengeti", "Ngorongoro", "Wildlife"],
     "reviews": "133",
     "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Mid Range Safaris"],
-    "description": "A 12-day honeymoon journey combining Tanzania's major safari destinations with relaxation on Zanzibar's beaches.",
+    "categories": ["Mid Range Safaris", "Beach Combo"],
+    "description": "Twelve days for two — the full northern circuit on honeymoon pace, then a few unhurried days on Zanzibar's beaches before flying home.",
     "rating": "4.8"
   },
   {
@@ -121,8 +121,8 @@ window.SIMBA_TOURS = [
     "tags": ["Tanzania", "Kilimanjaro", "Safari", "Migration", "Lake Natron", "Lake Victoria", "Maasai", "Ngorongoro"],
     "reviews": "151",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
-    "categories": ["Mid Range Safaris"],
-    "description": "An extensive 14-day Tanzania journey combining a Kilimanjaro day hike, walking safari, wildlife viewing, Maasai and Lake Natron experiences, Serengeti migration, Lake Victoria and Ngorongoro.",
+    "categories": ["Mid Range Safaris", "Migration"],
+    "description": "A proper two weeks: a Kilimanjaro day hike, Lake Natron and the Maasai, the Serengeti migration, a night on Lake Victoria, and Ngorongoro to close. Tanzania in one go.",
     "rating": "4.8"
   }
 ];
@@ -177,6 +177,14 @@ window.SIMBA_GALLERY = {
       "category": "Tanzania",
       "height": "260px",
       "alt": "A moving pattern"
+    },
+    {
+      "title": "Grazing plains",
+      "image": "/images/whatsapp-image-2026-09-14-at-12.42.18-pm.jpeg",
+      "location": "Ngorongoro, Tanzania",
+      "category": "Tanzania",
+      "height": "300px",
+      "alt": "Grazing plains"
     }
   ]
 };
