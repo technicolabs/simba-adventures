@@ -3,367 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Plan My Safari &mdash; Simba Adventures</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
 <body>
 
   <header class="site-header header-overlay">
-
     <div class="wrap">
-
       <a href="index.html" class="brand">
         <i class="fa-solid fa-paw"></i>
         Simba Adventures
       </a>
-
       <ul class="nav-menu nav-menu-links" id="navMenu">
-
-        <li>
-          <a href="index.html">
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a href="tour.html">
-            Tours &amp; Safaris
-          </a>
-        </li>
-
-        <li>
-          <a href="about-us.html">
-            About Us
-          </a>
-        </li>
-
-        <li>
-          <a href="index.html#testimonials">
-            Reviews
-          </a>
-        </li>
-
-        <li>
-          <a href="gallery.html">
-            Gallery
-          </a>
-        </li>
-
-        <li>
-          <a href="contact-us.html">
-            Contact
-          </a>
-        </li>
-
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tours &amp; Safaris</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
       </ul>
-
       <div class="nav-right">
-
-        <a
-          href="plan-my-safari.html"
-          class="btn btn-gold btn-sm"
-        >
-          Plan My Safari
-        </a>
-
-        <div
-          class="menu-toggle"
-          onclick="document.getElementById('navMenu').classList.toggle('show')"
-        >
+        <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
+        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')">
           <i class="fa-solid fa-bars"></i>
         </div>
-
       </div>
-
     </div>
-
   </header>
 
-  <section
-    class="page-hero"
-    style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1600&q=80');"
-  >
-
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1600&q=80');">
     <div class="wrap">
-
-      <span class="eyebrow on-dark">
-        Start Your Journey
-      </span>
-
-      <h1>
-
-        Plan My
-
-        <span class="italic">
-          Safari
-        </span>
-
-      </h1>
-
-      <p class="lede">
-        Tell us about your dream trip and we'll craft the perfect Tanzanian adventure.
-      </p>
-
+      <span class="eyebrow on-dark">Start Your Journey</span>
+      <h1>Plan My <span class="italic">Safari</span></h1>
+      <p class="lede">Tell us the trip you have in mind and we'll shape a safari around it — dates, budget, and the wildlife you're hoping to meet.</p>
     </div>
-
   </section>
 
   <section class="section">
-
     <div class="wrap">
-
-      <div
-        style="display:grid; grid-template-columns:1fr 340px; gap:30px; align-items:start;"
-      >
+      <div class="form-layout">
 
         <div class="form-card">
 
-          <h3 style="margin-bottom:4px;">
-            Safari <span class="italic">Enquiry</span>
-          </h3>
+          <h3 style="margin-bottom:4px;">Safari <span class="italic">Enquiry</span></h3>
+          <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;">Fill in what you know &mdash; we'll handle the rest.</p>
 
-          <p
-            style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;"
-          >
-            Fill in what you know &mdash; we'll handle the rest.
-          </p>
-
-
-          <form
-            action="https://formspree.io/f/mjyvqlnr"
-            method="POST"
-            id="safari-enquiry-form"
-          >
-
-            
+          <form action="https://formspree.io/f/mjyvqlnr" method="POST" id="safari-enquiry-form">
 
             <div class="form-row">
-
               <div class="form-group">
-
-                <label>
-                  Full Name <span class="req">*</span>
-                </label>
-
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                >
-
+                <label>Full Name <span class="req">*</span></label>
+                <input type="text" name="name" placeholder="Your name" required>
               </div>
-
-
               <div class="form-group">
-
-                <label>
-                  Email <span class="req">*</span>
-                </label>
-
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="you@email.com"
-                  required
-                >
-
+                <label>Email <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="you@email.com" required>
               </div>
-
             </div>
 
-
-            
-
             <div class="form-row">
-
               <div class="form-group">
-
-                <label>
-                  Phone
-                </label>
-
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+1 (555) 000-0000"
-                >
-
+                <label>Phone</label>
+                <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
               </div>
-
-
               <div class="form-group">
-
-                <label>
-                  No. of Guests
-                </label>
-
-                <input
-                  type="number"
-                  name="guests"
-                  placeholder="2"
-                  min="1"
-                >
-
+                <label>No. of Guests</label>
+                <input type="number" name="guests" placeholder="2" min="1">
               </div>
-
             </div>
 
-
-            
-
             <div class="form-row">
-
               <div class="form-group">
-
-                <label>
-                  Interested Tour / Destination
-                </label>
-
-                <select
-                  id="tour-select"
-                  name="tour"
-                >
-
-                  <option value="">
-                    Loading tours...
-                  </option>
-
+                <label>Interested Tour / Destination</label>
+                <select id="tour-select" name="tour">
+                  <option value="">Loading tours...</option>
                 </select>
-
               </div>
-
-
               <div class="form-group">
-
-                <label>
-                  Preferred Travel Dates
-                </label>
-
-                <input
-                  type="text"
-                  name="travel_dates"
-                  placeholder="e.g. July 2026"
-                >
-
+                <label>Preferred Travel Dates</label>
+                <input type="text" name="travel_dates" placeholder="e.g. July 2026">
               </div>
-
             </div>
 
-
-            
-
             <div class="form-group">
-
-              <label>
-                Budget per Person
-              </label>
-
+              <label>Budget per Person</label>
               <select name="budget">
-
-                <option value="">
-                  Select range
-                </option>
-
-                <option value="Under $2,000">
-                  Under $2,000
-                </option>
-
-                <option value="$2,000 - $4,000">
-                  $2,000 &ndash; $4,000
-                </option>
-
-                <option value="$4,000 - $6,000">
-                  $4,000 &ndash; $6,000
-                </option>
-
-                <option value="$6,000+">
-                  $6,000+
-                </option>
-
+                <option value="">Select range</option>
+                <option value="Under $2,000">Under $2,000</option>
+                <option value="$2,000 - $4,000">$2,000 &ndash; $4,000</option>
+                <option value="$4,000 - $6,000">$4,000 &ndash; $6,000</option>
+                <option value="$6,000+">$6,000+</option>
               </select>
-
             </div>
-
-
-            
 
             <div class="form-group">
-
-              <label>
-                Tell Us About Your Dream Safari
-              </label>
-
-              <textarea
-                name="message"
-                placeholder="Special occasions, accessibility requirements, must-see wildlife, accommodation preferences..."
-              ></textarea>
-
+              <label>Tell Us About Your Dream Safari</label>
+              <textarea name="message" placeholder="Special occasions, accessibility requirements, must-see wildlife, accommodation preferences..."></textarea>
             </div>
 
-
-            
-
-            <button
-              type="submit"
-              class="btn btn-gold btn-block"
-              id="submit-button"
-            >
+            <button type="submit" class="btn btn-gold btn-block" id="submit-button">
               Send My Safari Enquiry &rarr;
             </button>
 
           </form>
 
-
-          
-
-          <div
-            id="form-success"
-            style="display:none; text-align:center; padding:35px 20px;"
-          >
-
-            <div
-              style="font-size:42px; margin-bottom:15px;"
-            >
-              ✓
-            </div>
-
-            <h3>
-              Thank You!
-            </h3>
-
-            <p
-              style="color:var(--ink-faint); margin-top:10px;"
-            >
+          <div id="form-success" style="display:none; text-align:center; padding:35px 20px;">
+            <div style="font-size:42px; margin-bottom:15px;">&#10003;</div>
+            <h3>Thank You!</h3>
+            <p style="color:var(--ink-faint); margin-top:10px;">
               Your safari enquiry has been received.
               The Simba Adventures team will get back to you shortly.
             </p>
-
           </div>
 
-
-          
-
-          <div
-            id="form-error"
-            style="display:none; margin-top:15px; padding:12px; color:#8a1f1f; background:#f9e6e6; border-radius:6px;"
-          >
+          <div id="form-error" style="display:none; margin-top:15px; padding:12px; color:#8a1f1f; background:#f9e6e6; border-radius:6px;">
             Something went wrong while sending your enquiry.
             Please try again.
           </div>
@@ -372,421 +131,153 @@
 
         <div>
 
-          <div
-            class="info-card-dark"
-            style="margin-bottom:20px;"
-          >
+          <div class="info-card-dark" style="margin-bottom:20px;">
 
-            <h3>
-              Contact Directly
-            </h3>
+            <h3>Contact Directly</h3>
 
             <div class="info-line">
-
               <i class="fa-solid fa-location-dot"></i>
-
               <div>
-
-                <strong>
-                  Arusha, Tanzania
-                </strong>
-
-                Near Kilimanjaro Gate, P.O. Box 9045
-
+                <strong>Arusha, Tanzania</strong>
+                Plot 58, Block E, Sokoine Road
               </div>
-
             </div>
 
-
             <div class="info-line">
-
               <i class="fa-solid fa-phone"></i>
-
               <div>
-
-                <strong>
-                  +255 700 123 456
-                </strong>
-
+                <strong>+255 755 753 576, +255 788 753 576</strong>
               </div>
-
             </div>
-
 
             <div class="info-line">
-
               <i class="fa-solid fa-envelope"></i>
-
               <div>
-
-                <strong>
-                  hello@simbaadventures.co.tz
-                </strong>
-
+                <strong>info@simbaadventures.com</strong>
               </div>
-
             </div>
 
-
-            <div
-              class="info-line"
-              style="margin-bottom:0;"
-            >
-
+            <div class="info-line" style="margin-bottom:0;">
               <i class="fa-regular fa-clock"></i>
-
               <div>
-
-                <strong>
-                  Response Time
-                </strong>
-
+                <strong>Response Time</strong>
                 Within 24 hours (usually sooner)
-
               </div>
-
             </div>
 
           </div>
-
 
           <div class="info-card-light">
 
-            <h3>
-              Why book with
-              <span class="italic">
-                Simba
-              </span>?
-            </h3>
+            <h3>Why book with <span class="italic">Simba</span>?</h3>
 
-
-            <div class="check-line">
-              <i class="fa-solid fa-check"></i>
-              100% Tanzanian owned &amp; operated
-            </div>
-
-
-            <div class="check-line">
-              <i class="fa-solid fa-check"></i>
-              No hidden fees &mdash; transparent pricing
-            </div>
-
-
-            <div class="check-line">
-              <i class="fa-solid fa-check"></i>
-              Fully bespoke, never group tours
-            </div>
-
-
-            <div class="check-line">
-              <i class="fa-solid fa-check"></i>
-              KATO &amp; Eco-certified
-            </div>
-
-
-            <div class="check-line">
-              <i class="fa-solid fa-check"></i>
-              24/7 in-country support
-            </div>
-
-
-            <div
-              class="check-line"
-              style="margin-bottom:0;"
-            >
-              <i class="fa-solid fa-check"></i>
-              Flexible booking &amp; postponement policy
-            </div>
+            <div class="check-line"><i class="fa-solid fa-check"></i> 100% Tanzanian owned &amp; operated</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i> No hidden fees &mdash; transparent pricing</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i> Fully bespoke, never group tours</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i> TATO &amp; Eco-certified</div>
+            <div class="check-line"><i class="fa-solid fa-check"></i> 24/7 in-country support</div>
+            <div class="check-line" style="margin-bottom:0;"><i class="fa-solid fa-check"></i> Flexible booking &amp; postponement policy</div>
 
           </div>
 
         </div>
 
       </div>
-
     </div>
-
   </section>
 
-  <section
-    class="section"
-    style="padding-top:0;"
-  >
-
-    <div
-      class="wrap"
-      style="max-width:760px;"
-    >
+  <section class="section" style="padding-top:0;">
+    <div class="wrap" style="max-width:760px;">
 
       <div class="section-header center">
-
-        <span class="eyebrow">
-          Common Questions
-        </span>
-
-        <h2>
-          Frequently Asked Questions
-        </h2>
-
+        <span class="eyebrow">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
       </div>
 
-
       <div class="faq-item">
-
-        <div class="faq-q">
-          When is the best time to visit Tanzania?
-          <span class="plus">+</span>
-        </div>
-
-        <div class="faq-a">
-          June to October is prime dry season for game viewing;
-          January&ndash;February brings the calving season on the southern plains.
-        </div>
-
+        <div class="faq-q">When is the best time to visit Tanzania?<span class="plus">+</span></div>
+        <div class="faq-a">June to October is prime dry season for game viewing; January&ndash;February brings the calving season on the southern plains.</div>
       </div>
 
-
       <div class="faq-item">
-
-        <div class="faq-q">
-          How far in advance should I book?
-          <span class="plus">+</span>
-        </div>
-
-        <div class="faq-a">
-          6&ndash;12 months ahead for peak season camps;
-          2&ndash;3 months is usually fine off-peak.
-        </div>
-
+        <div class="faq-q">How far in advance should I book?<span class="plus">+</span></div>
+        <div class="faq-a">6&ndash;12 months ahead for peak season camps; 2&ndash;3 months is usually fine off-peak.</div>
       </div>
 
-
       <div class="faq-item">
-
-        <div class="faq-q">
-          Are your safaris suitable for families with children?
-          <span class="plus">+</span>
-        </div>
-
-        <div class="faq-a">
-          Yes &mdash; we tailor pacing, accommodation,
-          and activities for travellers of all ages.
-        </div>
-
+        <div class="faq-q">Are your safaris suitable for families with children?<span class="plus">+</span></div>
+        <div class="faq-a">Yes &mdash; we tailor pacing, accommodation, and activities for travellers of all ages.</div>
       </div>
 
-
       <div class="faq-item">
-
-        <div class="faq-q">
-          What's included in the quoted price?
-          <span class="plus">+</span>
-        </div>
-
-        <div class="faq-a">
-          All quotes include accommodation, park fees,
-          a private guide and vehicle, and most meals.
-          Flights and personal expenses are quoted separately.
-        </div>
-
+        <div class="faq-q">What's included in the quoted price?<span class="plus">+</span></div>
+        <div class="faq-a">All quotes include accommodation, park fees, a private guide and vehicle, and most meals. Flights and personal expenses are quoted separately.</div>
       </div>
 
-
       <div class="faq-item">
-
-        <div class="faq-q">
-          Is Tanzania safe for travellers?
-          <span class="plus">+</span>
-        </div>
-
-        <div class="faq-a">
-          Yes. Tanzania is one of East Africa's most stable
-          destinations for tourism, and our guides and vehicles
-          are with you throughout your trip.
-        </div>
-
+        <div class="faq-q">Is Tanzania safe for travellers?<span class="plus">+</span></div>
+        <div class="faq-a">Yes. Tanzania is one of East Africa's most stable destinations for tourism, and our guides and vehicles are with you throughout your trip.</div>
       </div>
 
     </div>
-
   </section>
 
   <footer class="site-footer">
-
     <div class="wrap">
-
       <div class="footer-grid">
 
         <div>
-
-          <div class="footer-brand">
-            <i class="fa-solid fa-paw"></i>
-            Simba Adventures
-          </div>
-
-          <p class="footer-desc">
-            Tanzania's premier safari specialist.
-            Crafting unforgettable wildlife journeys since 2006.
-          </p>
-
+          <div class="footer-brand"><i class="fa-solid fa-paw"></i> Simba Adventures</div>
+          <p class="footer-desc">A small team of Tanzanian guides and planners who love what we do — and want you to feel it too.</p>
           <div class="footer-social">
-
-            <a href="#">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="#">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-
+            <a href="https://www.facebook.com/simbaadventures" target="_blank" aria-label="Facebook"><svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+            <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank" aria-label="Instagram"><svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
           </div>
-
         </div>
 
-
         <div>
-
-          <div class="footer-col-title">
-            Explore
-          </div>
-
+          <div class="footer-col-title">Explore</div>
           <ul class="footer-menu">
-
-            <li>
-              <a href="tour.html">
-                Serengeti Safaris
-              </a>
-            </li>
-
-            <li>
-              <a href="tour.html">
-                Kilimanjaro Treks
-              </a>
-            </li>
-
-            <li>
-              <a href="tour.html">
-                Zanzibar Retreats
-              </a>
-            </li>
-
-            <li>
-              <a href="tour.html">
-                Ngorongoro Crater
-              </a>
-            </li>
-
+            <li><a href="tour.html">Serengeti Safaris</a></li>
+            <li><a href="tour.html">Kilimanjaro Treks</a></li>
+            <li><a href="tour.html">Zanzibar Retreats</a></li>
+            <li><a href="tour.html">Ngorongoro Crater</a></li>
           </ul>
-
         </div>
 
-
         <div>
-
-          <div class="footer-col-title">
-            Main Navigation
-          </div>
-
+          <div class="footer-col-title">Main Navigation</div>
           <ul class="footer-menu">
-
-            <li>
-              <a href="index.html">
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="tour.html">
-                Tours &amp; Safaris
-              </a>
-            </li>
-
-            <li>
-              <a href="about-us.html">
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="index.html#testimonials">
-                Reviews
-              </a>
-            </li>
-
-            <li>
-              <a href="gallery.html">
-                Gallery
-              </a>
-            </li>
-
-            <li>
-              <a href="contact-us.html">
-                Contact
-              </a>
-            </li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tour.html">Tours &amp; Safaris</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
           </ul>
-
         </div>
 
-
         <div>
-
-          <div class="footer-col-title">
-            Get In Touch
-          </div>
-
+          <div class="footer-col-title">Get In Touch</div>
           <div class="footer-contact-info">
-
-            <p>
-              <i class="fa-solid fa-location-dot"></i>
-              Arusha, Tanzania
-            </p>
-
-            <p>
-              <i class="fa-solid fa-phone"></i>
-              +255 700 123 456
-            </p>
-
-            <p>
-              <i class="fa-solid fa-envelope"></i>
-              hello@simbaadventures.co.tz
-            </p>
-
+            <p><i class="fa-solid fa-location-dot"></i> Plot 58, Block E, Sokoine Road, Arusha, Tanzania</p>
+            <p><i class="fa-solid fa-phone"></i> +255 755 753 576, +255 788 753 576</p>
+            <p><i class="fa-solid fa-envelope"></i> info@simbaadventures.com</p>
           </div>
-
         </div>
 
       </div>
-
 
       <div class="footer-bottom">
-
+        <div>&copy; 2026 Simba Adventures. All rights reserved.</div>
+        <div>Reg. No. 113663 &middot; VAT No. 40319680K</div>
         <div>
-          &copy; 2006&ndash;2026 Simba Adventures.
-          All rights reserved.
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="sitemap.html">Sitemap</a>
         </div>
-
-        <div>
-
-          <a href="privacy-policy.html">
-            Privacy Policy
-          </a>
-
-          <a href="sitemap.html">
-            Sitemap
-          </a>
-
-        </div>
-
       </div>
-
     </div>
-
   </footer>
 
   <script src="data-embedded.js"></script>
@@ -848,31 +339,31 @@
     var successMessage = document.getElementById('form-success');
     var errorMessage = document.getElementById('form-error');
 
-    safariForm.addEventListener('submit', async function(event) {
+    safariForm.addEventListener('submit', function(event) {
       event.preventDefault();
       errorMessage.style.display = 'none';
       submitButton.disabled = true;
       submitButton.textContent = 'Sending...';
 
-      try {
-        var response = await fetch(safariForm.action, {
-          method: 'POST',
-          body: new FormData(safariForm),
-          headers: { 'Accept': 'application/json' }
-        });
-
+      fetch(safariForm.action, {
+        method: 'POST',
+        body: new FormData(safariForm),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) {
         if (response.ok) {
           safariForm.style.display = 'none';
           successMessage.style.display = 'block';
         } else {
           throw new Error('Form submission failed');
         }
-      } catch (error) {
+      })
+      .catch(function(error) {
         console.error('Form submission error:', error);
         errorMessage.style.display = 'block';
         submitButton.disabled = false;
         submitButton.textContent = 'Send My Safari Enquiry →';
-      }
+      });
     });
   </script>
 
