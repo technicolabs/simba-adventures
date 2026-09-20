@@ -1,217 +1,338 @@
 {
   "tours": [
     {
-      "badge": "Most Popular",
-      "price": "1,350",
-      "route": "Arusha → Tarangire National Park → Serengeti National Park → Ngorongoro Crater → Arusha",
-      "accommodation": "Nsya Camp; Seronera Campsite; Simba Campsite",
-      "duration": "5 Days / 4 Nights",
-      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
-      "title": "5 Days Big 5 Safari",
-      "tags": [
-        "Big Five",
+      "title": "The Serengeti Symphony",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Lake Manyara, Serengeti, Ngorongoro & Tarangire",
+      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Tarangire → Arusha",
+      "description": "A classic 6-day Northern Circuit safari combining Lake Manyara, the Serengeti, Ngorongoro Crater and Tarangire for an unforgettable Tanzanian wildlife experience.",
+      "detailedDescription": "The 6-Day Serengeti Symphony itinerary is a classic Northern Circuit safari in Tanzania. It balances the spectacular wildlife of the Serengeti National Park with the geological wonders of the Ngorongoro Crater, Tarangire, and Lake Manyara.\n\n## The 6-Day Itinerary Breakdown\n\n### Day 1: Arusha to Lake Manyara National Park\n\n**Morning:** Pick-up from your hotel in Arusha and depart for Lake Manyara National Park for game drive looking for the park’s famous tree-climbing lions, large elephant herds, and flocks of pink flamingos along the lake shore.\n\n**Evening:** Dinner and overnight stay at a lodge near Lake Manyara.\n\n### Day 2: Lake Manyara to Serengeti National Park\n\n**Morning:** Travel through the agricultural highlands of Karatu and enter the Ngorongoro Conservation Area, driving toward the endless plains of the Serengeti National Park.\n\n**Afternoon:** Enjoy a picnic lunch followed by an en-route game drive into the central Seronera valley.\n\n**Evening:** Settle into a safari camp or lodge inside the Serengeti for dinner.\n\n### Day 3: Full Day in Serengeti National Park\n\n**Morning:** Embark on an early morning game drive to catch predators like lions, cheetahs, and leopards when they are most active. Optional sunrise hot air balloon safaris are available.\n\n**Afternoon:** Continue exploring different wildlife corridors to seek out massive herds of the Great Migration.\n\n**Evening:** Relax around the campfire listening to the sounds of the African bush.\n\n### Day 4: Serengeti to Ngorongoro Crater Rim\n\n**Morning:** Conclude your time in the Serengeti with a final morning game drive before departing toward the Ngorongoro Conservation Area.\n\n**Afternoon:** Stop for a picnic lunch and optional cultural visit to a Maasai Boma or the historical Olduvai Gorge archaeological site.\n\n**Evening:** Drive up to the crater rim for dinner and overnight accommodations boasting spectacular caldera views.\n\n### Day 5: Ngorongoro Crater Floor to Tarangire National Park\n\n**Morning:** Descend 610 meters into the UNESCO-listed Ngorongoro Crater floor for a 5-hour game drive. This is your best chance to spot the endangered black rhino and tick off the complete Big Five.\n\n**Afternoon:** Ascend the crater and drive across the scenic Rift Valley floor to Tarangire National Park.\n\n**Evening:** Overnight stay at a tented camp or lodge bordering the park.\n\n### Day 6: Tarangire National Park to Arusha\n\n**Morning:** Explore Tarangire on a morning game drive. This park is renowned for its colossal elephant herds and ancient baobab trees that dominate the landscape.\n\n**Afternoon:** Enjoy a final bush lunch before making the return drive back to Arusha.\n\n**Evening:** Drop-off at Kilimanjaro International Airport (JRO) or your Arusha accommodation, wrapping up your safari journey.",
+      "duration": "6 Days / 5 Nights",
+      "price": "1,957",
+      "badge": "Classic Safari",
+      "categories": [
         "Safari",
-        "Tarangire",
+        "Big Five",
+        "Northern Circuit"
+      ],
+      "tags": [
+        "Safari",
+        "Big Five",
         "Serengeti",
+        "Tarangire",
+        "Lake Manyara",
         "Ngorongoro",
-        "Camping",
         "Wildlife"
       ],
-      "reviews": "214",
-      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Budget Safaris",
-        "Big Five",
-        "Short Break"
-      ],
-      "description": "Five days camping through Tarangire, the Serengeti and Ngorongoro. Plenty of elephant sightings in Tarangire, predator action in the Serengeti plains, and a full morning down on the crater floor.",
-      "rating": "4.9"
+      "accommodation": "Safari Lodge & Tented Camp",
+      "rating": "4.9",
+      "reviews": "184"
     },
     {
-      "badge": "",
-      "price": "1,750",
-      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
-      "accommodation": "Boutique Lodge",
-      "duration": "7 Days / 6 Nights",
-      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti & Ngorongoro",
-      "title": "7 Days Migration Safari",
+      "title": "Tanzania Big Five Signature",
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "description": "A premium 5-day safari designed to maximize opportunities to see Africa's iconic Big Five across Tanzania's legendary Northern Circuit.",
+      "detailedDescription": "The Tanzania Big Five Signature (5 Days) safari is a premium, fast-paced itinerary designed specifically to maximize your chances of spotting Africa's iconic Big Five: lions, leopards, rhinos, elephants, and Cape buffalos. This classic Northern Circuit route condenses the region's best wildlife destinations—Tarangire National Park, the Serengeti National Park, and the Ngorongoro Crater—into five action-packed days.\n\n## The 5-Day Signature Route Breakdown\n\n### Day 1: Arusha to Tarangire National Park\n\n**Morning:** Pick-up at 08:00 AM from your hotel in Arusha. Drive roughly two hours south through rural landscapes to Tarangire National Park.\n\n**Afternoon:** Embark on your first major game drive. Focus your lens on Tarangire's world-famous colossal elephant herds and massive, ancient baobab trees flanking the Tarangire River. Look out for lions and leopards resting in branches.\n\n**Evening:** Head to your lodge or tented camp in Karatu or inside the park boundaries for dinner.\n\n### Day 2: Tarangire to Serengeti National Park (Central Seronera)\n\n**Morning:** Depart early and drive through the lush, misty crater highlands of Karatu into the Ngorongoro Conservation Area. Stop briefly at the crater rim viewpoint for sweeping caldera photos.\n\n**Afternoon:** Descend the outer ridges and journey into the golden, flat savannah plains of the Serengeti National Park via the Naabi Hill Gate. Drive deep into the Central Seronera valley, a global hotspot for apex predators.\n\n**Evening:** Fall asleep to the sounds of the wilderness inside an authentic Serengeti tented camp.\n\n### Day 3: Full Day Exploring the Serengeti Plains\n\n**Morning:** Set off on a sunrise game drive when elusive leopards and lions are actively hunting. Alternatively, opt for an early morning hot air balloon flight over the plains.\n\n**Afternoon:** Search the riverbanks and dynamic kopjes (rock formations) for resting prides, cheetahs, and hyenas. Depending on the month, you may cross paths with the migratory chains of the Great Wildebeest Migration.\n\n**Evening:** Enjoy a second evening listening to the wild night sounds around a crackling bush campfire.\n\n### Day 4: Serengeti to Ngorongoro Conservation Area\n\n**Morning:** Embark on a final morning game drive out of the central Serengeti corridors.\n\n**Afternoon:** Take a slow game drive en route backward across the Serengeti boundaries with a packed picnic lunch. Choose an optional stop at the historical Olduvai Gorge anthropological museum or visit a Maasai Boma village.\n\n**Evening:** Move onto the cooler forested ridges of the Ngorongoro crater rim to relax before the big descent tomorrow.\n\n### Day 5: Ngorongoro Crater Floor to Arusha\n\n**Morning:** Wake up early to descend 610 meters into the UNESCO-listed Ngorongoro Crater floor. The pristine grasslands enclosed here shelter roughly 25,000 large mammals. This is your premier destination to spot the highly endangered Black Rhino, completing your Big Five checklist.\n\n**Afternoon:** Track prides of crater lions, heavy bull elephants, and massive buffalo herds before stopping for lunch near the hippo pool. Ascend the caldera wall and make the final driving leg back to Arusha.\n\n**Evening:** Arrive in Arusha around late afternoon for your drop-off at your hotel or a direct transfer to Kilimanjaro International Airport (JRO) for your flight.",
+      "duration": "5 Days / 4 Nights",
+      "price": "1,693",
+      "badge": "Big Five",
+      "categories": [
+        "Safari",
+        "Big Five",
+        "Northern Circuit"
+      ],
+      "tags": [
+        "Big Five",
+        "Serengeti",
+        "Tarangire",
+        "Ngorongoro",
+        "Safari",
+        "Wildlife"
+      ],
+      "accommodation": "Premium Tented Camp & Lodge",
+      "rating": "4.9",
+      "reviews": "196"
+    },
+    {
+      "title": "The Great Migration Horizon",
+      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
+      "route": "Arusha → Tarangire → Central Serengeti → Migration Zones → Ngorongoro → Lake Manyara → Arusha",
+      "description": "An 8-day deep-dive into Tanzania's Great Migration with multiple dedicated days tracking wildebeest and zebra herds across the Serengeti.",
+      "detailedDescription": "The 8-Day Great Migration Horizon safari is the ultimate deep-dive itinerary for travelers who want to witness the largest land mammal migration on Earth. Spanning eight days, this route prioritizes multiple days in different sectors of the Serengeti National Park, adjusting dynamically to where the massive herds of wildebeest and zebras are located based on the time of year.\n\n## The 8-Day Great Migration Horizon Route\n\n### Day 1: Arusha to Tarangire National Park\n\n**Morning:** Meet your professional guide in Arusha and drive to Tarangire National Park, famous for its baobab-studded landscapes.\n\n**Afternoon:** Game drive along the Tarangire River, tracking some of Africa’s largest elephant herds.\n\n**Evening:** Overnight at a standard mid-range lodge or luxury tented camp near the park boundary.\n\n### Day 2: Tarangire to Central Serengeti\n\n**Morning:** Travel through the misty Ngorongoro highlands, entering the Serengeti plains through the Naabi Hill gate.\n\n**Afternoon:** Enjoy a picnic lunch followed by an afternoon game drive through the Central Seronera Valley, looking for resident big cats.\n\n**Evening:** Settle into your safari camp for dinner under the stars.\n\n### Days 3, 4 & 5: Deep Tracking the Migration (3 Full Days)\n\n**Daily Plan:** These three full days are entirely dedicated to maximizing your time with the Great Migration. Your guide will track the fast-moving herds across the plains.\n\n**What You'll Witness:** Depending on the season, you will spend your days scanning the banks of the Mara River for crocodile action, over 1.5 million wildebeest crossing.\n\n**Evenings:** Unwind at mobile migration camps that move semi-annually to stay within close driving distance of the herds.\n\n### Day 6: Serengeti to Ngorongoro Crater Rim\n\n**Morning:** Enjoy a final sunrise game drive in the Serengeti to catch leopards or cheetahs on an early hunt.\n\n**Afternoon:** Game drive en route out of the park. Stop for an optional cultural visit to a Maasai village or the Olduvai Gorge museum.\n\n**Evening:** Drive up to the cooler, forested rim of the Ngorongoro Crater for dinner and a panoramic sunset view.\n\n### Day 7: Ngorongoro Crater Floor to Karatu / Lake Manyara\n\n**Morning:** Descend early into the Ngorongoro Crater floor for a 5-to-6-hour game drive. This enclosed volcanic caldera is the premium place to easily spot the endangered Black Rhino, completing your Big Five checklist.\n\n**Afternoon:** View dense populations of lions, hyenas, and hippos before ascending the crater walls.\n\n**Evening:** Drive a short distance to the nearby town of Karatu or the rim of Lake Manyara for a relaxing final evening.\n\n### Day 8: Lake Manyara Game Drive to Arusha\n\n**Morning:** Conclude your safari with a morning game drive in Lake Manyara National Park, looking out for its unique tree-climbing lions and flocks of pink flamingos.\n\n**Afternoon:** Enjoy a final lunch before driving back to Arusha.\n\n**Evening:** Arrive in Arusha for a drop-off at your hotel or a direct transfer to Kilimanjaro International Airport (JRO) for evening flights home.",
+      "duration": "8 Days / 7 Nights",
+      "price": "3,121",
+      "badge": "Migration",
+      "categories": [
+        "Great Migration",
+        "Safari",
+        "Wildlife"
+      ],
       "tags": [
         "Great Migration",
         "Serengeti",
-        "Safari",
-        "Wildlife",
-        "Tarangire",
-        "Lake Manyara",
-        "Ngorongoro",
-        "Camping"
-      ],
-      "reviews": "167",
-      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Budget Safaris",
-        "Migration"
-      ],
-      "description": "A week tracking the wildebeest herds through the Serengeti, with stops at Manyara's tree-climbing lions and a day in the Ngorongoro Crater. Classic migration timing.",
-      "rating": "4.8"
-    },
-    {
-      "badge": "",
-      "price": "3,980",
-      "route": "Arusha → Arusha National Park → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Lake Eyasi → Arusha",
-      "accommodation": "Campsite/Hotel; Nsya Camp; Eyasi Campsite",
-      "duration": "8 Days / 7 Nights",
-      "location": "Tanzania — Arusha, Tarangire, Lake Manyara, Serengeti, Ngorongoro & Lake Eyasi",
-      "title": "8 Days Discover Tanzania",
-      "tags": [
-        "Tanzania Safari",
-        "Wildlife",
-        "Culture",
-        "Hadzabe",
-        "Lake Eyasi",
-        "Serengeti",
-        "Ngorongoro",
-        "Camping"
-      ],
-      "reviews": "142",
-      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Budget Safaris"
-      ],
-      "description": "Eight days mixing big game with something different — a walk with the Hadzabe hunters around Lake Eyasi, known spots for the biggest herds, and the crater to round it off.",
-      "rating": "4.8"
-    },
-    {
-      "badge": "",
-      "price": "2,200",
-      "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Arusha",
-      "accommodation": "Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro Ang'ata Tented Camp",
-      "duration": "5 Days / 4 Nights",
-      "location": "Tanzania — Lake Manyara, Serengeti & Ngorongoro",
-      "title": "5 Days Wild Discovery",
-      "tags": [
+        "Wildebeest",
         "Wildlife",
         "Safari",
-        "Serengeti",
-        "Lake Manyara",
-        "Ngorongoro",
-        "Big Five",
-        "Tented Camp"
-      ],
-      "reviews": "186",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Mid Range Safaris",
-        "Big Five",
-        "Short Break"
-      ],
-      "description": "Five days in comfortable tented camps across Manyara, the Serengeti and Ngorongoro. Good balance of long game drives and lazy bush evenings.",
-      "rating": "4.9"
-    },
-    {
-      "badge": "",
-      "price": "5,290",
-      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Arusha",
-      "accommodation": "Roika Tented Camp; Karatu Tented Camp; Embalakai Luxury Tented Camp; Ngorongoro",
-      "duration": "7 Days / 6 Nights",
-      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti & Ngorongoro",
-      "title": "7 Days Nature Explorer",
-      "tags": [
-        "Nature",
-        "Safari",
-        "Wildlife",
-        "Migration",
-        "Serengeti",
-        "Tarangire",
         "Ngorongoro"
       ],
-      "reviews": "109",
-      "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Mid Range Safaris",
-        "Migration"
-      ],
-      "description": "The northern circuit done at a relaxed pace — Tarangire's elephants, Manyara's flamingos, the Serengeti's endless plains and a slow descent into the crater.",
-      "rating": "4.8"
+      "accommodation": "Mobile Migration Camp & Safari Lodge",
+      "rating": "4.9",
+      "reviews": "172"
     },
     {
-      "badge": "",
-      "price": "3,190",
-      "route": "Arusha → Arusha National Park → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Lake Eyasi → Arusha",
-      "accommodation": "Meru View Lodge; Ang'ata Tarangire Tented Camp; Kirurumu Manyara Tented Camp; Ang'ata Serengeti Tented Camp; Ang'ata Ngorongoro Tented Camp; Kisima Ngeda Tented Camp",
+      "title": "The Untamed South",
+      "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Nyerere & Ruaha National Parks",
+      "route": "Dar es Salaam → Nyerere → Ruaha → Mikumi / Morogoro → Dar es Salaam",
+      "description": "An 8-day off-the-beaten-path adventure through Tanzania's rugged southern wilderness, combining Nyerere and Ruaha National Parks.",
+      "detailedDescription": "The 8-Day Untamed South safari is a wild, off-the-beaten-path itinerary designed for safari purists and returning travelers. Instead of visiting the busy northern parks, this journey heads into Tanzania’s vast, rugged southern circuit—specifically Nyerere National Park (formerly Selous Game Reserve) and Ruaha National Park.\n\n## The 8-Day Southern Wilderness Route Breakdown\n\n### Day 1: Dar es Salaam to Nyerere National Park (Selous)\n\n**Morning:** Meet your safari guide in Dar es Salaam and begin the 5-to-6 hour drive southwest (or take a short 45-minute coastal bush flight) into Nyerere National Park, one of the largest fauna reserves in the world.\n\n**Afternoon:** Arrive at your river camp for lunch and settle into your canvas tent.\n\n**Evening:** Embark on a magical sunset boat safari along the great Rufiji River, watching hundreds of hippos, massive crocodiles, and elephants coming down to drink.\n\n### Day 2: Full Day in Nyerere National Park\n\n**Morning:** Set off on a thrilling early morning guided walking safari. Accompanied by an armed ranger, you will learn to track footprints, identify bird calls, and experience the African bush on foot.\n\n**Afternoon:** Transition into an open-sided 4x4 vehicle for a game drive deep into the palm-fringed terminal woodlands. Nyerere is a stronghold for the highly endangered African Wild Dog (painted wolf).\n\n**Evening:** Enjoy sundowners overlooking the lakes followed by a multi-course dinner at your camp.\n\n### Day 3: Another Day of Southern Splendor\n\n**Morning:** Spend another full day exploring the diverse wetlands, hot springs, and river channels of Nyerere.\n\n**Afternoon:** Track massive prides of lions, leopards, Cape buffalos, and the rare sable antelopes that thrive in this Miombo woodland ecosystem.\n\n**Evening:** Relax by the campfire listening to the unique night calls of the southern wilderness.\n\n### Day 4: Nyerere National Park to Ruaha National Park\n\n**Morning:** Enjoy an early breakfast before driving across the beautiful Southern Highlands or taking a scenic coastal aviation bush flight directly from Nyerere to Ruaha National Park.\n\n**Afternoon:** Touch down on the red-dirt airstrip of Ruaha. The landscape transitions drastically into a rugged, arid semi-desert environment dominated by thousands of massive, ancient baobab trees.\n\n**Evening:** Embark on an introductory game drive along the Great Ruaha River before checking into your lodge.\n\n### Days 5 & 6: Deep Exploration of Ruaha (2 Full Days)\n\n**Daily Plan:** Spend two full days traversing Ruaha’s wild terrains. Because Ruaha is isolated, you will often go hours without seeing another safari vehicle.\n\n**Wildlife Highlights:** Ruaha is famous for hosting 10% of the world’s remaining lion population, meaning massive super-prides are common. It is also an exceptional place to spot cheetahs, leopards, striped hyenas, and both Greater and Lesser Kudus.\n\n**Activity:** Midday can be spent relaxing at the lodge overlooking the river, watching elephants dig for water in the dry sandbeds.\n\n### Day 7: Ruaha Wilderness to Mikumi / Morogoro Highlands\n\n**Morning:** Enjoy a final sunrise game drive in Ruaha, taking in the spectacular scenery of the Great Rift Valley escarpment.\n\n**Afternoon:** If choosing the road-safari route, begin your journey back toward the coast, stopping for a night at a lodge near Mikumi National Park or the cool Morogoro mountain foothills to break up the drive. (Note: If you choose a fly-in safari, you will stay a final night in Ruaha and fly out the next morning).\n\n**Evening:** Unwind and enjoy your final night in the Tanzanian bush.\n\n### Day 8: Return Journey to Dar es Salaam\n\n**Morning:** Embark on a brief morning transit drive out of the park corridors.\n\n**Afternoon:** Complete the drive back to Dar es Salaam, stopping for a local Tanzanian lunch along the way.\n\n**Evening:** Arrive in Dar es Salaam by late afternoon for your drop-off at your hotel or a direct check-in at Julius Nyerere International Airport (DAR) for your onward flight.",
       "duration": "8 Days / 7 Nights",
-      "location": "Tanzania — Arusha, Tarangire, Lake Manyara, Serengeti, Ngorongoro & Lake Eyasi",
-      "title": "8 Days Special Africa",
-      "tags": [
-        "Tanzania",
-        "Safari",
-        "Culture",
-        "Hadzabe",
-        "Wildlife",
-        "Serengeti",
-        "Lake Eyasi",
-        "Tented Camp"
-      ],
-      "reviews": "98",
-      "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80",
+      "price": "2,565",
+      "badge": "Southern Wilderness",
       "categories": [
-        "Mid Range Safaris"
+        "Southern Circuit",
+        "Wildlife",
+        "Adventure"
       ],
-      "description": "Eight days that blend classic parks with a quieter side of Tanzania — a Lake Eyasi morning with the Hadzabe, plus the usual suspects across Tarangire, Manyara, Serengeti and Ngorongoro.",
-      "rating": "4.7"
+      "tags": [
+        "Nyerere",
+        "Ruaha",
+        "Wildlife",
+        "Wild Dog",
+        "Boat Safari",
+        "Walking Safari",
+        "Southern Tanzania"
+      ],
+      "accommodation": "River Camp & Luxury Safari Lodge",
+      "rating": "4.8",
+      "reviews": "118"
     },
     {
-      "badge": "",
-      "price": "7,490",
-      "route": "Arusha → Tarangire → Lake Manyara → Serengeti → Ngorongoro → Zanzibar",
-      "accommodation": "Tarangire Acacia Tented Camp; Manyara Secret Lodge; Malaika Luxury Camp; Lion's Paw Ngorongoro Luxury Camp; Zanzibar accommodation",
-      "duration": "12 Days / 11 Nights",
-      "location": "Tanzania — Tarangire, Lake Manyara, Serengeti, Ngorongoro & Zanzibar",
-      "title": "12 Days Romantic Honeymoon Safari Tanzania",
-      "tags": [
-        "Honeymoon",
-        "Romantic",
+      "title": "The Family Karibu Safari",
+      "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Tarangire, Lake Manyara, Ngorongoro & Lake Eyasi",
+      "route": "Arusha → Tarangire → Mto wa Mbu → Lake Manyara → Ngorongoro → Lake Eyasi → Arusha",
+      "description": "A family-focused 6-day Tanzanian safari combining wildlife, culture and child-friendly activities across the Northern Circuit.",
+      "detailedDescription": "The 6-Day Family Karibu Safari (\"Karibu\" means Welcome in Swahili) is an itinerary designed specifically for families traveling with children or teenagers. It features shorter driving times, child-friendly lodges, and interactive cultural experiences that go beyond standard game viewing to keep younger travelers engaged. This route explores Tanzania's classic Northern Circuit—Tarangire, Lake Manyara, and the Ngorongoro Crater—while basing the family in comfortable, malaria-conscious highland lodges with swimming pools.\n\n## The 6-Day Family Itinerary Breakdown\n\n### Day 1: Arusha to Tarangire National Park\n\n**Morning:** Pick-up at 08:00 AM from your Arusha accommodation. Take a gentle, paved 2-hour drive to Tarangire National Park, stopping for a quick restroom and snack break along the way.\n\n**Afternoon:** Enjoy a relaxed game drive. Children love Tarangire because the wildlife is massive and easy to spot—specifically the colossal elephant families splashing in the mud and the oversized, cartoonish baobab trees.\n\n**Evening:** Check into a family-friendly tented camp or lodge. Settle down for dinner around a campfire while listening to early evening bush stories.\n\n### Day 2: Mto wa Mbu Cultural Bike Tour & Lake Manyara Canopy Walk\n\n**Morning:** Drive to the vibrant village of Mto wa Mbu. Embark on a gentle, flat guided bicycle ride (or a tuk-tuk ride for younger kids) through local banana plantations, visiting a primary school and a local woodcarving workshop.\n\n**Afternoon:** Head into Lake Manyara National Park. Walk across the thrilling Manyara Treetop Walkway—a series of secure suspension bridges high up in the forest canopy where kids can spot monkeys and birds at eye level.\n\n**Evening:** Drive up to the cooler, green hills of Karatu to check into a lodge featuring a swimming pool for the kids to splash in.\n\n### Day 3: Full Day \"Maasai Explorer\" Experience\n\n**Morning:** Sleep in slightly or enjoy a relaxed family breakfast. Visit an authentic, non-touristic Maasai Boma (village).\n\n**Afternoon:** Instead of a passive tour, the kids participate in interactive activities: learning to throw traditional sticks, trying out Maasai beadwork with the village grandmothers, and discovering how to track animal footprints in the dirt.\n\n**Evening:** Return to your Karatu lodge for a relaxed family dinner and pool time.\n\n### Day 4: Ngorongoro Crater Floor (The Big Five Quest)\n\n**Morning:** Pack a picnic lunch and descend early into the spectacular Ngorongoro Crater floor. Turn the game drive into a family scavenger hunt to see who can spot all the Big Five first.\n\n**Afternoon:** The crater's enclosed walls host roughly 25,000 animals, making wildlife sightings rapid and constant—perfect for short attention spans. Enjoy lunch at the designated Ngoitokitok Hippo Pool picnic site.\n\n**Evening:** Ascend the crater walls and return to your Karatu base for dinner.\n\n### Day 5: Lake Eyasi Hadzabe Bushmen Adventure\n\n**Morning:** Drive to the wild shores of Lake Eyasi to meet the Hadzabe tribe, one of the last remaining hunter-gatherer communities on Earth.\n\n**Afternoon:** An incredibly engaging day for teenagers and older children. Walk alongside the bushmen as they demonstrate traditional bow-and-arrow hunting techniques, friction-fire making, and foraging for wild honey.\n\n**Evening:** Drive back toward your lodge, stopping at a local colorful market to pick up unique souvenirs.\n\n### Day 6: Karatu to Reptile Farm & Arusha Drop-off\n\n**Morning:** Depart the highlands and drive back toward Arusha. Stop at the Meserani Snake Park or a local reptile sanctuary, where kids can safely see and learn about African snakes, chameleons, and tortoises up close.\n\n**Afternoon:** Enjoy a final family lunch at a garden cafe in Arusha.\n\n**Evening:** Drop-off at your hotel or a direct transfer to Kilimanjaro International Airport (JRO) for your departure flight home.",
+      "duration": "6 Days / 5 Nights",
+      "price": "1,689",
+      "badge": "Family",
+      "categories": [
+        "Family Safari",
         "Safari",
+        "Culture"
+      ],
+      "tags": [
+        "Family",
+        "Safari",
+        "Wildlife",
+        "Culture",
+        "Lake Manyara",
+        "Ngorongoro",
+        "Lake Eyasi"
+      ],
+      "accommodation": "Family-Friendly Lodge & Tented Camp",
+      "rating": "4.9",
+      "reviews": "143"
+    },
+    {
+      "title": "The Bush & Blue Escape",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Northern Circuit & Zanzibar",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha → Zanzibar → Stone Town → Nungwi / Kendwa",
+      "description": "A 13-day Tanzania escape combining an unforgettable Northern Circuit safari with the beaches, culture and waters of Zanzibar.",
+      "detailedDescription": "This 13-Day Bush & Blue Escape is the quintessential Tanzanian holiday package. It perfectly balances an action-packed, thrilling wildlife safari across the Northern Circuit with a deeply relaxing, tropical beach getaway on the spice island of Zanzibar.\n\n## The 13-Day Itinerary Breakdown\n\n### Day 1: Arrival in Arusha\n\nPick-up from Kilimanjaro International Airport (JRO) and transfer to your hotel in Arusha. Spend the day relaxing, recovering from jet lag, and meeting your safari guide for an evening briefing.\n\n### Day 2: Arusha to Tarangire National Park\n\nDrive 2 hours to Tarangire, famous for its giant baobab trees and the highest concentration of elephants in Tanzania. Spend the afternoon on a game drive along the Tarangire River.\n\n### Day 3: Tarangire to Serengeti National Park\n\nJourney through the lush Ngorongoro highlands and enter the endless plains of the Serengeti. Enjoy an en-route game drive into the central Seronera valley, tracking lions and leopards.\n\n### Day 4: Full Day in the Serengeti\n\nA dedicated day traversing the Serengeti. Track massive herds of the Great Migration, search the kopjes for cheetahs, or opt for a sunrise hot air balloon flight over the savannah plains.\n\n### Day 5: Serengeti to Ngorongoro Crater Rim\n\nEnjoy a final morning game drive out of the Serengeti before driving to the edge of the spectacular Ngorongoro Crater rim for dinner and a panoramic sunset view.\n\n### Day 6: Ngorongoro Crater Floor to Arusha, fly to Zanzibar\n\nDescend early into the 610-meter deep crater floor for a 5-hour game drive. This is your premier opportunity to spot the rare Black Rhino to complete the Big Five. Ascend and drive back to Arusha for an evening domestic flight to Zanzibar.\n\n### Day 7: Stone Town History & Spice Tour\n\nSpend the morning exploring the winding, historic alleys of Stone Town, visiting the Old Slave Market and the Sultan’s Palace. In the afternoon, visit a local spice farm to smell and taste fresh vanilla, nutmeg, and cloves.\n\n### Day 8: Transfer to Nungwi / Kendwa Beach\n\nDrive north to the island's best white-sand beaches (Nungwi or Kendwa). Check into your beachfront resort and watch a classic dhow cruise sail across the turquoise horizon.\n\n### Days 9, 10 & 11: Relaxing on the Spice Island (3 Full Days)\n\nFree days to enjoy Zanzibar at your own pace.\n\n**Optional Splurges:** Snorkel or scuba dive at the famous Mnemba Atoll marine reserve, take a boat out to Prison Island to feed giant tortoises, or simply lounge under a palm tree with a fresh coconut.\n\n### Day 12: Safari Blue Boat Excursion\n\nEmbark on a full-day traditional dhow sailing trip. Snorkel over coral reefs, swim in a mangrove lagoon, and indulge in a massive sandbank seafood barbecue lunch.\n\n### Day 13: Zanzibar Departure\n\nSpend your final morning buying souvenirs or taking a last dip in the ocean. Transfer to Abeid Amani Karume International Airport (ZNZ) for your departure flight home.",
+      "duration": "13 Days / 12 Nights",
+      "price": "5,850",
+      "badge": "Safari + Beach",
+      "categories": [
+        "Safari",
+        "Beach",
+        "Zanzibar",
+        "Luxury"
+      ],
+      "tags": [
         "Zanzibar",
         "Beach",
+        "Safari",
         "Serengeti",
+        "Tarangire",
         "Ngorongoro",
-        "Wildlife"
+        "Honeymoon"
       ],
-      "reviews": "133",
-      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=700&q=80",
-      "categories": [
-        "Mid Range Safaris",
-        "Beach Combo"
-      ],
-      "description": "Twelve days for two — the full northern circuit on honeymoon pace, then a few unhurried days on Zanzibar's beaches before flying home.",
-      "rating": "4.8"
+      "accommodation": "Luxury Safari Camps & Beach Resort",
+      "rating": "4.9",
+      "reviews": "127"
     },
     {
-      "badge": "",
-      "price": "2,200",
-      "route": "Arusha → Kilimanjaro → Arusha National Park → Tarangire → Lake Natron → Serengeti → Lake Victoria → Ngorongoro → Arusha",
-      "accommodation": "Airport Planet Lodge; Arusha Planet Lodge; Ang'ata Tarangire Tented Camp; Lake Natron Tented Camp; Malaika Luxury Camp; Speke Bay Lodge; Lion's Paw Camp",
-      "duration": "14 Days / 13 Nights",
-      "location": "Tanzania — Kilimanjaro, Arusha, Tarangire, Lake Natron, Serengeti, Lake Victoria & Ngorongoro",
-      "title": "14 Days Tanzania Experience",
-      "tags": [
-        "Tanzania",
-        "Kilimanjaro",
+      "title": "Rhythms of the Rift Valley",
+      "image": "https://images.unsplash.com/photo-1534177616061-ef7e8e1e6c5c?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Lake Manyara, Ngorongoro & Lake Eyasi",
+      "route": "Arusha → Lake Manyara → Ngorongoro → Lake Eyasi → Mto wa Mbu → Arusha",
+      "description": "A fast-paced 4-day journey through dramatic Rift Valley landscapes, wildlife habitats and Tanzania's rich cultural communities.",
+      "detailedDescription": "This 4-Day Rhythms of the Rift Valley safari is a fast-paced, immersive itinerary focused on the dramatic geological landscapes and rich tribal cultures of the East African Rift Valley. By bypassing the deeper, vast expanses of the Serengeti, this trip cuts down on heavy driving times—making it ideal for travelers who want a rich blend of spectacular wildlife viewing, world-class birdwatching, and deep cultural interactions in a shorter timeframe.\n\n## The 4-Day Rift Valley Route Breakdown\n\n### Day 1: Arusha to Lake Manyara National Park\n\n**Morning:** Pick-up at 08:00 AM from your Arusha accommodation. Drive roughly two hours west, descending into the floor of the Great Rift Valley to Lake Manyara National Park.\n\n**Afternoon:** Enjoy a game drive through Manyara's groundwater forests and lake shores. The park is a haven for massive troops of baboons, large elephant herds, and pink flamingos. Keep your eyes on the ancient mahogany branches for the park's legendary tree-climbing lions.\n\n**Evening:** Drive up the steep Rift Valley escarpment to a lodge in Karatu for dinner and a panoramic sunset view over the valley floor.\n\n### Day 2: Ngorongoro Crater Floor (The Big Five Ecosystem)\n\n**Morning:** Wake up early and drive to the Ngorongoro Conservation Area. Descend 610 meters into the spectacular Ngorongoro Crater floor, a collapsed volcanic caldera that forms a self-contained ecosystem.\n\n**Afternoon:** Spend 5 to 6 hours tracking wildlife across the crater floor. This enclosed grassland offers your absolute best chance in East Africa to spot the highly endangered Black Rhino, completing your Big Five checklist. Enjoy a picnic lunch right by the hippo pool.\n\n**Evening:** Ascend the crater walls and drive southwest toward the rugged, arid landscapes surrounding Lake Eyasi for dinner and overnight rest.\n\n### Day 3: Lake Eyasi Cultural Immersion (Hadzabe & Datoga Tribes)\n\n**Morning:** Wake up before dawn to join the Hadzabe bushmen, one of the last true hunter-gatherer tribes on earth. Walk alongside them into the bush to witness their traditional bow-and-arrow hunting techniques, foraging skills, and ancient click-language.\n\n**Afternoon:** Visit the neighboring Datoga tribe, traditional pastoralist blacksmiths. Watch how they skillfully melt down scrap metal to forge arrowheads, jewelry, and tools using local bellows.\n\n**Evening:** Enjoy a relaxed evening walk along the seasonal, shallow shores of the salt lake, watching a spectacular Rift Valley sunset.\n\n### Day 4: Lake Eyasi to Mto wa Mbu Village to Arusha\n\n**Morning:** Depart Lake Eyasi and stop at the vibrant market town of Mto wa Mbu. Take a guided walk or a tuk-tuk ride through local banana plantations and rice fields, learning about the 120+ distinct tribal cultures that peacefully coexist here.\n\n**Afternoon:** Savor a traditional African buffet lunch prepared by local village women, sampling dishes like ugali, roasted green bananas, and fresh local stews.\n\n**Evening:** Make the comfortable 2-hour drive back to Arusha, arriving by late afternoon for your drop-off at your hotel or a direct transfer to Kilimanjaro International Airport (JRO) for your flight home.",
+      "duration": "4 Days / 3 Nights",
+      "price": "1,120",
+      "badge": "Culture & Wildlife",
+      "categories": [
+        "Culture",
         "Safari",
-        "Migration",
-        "Lake Natron",
-        "Lake Victoria",
-        "Maasai",
+        "Short Break"
+      ],
+      "tags": [
+        "Rift Valley",
+        "Lake Manyara",
+        "Lake Eyasi",
+        "Hadzabe",
+        "Datoga",
+        "Ngorongoro",
+        "Culture"
+      ],
+      "accommodation": "Lodge & Cultural Camp",
+      "rating": "4.8",
+      "reviews": "91"
+    },
+    {
+      "title": "Timeless Savannah Romance",
+      "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
+      "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Karatu → Arusha",
+      "description": "A slow-paced 7-day romantic safari designed for couples, honeymooners and anniversary celebrations across Tanzania's Northern Circuit.",
+      "detailedDescription": "This 7-Day Timeless Savannah Romance safari is a beautifully curated, slow-paced itinerary designed specifically for couples, honeymooners, or those celebrating a milestone anniversary. This romantic escape balances classic Northern Circuit wildlife viewing in Tarangire, the Serengeti, and the Ngorongoro Crater with intimate, high-end tented lodges, private bush dinners, and spectacular sunset sundowners.\n\n## The 7-Day Timeless Savannah Romance Route Breakdown\n\n### Day 1: Arusha to Tarangire National Park\n\n**Morning:** Your private driver-guide picks you up at 08:00 AM from your hotel or airport in Arusha in a modified luxury 4x4 Land Cruiser. Drive 2 hours south to Tarangire National Park.\n\n**Afternoon:** Enjoy a romantic game drive under the silhouette of ancient baobab trees, tracking giant bull elephants strolling along the riverbanks.\n\n**Evening:** Arrive at a luxury tented lodge. Unwind with a welcome bottle of sparkling wine on your private deck overlooking the savannah.\n\n### Day 2: Tarangire to Serengeti National Park (Central Seronera)\n\n**Morning:** Depart after a relaxed breakfast, driving past the scenic crater highlands of Karatu and descending onto the endless golden plains of the Serengeti.\n\n**Afternoon:** Take a gentle en-route game drive into the Central Seronera Valley, a major big-cat territory teeming with leopards, lions, and cheetahs.\n\n**Evening:** Check into an intimate, secluded luxury glamping camp. Enjoy a multi-course dinner illuminated by lanterns and a roaring campfire.\n\n### Day 3: Sunrise Balloon Safari & Serengeti Exploration\n\n**Morning:** Wake up before dawn for a magical, optional Sunrise Hot Air Balloon Safari. Float silently over the Serengeti plains as the sun rises, watching wildlife from above. Toast your landing with a traditional champagne bush breakfast.\n\n**Afternoon:** Embark on a private afternoon game drive tailored entirely to your pace. Search the iconic granite kopjes (rock formations) for resting lion prides.\n\n**Evening:** Return to camp for a private, candlelit outdoor dinner served under the vast African starlight.\n\n### Day 4: Deep in the Serengeti Savannah\n\n**Morning:** Enjoy a leisurely morning game drive following river loops where hippos and crocodiles lounge.\n\n**Afternoon:** Your guide will find a secluded, scenic spot under an acacia tree for an elegant gourmet picnic lunch just for the two of you.\n\n**Evening:** End the day with a signature African sundowner experience—sipping craft cocktails or wine on a scenic ridge as the African sun drops below the horizon.\n\n### Day 5: Serengeti to Ngorongoro Crater Rim\n\n**Morning:** Take a final morning game drive out of the Serengeti plains.\n\n**Afternoon:** Drive toward the lush, misty highlands of the Ngorongoro Conservation Area. Stop for an optional cultural afternoon visiting a Maasai village.\n\n**Evening:** Check into a romantic lodge perched directly on the high Ngorongoro Crater rim, featuring sweeping, dramatic caldera views and crackling indoor fireplaces.\n\n### Day 6: Ngorongoro Crater Floor (The Big Five Sanctuary)\n\n**Morning:** Descend early into the 610-meter deep Ngorongoro Crater floor. The enclosed caldera hosts roughly 25,000 large mammals, providing an incredibly intimate wildlife viewing experience.\n\n**Afternoon:** Track the endangered Black Rhino to complete your Big Five checklist, and view massive elephant bulls and crater lion prides. Enjoy a catered lunch by a scenic lakeside.\n\n**Evening:** Ascend the crater and drive to a luxurious country estate or lodge in Karatu for a relaxing final evening.\n\n### Day 7: Karatu to Arusha Departure\n\n**Morning:** Enjoy a late, lazy breakfast at your lodge. If staying at a coffee estate, take a hand-in-hand walking tour through the lush green coffee plantations.\n\n**Afternoon:** Drive comfortably back to Arusha, stopping at an upscale local gallery or market for unique hand-crafted Tanzanian keepsakes.\n\n**Evening:** Arrive in Arusha for a romantic farewell dinner or a direct transfer to Kilimanjaro International Airport (JRO) for your onward flight.",
+      "duration": "7 Days / 6 Nights",
+      "price": "3,220",
+      "badge": "Romantic",
+      "categories": [
+        "Romantic",
+        "Luxury",
+        "Safari"
+      ],
+      "tags": [
+        "Romantic",
+        "Honeymoon",
+        "Serengeti",
+        "Safari",
+        "Luxury",
+        "Big Five",
+        "Tarangire",
         "Ngorongoro"
       ],
-      "reviews": "151",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80",
+      "accommodation": "Luxury Tented Lodge & Private Camp",
+      "rating": "4.9",
+      "reviews": "156"
+    },
+    {
+      "title": "The Roof of Africa & Beyond",
+      "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Kilimanjaro, Tarangire, Serengeti & Ngorongoro",
+      "route": "Moshi → Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
+      "description": "A 10-day adventure combining a Kilimanjaro trek experience with Tanzania's legendary wildlife and cultural highlights.",
+      "detailedDescription": "This 10-Day Roof of Africa & Beyond package is an elite adventure itinerary that combines two of Tanzania's greatest natural highlights: standing on the slopes of Mount Kilimanjaro (the \"Roof of Africa\") and embarking on a classic wildlife safari through the Serengeti National Park and Ngorongoro Crater.\n\n## The 10-Day Adventure Route Breakdown\n\n### Day 1: Arrival in Moshi (The Kilimanjaro Gateway)\n\nPick-up from Kilimanjaro International Airport (JRO) and transfer to your lodge in Moshi, a vibrant town nestled right at the base of the mountain. Spend the afternoon relaxing and prepping gear with your mountain guide.\n\n### Day 2: Mount Kilimanjaro Day Trek (Marangu Route)\n\nDrive to the Marangu Gate (1,860m). Embark on a beautiful 4-to-5 hour guided trek through Kilimanjaro's lush, misty montane rainforest up to the Mandara Huts (2,700m). Enjoy a picnic lunch at the crater rim before descending.\n\n### Day 3: Materuni Waterfalls & Coffee Tour\n\nTake a gentle hike through the foothills to the stunning 80-meter Materuni Waterfall. Afterward, join a local Chagga community member to pick, roast, grind, and brew your own traditional cup of volcanic Kilimanjaro coffee.\n\n### Day 4: Moshi to Tarangire National Park\n\nLeave the mountain behind and drive 3 hours west to Tarangire National Park. Spend the afternoon tracking the park's world-famous massive elephant families wandering among giant, ancient baobab trees.\n\n### Day 5: Tarangire to Central Serengeti\n\nJourney across the scenic Great Rift Valley floor, climbing into the misty Ngorongoro highlands and descending onto the endless golden savannah of the Serengeti National Park.\n\n### Days 6 & 7: Two Full Days in the Serengeti Plains\n\nTwo dedicated days exploring the Serengeti corridors. Track massive herds of the Great Migration, search dynamic granite kopjes for resting lions and cheetahs, and enjoy campfire sundowners under the starlight.\n\n### Day 8: Serengeti to Ngorongoro Crater Rim\n\nEnjoy a final sunrise game drive out of the central Seronera valley before transferring to the cooler, high-forested rim of the Ngorongoro Crater for the evening.\n\n### Day 9: Ngorongoro Crater Floor (The Big Five Quest)\n\nDescend early into the 610-meter deep volcanic crater floor. This enclosed caldera offers your absolute best chance in East Africa to spot the endangered Black Rhino, completing your Big Five checklist. Drive to Karatu or Arusha for the night.\n\n### Day 10: Cultural Village Walk & Departure\n\n**Activity:** Explore a local market or take a gentle morning walk in Arusha to purchase authentic Tanzanian keepsakes. Transfer to Kilimanjaro International Airport (JRO) for your departure flight home.",
+      "duration": "10 Days / 9 Nights",
+      "price": "2,999",
+      "badge": "Adventure",
       "categories": [
-        "Mid Range Safaris",
-        "Migration"
+        "Kilimanjaro",
+        "Safari",
+        "Adventure"
       ],
-      "description": "A proper two weeks: a Kilimanjaro day hike, Lake Natron and the Maasai, the Serengeti migration, a night on Lake Victoria, and Ngorongoro to close. Tanzania in one go.",
-      "rating": "4.8"
+      "tags": [
+        "Kilimanjaro",
+        "Serengeti",
+        "Safari",
+        "Ngorongoro",
+        "Tarangire",
+        "Adventure",
+        "Culture"
+      ],
+      "accommodation": "Mountain Camp, Safari Lodge & Tented Camp",
+      "rating": "4.8",
+      "reviews": "137"
+    },
+    {
+      "title": "Serengeti Under Canvas",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Serengeti National Park",
+      "route": "Arusha → Serengeti → Migration Zones → Arusha",
+      "description": "A focused 4-day fly-in Serengeti safari built around luxury mobile camping and maximum time in the heart of the wilderness.",
+      "detailedDescription": "This 4-Day Serengeti Under Canvas safari is an elite, hyper-focused fly-in itinerary designed entirely around maximizing time in the Serengeti National Park. By bypassing long road transits from Arusha and flying directly into the bush via light aircraft, this package is optimized for travelers who want an exclusive, intimate luxury glamping experience situated right in the path of the Great Migration.\n\n## The 4-Day Under Canvas Breakdown\n\n### Day 1: Arusha Fly Deep Serengeti Plains\n\n**Morning:** Board a scenic 08:00 AM light aircraft bush flight from Arusha Airport (ARK) or Kilimanjaro International Airport (JRO). Fly over the Great Rift Valley, touching down on a red-dirt Serengeti airstrip roughly one hour later.\n\n**Afternoon:** Meet your dedicated camp guide and open-sided 4x4 safari vehicle. Enjoy an introductory game drive en route to your camp. Settle into your canvas pavilion.\n\n**Evening:** Sip cocktails by a roaring campfire as the sun sets over the golden horizon, followed by a gourmet multi-course dinner.\n\n### Days 2 & 3: Ultimate Migration Tracking (2 Full Days)\n\n**Daily Plan:** Two full days entirely tailored to your preferences. You can opt for early morning and late afternoon game drives, or head out for a full-day excursion with a luxury bush picnic.\n\n**The Experience:** Because you are staying in a mobile canvas camp that moves dynamically across the park, you will be placed just minutes away from the action. Depending on the month, you will track millions of wildebeest and zebras, watch dramatic river crossings, or sit among thousands of newborn calves while scanning for hunting cheetahs, lions, and leopards.\n\n**Evenings:** Relax with hot bucket showers, fine wines, and stargazing in the heart of the wild African bush.\n\n### Day 4: Dawn Safari & Serengeti Fly Back to Arusha\n\n**Morning:** Embark on a final sunrise game drive when big cats are most active. Return to camp for a hearty bush breakfast.\n\n**Afternoon:** Transfer back to the local airstrip for your scheduled afternoon flight back to Arusha.\n\n**Evening:** Arrive at Arusha Airport by late afternoon for your onward connection or hotel drop-off, bringing your short but intense wilderness immersion to a close.",
+      "duration": "4 Days / 3 Nights",
+      "price": "2,384",
+      "badge": "Luxury Fly-In",
+      "categories": [
+        "Luxury",
+        "Migration",
+        "Safari"
+      ],
+      "tags": [
+        "Serengeti",
+        "Great Migration",
+        "Luxury",
+        "Camping",
+        "Fly-In",
+        "Wildlife"
+      ],
+      "accommodation": "Luxury Mobile Canvas Camp",
+      "rating": "4.9",
+      "reviews": "112"
+    },
+    {
+      "title": "Kilimanjaro Expedition",
+      "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Mount Kilimanjaro",
+      "route": "Arusha / Moshi → Londorossi Gate → Mti Mkubwa → Shira → Barranco → Karanga → Barafu → Uhuru Peak → Mweka → Gate",
+      "description": "An 8-day summit-focused Kilimanjaro expedition using the Lemosho or Machame route, culminating at Uhuru Peak.",
+      "detailedDescription": "This 8-Day Kilimanjaro Expedition is an elite, summit-focused itinerary designed for adventurers who want to stand on the true \"Roof of Africa\" (Uhuru Peak at 5,895 meters). Utilizing the highly acclaimed Lemosho Route or the scenic Machame Route, this 8-day package includes 1 arrival day in town and 7 full days on the mountain. This extended timeline is highly recommended by high-altitude specialists because it provides a 90%+ summit success rate by giving your body ample time to properly acclimatize.\n\n## The 8-Day Mountain Expedition Breakdown\n\n### Day 1: Arrival in Tanzania (Moshi / Arusha)\n\nPick-up from Kilimanjaro International Airport (JRO) and transfer to your pre-climb hotel in Moshi or Arusha.\n\n**Evening:** Meet your chief mountain guide for a comprehensive gear check and safety briefing. Ensure your health forms, thermal clothing, and packing lists are verified before tomorrow's departure.\n\n### Day 2: Gate to Forest Camp (Londorossi to Mti Mkubwa)\n\n**Trek Details:** 3–4 hours | 7 km | Starting: 2,100m | Ending: 2,650m\n\n**The Experience:** Drive to the western Londorossi Gate for registration. Begin your trek through Kilimanjaro’s untouched, misty montane rainforest. Keep your eyes open for black-and-white colobus monkeys feeding in the high canopy. Sleep in mountain tents at Mti Mkubwa (Big Tree) Camp.\n\n### Day 3: The Shira Plateau (Mti Mkubwa to Shira 2 Camp)\n\n**Trek Details:** 5–6 hours | 10 km | Starting: 2,650m | Ending: 3,850m\n\n**The Experience:** Leave the forest behind as the trail steepens into the heather and moorland zones. You will cross the expansive, volcanic Shira Plateau—one of the oldest calderas on Earth—rewarding you with panoramic views of Kibo peak in the distance.\n\n### Day 4: Acclimatization Day (Shira 2 to Lava Tower to Barranco)\n\n**Trek Details:** 7 hours | 12 km | Starting: 3,850m | Peak: 4,630m | Ending: 3,900m\n\n**The Experience:** A vital acclimatization day following the golden mountaineering rule: \"Climb high, sleep low.\" Hike up to the imposing volcanic plug of Lava Tower (4,630m) for a hot lunch, then descend into the beautiful, sheltered Barranco Valley, famous for its giant Senecio plants.\n\n### Day 5: The Barranco Wall (Barranco to Karanga Camp)\n\n**Trek Details:** 4–5 hours | 5 km | Starting: 3,900m | Ending: 3,995m\n\n**The Experience:** Conquering the famous Barranco Wall. While it looks intimidating, it is a fun, non-technical scramble using your hands and feet (no ropes needed). Reaching the top rewards you with breathtaking views above the clouds before you drop down into the scenic Karanga Valley.\n\n### Day 6: Pushing to Base Camp (Karanga to Barafu Camp)\n\n**Trek Details:** 4 hours | 4 km | Starting: 3,995m | Ending: 4,673m\n\n**The Experience:** A short but steady uphill hike through an alpine desert landscape to Barafu Camp (Base Camp). Settle in by early afternoon, eat a high-carb dinner, and go to sleep immediately by 07:00 PM to prepare for the midnight summit push.\n\n### Day 7: SUMMIT NIGHT (Barafu to Uhuru Peak to Mweka Camp)\n\n**Trek Details:** 11–13 hours | 15 km | Starting: 4,673m | Peak: 5,895m | Ending: 3,100m\n\n**The Experience:** Wake up at 11:30 PM for tea and biscuits. Begin the freezing, slow-and-steady (Pole Pole) push up the steep scree slopes under a blanket of stars. Reach Stella Point (5,756m) just as the sun rises over the horizon. Hike another hour along the snow-covered crater rim to stand at Uhuru Peak (5,895m), the Roof of Africa. Take your photos, celebrate, and begin the long descent down to Mweka Camp for a well-earned sleep.\n\n### Day 8: Final Descent & Celebration (Mweka Camp to Gate)\n\n**Trek Details:** 3–4 hours | 10 km | Starting: 3,100m | Ending: 1,640m\n\n**The Experience:** Walk down through the lush rainforest to the Mweka Gate. Gather with your porters and guides for the traditional Kilimanjaro Celebration Song, receive your official gold summit certificate, and enjoy a cold celebratory drink. Transfer back to Arusha or Moshi for a long-awaited hot shower.",
+      "duration": "8 Days / 7 Nights",
+      "price": "2,450",
+      "badge": "Summit",
+      "categories": [
+        "Kilimanjaro",
+        "Adventure",
+        "Mountain"
+      ],
+      "tags": [
+        "Kilimanjaro",
+        "Lemosho",
+        "Machame",
+        "Uhuru Peak",
+        "Mountain",
+        "Trekking",
+        "Adventure"
+      ],
+      "accommodation": "Mountain Tents & Pre/Post-Trek Hotel",
+      "rating": "4.9",
+      "reviews": "205"
+    },
+    {
+      "title": "Echoes of the Ngorongoro",
+      "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+      "location": "Tanzania — Tarangire, Ngorongoro & Lake Manyara",
+      "route": "Arusha → Tarangire → Ngorongoro → Lake Manyara → Arusha",
+      "description": "A compact 3-day safari covering Tarangire, Ngorongoro Crater and Lake Manyara for travelers with limited time.",
+      "detailedDescription": "This 3-Day Echoes of the Ngorongoro safari is an ideal, short-duration itinerary tailored for travelers who want a rapid but deep wildlife experience without driving long distances into the Serengeti. This compact route targets three highly distinct ecosystems within the Great Rift Valley: the lush groundwater forests of Lake Manyara, the massive elephant paths of Tarangire, and the ancient volcanic caldera of the Ngorongoro Crater.\n\n## The 3-Day Itinerary Breakdown\n\n### Day 1: Arusha to Tarangire National Park\n\n**Morning:** Pick-up at 08:00 AM from your hotel or airport in Arusha. Take a comfortable 2-hour paved drive south to Tarangire National Park.\n\n**Afternoon:** Spend the afternoon on a game drive traversing the golden savannah. Tarangire is world-famous for its massive elephant families splashing in the riverbeds and iconic, ancient baobab trees. Scan the lower branches for resting lions and leopards.\n\n**Evening:** Drive to a nearby lodge or tented camp in Karatu or Mto wa Mbu for dinner and a campfire briefing.\n\n### Day 2: Ngorongoro Crater Floor (The Big Five Quest)\n\n**Morning:** Wake up early to pack your picnic lunch and descend 610 meters into the UNESCO-listed Ngorongoro Crater floor. This enclosed volcanic caldera forms a pristine, self-sustaining ecosystem packed with over 25,000 large mammals.\n\n**Afternoon:** Enjoy a 5-to-6-hour game drive across the grasslands. This is your premier destination in East Africa to spot the highly endangered Black Rhino, completing your Big Five checklist. Stop for a picnic lunch alongside the hippo pool.\n\n**Evening:** Ascend the steep crater walls and return to your comfortable valley lodge to unwind.\n\n### Day 3: Lake Manyara National Park to Arusha\n\n**Morning:** Head into Lake Manyara National Park, nestled directly against the steep wall of the Great Rift Valley. Explore the unique groundwater forest, which is home to massive baboon troops and blue monkeys.\n\n**Afternoon:** Look out for Manyara's legendary tree-climbing lions and the thousands of pink flamingos feeding along the shallow alkaline lake shores. Enjoy a final bush lunch.\n\n**Evening:** Make the quick 2-hour return drive back to Arusha. Arrive by late afternoon for your hotel drop-off or direct transfer to Kilimanjaro International Airport (JRO) for your departure flight.",
+      "duration": "3 Days / 2 Nights",
+      "price": "698",
+      "badge": "Short Break",
+      "categories": [
+        "Short Break",
+        "Safari",
+        "Big Five"
+      ],
+      "tags": [
+        "Ngorongoro",
+        "Tarangire",
+        "Lake Manyara",
+        "Big Five",
+        "Safari",
+        "Wildlife"
+      ],
+      "accommodation": "Safari Lodge / Tented Camp",
+      "rating": "4.8",
+      "reviews": "164"
     }
   ]
 }
