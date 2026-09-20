@@ -3,204 +3,1113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tour Details — Simba Adventures</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="styles.css">
+
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    .tour-detail-wrapper {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .tour-main-image {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+      background: #eee;
+    }
+
+    .tour-heading {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+
+    .tour-heading h1 {
+      margin: 8px 0 15px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.08;
+    }
+
+    .tour-short-description {
+      font-size: 19px;
+      line-height: 1.8;
+      color: var(--ink-faint);
+      max-width: 850px;
+    }
+
+    .tour-info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 35px 0 45px;
+    }
+
+    .tour-info-card {
+      background: #f7f4ee;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .tour-info-card h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin: 0 0 8px;
+      color: var(--ink-faint);
+    }
+
+    .tour-info-card p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .tour-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .tour-content h2 {
+      font-family: Fraunces, serif;
+      font-size: 34px;
+      margin: 0 0 22px;
+    }
+
+    .tour-description {
+      font-size: 17px;
+      line-height: 1.9;
+      color: var(--ink-faint);
+    }
+
+    .tour-description p {
+      margin: 0 0 22px;
+    }
+
+    .tour-description ul {
+      margin: 0 0 25px 22px;
+    }
+
+    .tour-description li {
+      margin-bottom: 10px;
+    }
+
+    .tour-route {
+      margin-top: 45px;
+      padding: 28px;
+      border-radius: 14px;
+      background: #f7f4ee;
+    }
+
+    .tour-route h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .tour-route p {
+      margin: 0;
+      line-height: 1.7;
+      color: var(--ink-faint);
+    }
+
+    .tour-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 30px 0;
+    }
+
+    .tour-tag {
+      padding: 8px 13px;
+      border-radius: 30px;
+      background: #f2eee5;
+      font-size: 13px;
+    }
+
+    .tour-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 35px;
+    }
+
+    .tour-not-found {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    @media (max-width: 850px) {
+      .tour-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tour-main-image {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .tour-info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tour-main-image {
+        height: 280px;
+        border-radius: 10px;
+      }
+
+      .tour-heading {
+        margin-top: 30px;
+      }
+
+      .tour-short-description {
+        font-size: 16px;
+      }
+
+      .tour-description {
+        font-size: 16px;
+      }
+
+      .tour-actions a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="site-header header-overlay">
-    <div class="wrap">
-      <a href="index.html" class="brand">
-        <i class="fa-solid fa-paw"></i>
-        Simba Adventures
+<header class="site-header header-overlay">
+  <div class="wrap">
+
+    <a href="index.html" class="brand">
+      <i class="fa-solid fa-paw"></i>
+      Simba Adventures
+    </a>
+
+    <ul class="nav-menu nav-menu-links" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tour.html">Tours &amp; Safaris</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="plan-my-safari.html" class="btn btn-gold btn-sm">
+        Plan My Safari
       </a>
-      <ul class="nav-menu nav-menu-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tour.html">Tours &amp; Safaris</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="index.html#testimonials">Reviews</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
-        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+
+      <div class="menu-toggle"
+           onclick="document.getElementById('navMenu').classList.toggle('show')">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </div>
-  </header>
 
-  <section class="page-hero" id="tourHero" style="background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80');">
+  </div>
+</header>
+
+
+<section class="page-hero"
+         id="tourHero"
+         style="background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80');">
+
+  <div class="wrap">
+
+    <span class="eyebrow on-dark">
+      Safari Journey
+    </span>
+
+    <h1 id="tourHeroTitle">
+      <span class="italic">Your Safari</span>
+    </h1>
+
+  </div>
+
+</section>
+
+
+<main>
+
+  <section class="section">
+
     <div class="wrap">
-      <span class="eyebrow on-dark">Safari Journeys</span>
-      <h1 id="tourHeroTitle"><span class="italic">Your Safari</span></h1>
-    </div>
-  </section>
 
-  <main>
-    <section class="section">
-      <div class="wrap">
-        <div id="tour-details">
+      <div id="tour-details">
+
+        <div class="tour-not-found">
           <p>Loading tour...</p>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="data-embedded.js"></script>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-
-        <div>
-          <div class="footer-brand"><i class="fa-solid fa-paw"></i> Simba Adventures</div>
-          <p class="footer-desc">Based in Arusha, we're Tanzania's own safari company, showing travellers the wild places we grew up in.</p>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/simbaadventures" target="_blank" aria-label="Facebook"><svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-            <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank" aria-label="Instagram"><svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Explore</div>
-          <ul class="footer-menu">
-            <li><a href="tour.html">Serengeti Safaris</a></li>
-            <li><a href="tour.html">Kilimanjaro Treks</a></li>
-            <li><a href="tour.html">Zanzibar Retreats</a></li>
-            <li><a href="tour.html">Ngorongoro Crater</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Main Navigation</div>
-          <ul class="footer-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tour.html">Tours &amp; Safaris</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="index.html#testimonials">Reviews</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Get In Touch</div>
-          <div class="footer-contact-info">
-            <p><i class="fa-solid fa-location-dot"></i> Plot 58, Block E, Sokoine Road, Arusha, Tanzania</p>
-            <p><i class="fa-solid fa-phone"></i> +255 755 753 576, +255 788 753 576</p>
-            <p><i class="fa-solid fa-envelope"></i> info@simbaadventures.com</p>
-          </div>
-        </div>
 
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Simba Adventures. All rights reserved.</div>
-        <div>Reg. No. 113663 &middot; VAT No. 40319680K</div>
-        <div>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="sitemap.html">Sitemap</a>
-        </div>
-      </div>
     </div>
-  </footer>
 
-  <script>
-    var urlParams = new URLSearchParams(window.location.search);
-    var selectedTour = urlParams.get('tour');
-    var tourDetails = document.getElementById('tour-details');
+  </section>
 
-    if (!selectedTour) {
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-brand">
+          <i class="fa-solid fa-paw"></i>
+          Simba Adventures
+        </div>
+
+        <p class="footer-desc">
+          Based in Arusha, we're Tanzania's own safari company,
+          showing travellers the wild places we grew up in.
+        </p>
+
+        <div class="footer-social">
+
+          <a href="https://www.facebook.com/simbaadventures"
+             target="_blank"
+             aria-label="Facebook">
+
+            <svg viewBox="0 0 320 512"
+                 fill="currentColor"
+                 aria-hidden="true">
+
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+
+            </svg>
+
+          </a>
+
+
+          <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en"
+             target="_blank"
+             aria-label="Instagram">
+
+            <svg viewBox="0 0 448 512"
+                 fill="currentColor"
+                 aria-hidden="true">
+
+              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 9 29.4 11.7 99.4 11.7 132s-2.7 102.7-9 132.1z"/>
+
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <div class="footer-col-title">
+          Explore
+        </div>
+
+        <ul class="footer-menu">
+          <li><a href="tour.html">Serengeti Safaris</a></li>
+          <li><a href="tour.html">Kilimanjaro Treks</a></li>
+          <li><a href="tour.html">Zanzibar Retreats</a></li>
+          <li><a href="tour.html">Ngorongoro Crater</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <div class="footer-col-title">
+          Main Navigation
+        </div>
+
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour.html">Tours &amp; Safaris</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <div class="footer-col-title">
+          Get In Touch
+        </div>
+
+        <div class="footer-contact-info">
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Plot 58, Block E, Sokoine Road, Arusha, Tanzania
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +255 755 753 576, +255 788 753 576
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            info@simbaadventures.com
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div>
+        &copy; 2026 Simba Adventures. All rights reserved.
+      </div>
+
+      <div>
+        Reg. No. 113663 &middot; VAT No. 40319680K
+      </div>
+
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+var urlParams = new URLSearchParams(window.location.search);
+
+var selectedTour = urlParams.get('tour');
+
+var tourDetails = document.getElementById('tour-details');
+
+
+/* ---------------------------------------
+   HTML ESCAPE
+--------------------------------------- */
+
+function escapeHtml(value) {
+
+  if (value === null || value === undefined) {
+    return '';
+  }
+
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+}
+
+
+/* ---------------------------------------
+   MARKDOWN → SIMPLE HTML
+--------------------------------------- */
+
+function formatDescription(text) {
+
+  if (!text) {
+    return '<p>More information about this safari is available on request.</p>';
+  }
+
+  var safe = escapeHtml(text);
+
+  var lines = safe.split(/\r?\n/);
+
+  var html = '';
+
+  var paragraph = [];
+
+  var inList = false;
+
+
+  function closeParagraph() {
+
+    if (paragraph.length > 0) {
+
+      html += '<p>' +
+        paragraph.join('<br>') +
+        '</p>';
+
+      paragraph = [];
+
+    }
+
+  }
+
+
+  function closeList() {
+
+    if (inList) {
+
+      html += '</ul>';
+
+      inList = false;
+
+    }
+
+  }
+
+
+  lines.forEach(function(line) {
+
+    var trimmed = line.trim();
+
+
+    if (!trimmed) {
+
+      closeParagraph();
+
+      closeList();
+
+      return;
+
+    }
+
+
+    /* Headings */
+
+    if (trimmed.indexOf('### ') === 0) {
+
+      closeParagraph();
+
+      closeList();
+
+      html += '<h3>' +
+        trimmed.substring(4) +
+        '</h3>';
+
+      return;
+
+    }
+
+
+    if (trimmed.indexOf('## ') === 0) {
+
+      closeParagraph();
+
+      closeList();
+
+      html += '<h2>' +
+        trimmed.substring(3) +
+        '</h2>';
+
+      return;
+
+    }
+
+
+    if (trimmed.indexOf('# ') === 0) {
+
+      closeParagraph();
+
+      closeList();
+
+      html += '<h2>' +
+        trimmed.substring(2) +
+        '</h2>';
+
+      return;
+
+    }
+
+
+    /* Bullet list */
+
+    if (
+      trimmed.indexOf('- ') === 0 ||
+      trimmed.indexOf('* ') === 0
+    ) {
+
+      closeParagraph();
+
+      if (!inList) {
+
+        html += '<ul>';
+
+        inList = true;
+
+      }
+
+      html += '<li>' +
+        trimmed.substring(2) +
+        '</li>';
+
+      return;
+
+    }
+
+
+    /* Normal text */
+
+    closeList();
+
+    paragraph.push(trimmed);
+
+  });
+
+
+  closeParagraph();
+
+  closeList();
+
+
+  /* Bold */
+
+  html = html.replace(
+    /\*\*(.*?)\*\*/g,
+    '<strong>$1</strong>'
+  );
+
+
+  /* Italic */
+
+  html = html.replace(
+    /\*(.*?)\*/g,
+    '<em>$1</em>'
+  );
+
+
+  return html;
+
+}
+
+
+/* ---------------------------------------
+   IMAGE FALLBACK
+--------------------------------------- */
+
+function imageFallback(imageElement) {
+
+  imageElement.onerror = null;
+
+  imageElement.src =
+    'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1400&q=80';
+
+}
+
+
+/* ---------------------------------------
+   LOAD TOUR DATA
+--------------------------------------- */
+
+function loadToursData() {
+
+  return fetch('tours.json')
+
+    .then(function(response) {
+
+      if (!response.ok) {
+        throw new Error('Could not load tours.json');
+      }
+
+      return response.json();
+
+    })
+
+    .catch(function() {
+
+      if (window.SIMBA_TOURS) {
+
+        return {
+          tours: window.SIMBA_TOURS
+        };
+
+      }
+
+      throw new Error('No tour data available');
+
+    });
+
+}
+
+
+/* ---------------------------------------
+   NO TOUR SELECTED
+--------------------------------------- */
+
+if (!selectedTour) {
+
+  tourDetails.innerHTML = `
+
+    <div class="tour-not-found">
+
+      <h2>Tour Not Found</h2>
+
+      <p>
+        No safari was selected.
+      </p>
+
+      <a href="tour.html" class="btn btn-gold">
+        View All Tours
+      </a>
+
+    </div>
+
+  `;
+
+}
+
+
+/* ---------------------------------------
+   LOAD SELECTED TOUR
+--------------------------------------- */
+
+else {
+
+  loadToursData()
+
+    .then(function(data) {
+
+      var tours =
+        Array.isArray(data)
+          ? data
+          : data.tours || [];
+
+
+      var tour = tours.find(function(item) {
+
+        return item.title === selectedTour;
+
+      });
+
+
+      /* ---------------------------------------
+         TOUR NOT FOUND
+      --------------------------------------- */
+
+      if (!tour) {
+
+        tourDetails.innerHTML = `
+
+          <div class="tour-not-found">
+
+            <h2>Tour Not Found</h2>
+
+            <p>
+              We could not find this safari.
+            </p>
+
+            <a href="tour.html" class="btn btn-gold">
+              View All Tours
+            </a>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      /* ---------------------------------------
+         DATA VALUES
+      --------------------------------------- */
+
+      var title =
+        tour.title || 'Safari Adventure';
+
+      var location =
+        tour.location || 'Tanzania';
+
+      var image =
+        tour.image ||
+        'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1400&q=80';
+
+      var shortDescription =
+        tour.shortDescription ||
+        '';
+
+      var detailedDescription =
+        tour.detailedDescription ||
+        tour.description ||
+        '';
+
+      var duration =
+        tour.duration ||
+        'Contact us';
+
+      var price =
+        tour.price ||
+        '';
+
+      var accommodation =
+        tour.accommodation ||
+        '';
+
+      var rating =
+        tour.rating ||
+        '';
+
+      var reviews =
+        tour.reviews ||
+        '';
+
+      var route =
+        tour.route ||
+        '';
+
+      var tags =
+        Array.isArray(tour.tags)
+          ? tour.tags
+          : [];
+
+      var categories =
+        Array.isArray(tour.categories)
+          ? tour.categories
+          : [];
+
+
+      /* ---------------------------------------
+         HERO
+      --------------------------------------- */
+
+      var tourHero =
+        document.getElementById('tourHero');
+
+      var tourHeroTitle =
+        document.getElementById('tourHeroTitle');
+
+
+      if (tourHero) {
+
+        tourHero.style.backgroundImage =
+          "url('" +
+          image.replace(/'/g, "\\'") +
+          "')";
+
+      }
+
+
+      if (tourHeroTitle) {
+
+        tourHeroTitle.innerHTML =
+          escapeHtml(title);
+
+      }
+
+
+      /* ---------------------------------------
+         PRICE
+      --------------------------------------- */
+
+      var priceText =
+        price
+          ? '$' + escapeHtml(price) + ' per person'
+          : 'Contact us for pricing';
+
+
+      /* ---------------------------------------
+         ACCOMMODATION
+      --------------------------------------- */
+
+      var accommodationText =
+        accommodation
+          ? escapeHtml(accommodation)
+          : 'Contact us for accommodation options';
+
+
+      /* ---------------------------------------
+         RATING
+      --------------------------------------- */
+
+      var ratingText =
+        rating
+          ? '<i class="fa-solid fa-star" style="color:var(--gold);"></i> ' +
+            escapeHtml(rating) +
+            (reviews ? ' (' + escapeHtml(reviews) + ' reviews)' : '')
+          : 'Contact us';
+
+
+      /* ---------------------------------------
+         TAGS
+      --------------------------------------- */
+
+      var allTags =
+        tags.concat(categories);
+
+
+      var uniqueTags =
+        allTags.filter(function(tag, index) {
+
+          return tag &&
+            allTags.indexOf(tag) === index;
+
+        });
+
+
+      var tagsHtml =
+        uniqueTags.map(function(tag) {
+
+          return `
+            <span class="tour-tag">
+              ${escapeHtml(tag)}
+            </span>
+          `;
+
+        }).join('');
+
+
+      /* ---------------------------------------
+         PAGE CONTENT
+      --------------------------------------- */
+
       tourDetails.innerHTML = `
-        <h2>Tour Not Found</h2>
-        <p>No tour was selected.</p>
-        <a href="tour.html" class="btn btn-gold">View All Tours</a>`;
-    } else {
-      var loadToursData = function() {
-        return fetch('tours.json')
-          .then(function(response) {
-            if (!response.ok) throw new Error('Could not load tours.json');
-            return response.json();
-          })
-          .catch(function() {
-            if (window.SIMBA_TOURS) return { tours: window.SIMBA_TOURS };
-            throw new Error('No tour data available');
-          });
-      };
 
-      loadToursData()
-        .then(function(data) {
-          var tours = Array.isArray(data) ? data : data.tours || [];
-          var tour = tours.find(function(item) { return item.title === selectedTour; });
+        <div class="tour-detail-wrapper">
 
-          if (!tour) {
-            tourDetails.innerHTML = `
-              <h2>Tour Not Found</h2>
-              <p>We could not find this safari.</p>
-              <a href="tour.html" class="btn btn-gold">View All Tours</a>`;
-            return;
-          }
 
-          var tourHero = document.getElementById('tourHero');
-          var tourHeroTitle = document.getElementById('tourHeroTitle');
-          if (tourHero) tourHero.style.backgroundImage = "url('" + tour.image + "')";
-          if (tourHeroTitle) tourHeroTitle.innerHTML = tour.title;
+          <!-- MAIN IMAGE -->
 
-          var tags = Array.isArray(tour.tags) ? tour.tags : [];
+          <img
+            class="tour-main-image"
+            src="${escapeHtml(image)}"
+            alt="${escapeHtml(title)}"
+            onerror="imageFallback(this)"
+          >
 
-          tourDetails.innerHTML = `
-            <div>
-              <img src="${tour.image}" alt="${tour.title}" style="width:100%; max-height:500px; object-fit:cover; border-radius:12px;">
+
+          <!-- TITLE -->
+
+          <div class="tour-heading">
+
+            <span class="eyebrow">
+              ${escapeHtml(location)}
+            </span>
+
+            <h1>
+              ${escapeHtml(title)}
+            </h1>
+
+            ${
+              shortDescription
+                ? `
+                  <p class="tour-short-description">
+                    ${escapeHtml(shortDescription)}
+                  </p>
+                `
+                : ''
+            }
+
+          </div>
+
+
+          <!-- INFORMATION -->
+
+          <div class="tour-info-grid">
+
+
+            <div class="tour-info-card">
+
+              <h3>
+                Duration
+              </h3>
+
+              <p>
+                ${escapeHtml(duration)}
+              </p>
+
             </div>
 
-            <div style="max-width:850px; margin:35px auto 0;">
-              <span class="eyebrow">${tour.location}</span>
-              <h1>${tour.title}</h1>
 
-              <p style="font-size:18px; line-height:1.7; color:var(--ink-faint);">${tour.description}</p>
+            <div class="tour-info-card">
 
-              <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:15px; margin:30px 0;">
-                <div class="info-card-light"><h3>Duration</h3><p>${tour.duration}</p></div>
-                <div class="info-card-light"><h3>Starting Price</h3><p>$${tour.price} per person</p></div>
-                <div class="info-card-light"><h3>Accommodation</h3><p>${tour.accommodation}</p></div>
-                <div class="info-card-light"><h3>Rating</h3><p><i class="fa-solid fa-star" style="color:var(--gold);"></i> ${tour.rating} (${tour.reviews} reviews)</p></div>
-              </div>
+              <h3>
+                Starting Price
+              </h3>
 
-              <div style="margin-bottom:25px;">
-                <strong>Route</strong>
-                <p>${tour.route}</p>
-              </div>
+              <p>
+                ${priceText}
+              </p>
 
-              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:30px;">
-                ${tags.map(function(tag) {
-                  return `<span style="padding:7px 12px; border-radius:20px; background:#f2eee5; font-size:13px;">${tag}</span>`;
-                }).join('')}
-              </div>
+            </div>
 
-              <a href="plan-my-safari.html?tour=${encodeURIComponent(tour.title)}" class="btn btn-gold">Book This Safari &rarr;</a>
-              <a href="tour.html" class="btn btn-outline-light" style="margin-top:10px; margin-left:0;">Back to Tours</a>
-            </div>`;
 
-          document.title = tour.title + ' — Simba Adventures';
-        })
-        .catch(function(error) {
-          console.error('Tour loading error:', error);
-          tourDetails.innerHTML = `
-            <h2>Something went wrong</h2>
-            <p>We couldn't load the tour details.</p>
-            <a href="tour.html" class="btn btn-gold">Back to Tours</a>`;
-        });
-    }
-  </script>
+            <div class="tour-info-card">
+
+              <h3>
+                Accommodation
+              </h3>
+
+              <p>
+                ${accommodationText}
+              </p>
+
+            </div>
+
+
+            <div class="tour-info-card">
+
+              <h3>
+                Rating
+              </h3>
+
+              <p>
+                ${ratingText}
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- DETAILED DESCRIPTION -->
+
+          <div class="tour-content">
+
+            <h2>
+              About This Safari
+            </h2>
+
+            <div class="tour-description">
+              ${formatDescription(detailedDescription)}
+            </div>
+
+
+            <!-- ROUTE -->
+
+            ${
+              route
+                ? `
+                  <div class="tour-route">
+
+                    <h3>
+                      Safari Route
+                    </h3>
+
+                    <p>
+                      ${escapeHtml(route)}
+                    </p>
+
+                  </div>
+                `
+                : ''
+            }
+
+
+            <!-- TAGS -->
+
+            ${
+              uniqueTags.length
+                ? `
+                  <div class="tour-tags">
+
+                    ${tagsHtml}
+
+                  </div>
+                `
+                : ''
+            }
+
+
+            <!-- BUTTONS -->
+
+            <div class="tour-actions">
+
+              <a
+                href="plan-my-safari.html?tour=${encodeURIComponent(title)}"
+                class="btn btn-gold"
+              >
+                Book This Safari &rarr;
+              </a>
+
+
+              <a
+                href="tour.html"
+                class="btn btn-outline-light"
+              >
+                Back to Tours
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+
+      /* ---------------------------------------
+         PAGE TITLE
+      --------------------------------------- */
+
+      document.title =
+        title + ' — Simba Adventures';
+
+
+    })
+
+
+    .catch(function(error) {
+
+      console.error(
+        'Tour loading error:',
+        error
+      );
+
+
+      tourDetails.innerHTML = `
+
+        <div class="tour-not-found">
+
+          <h2>
+            Something went wrong
+          </h2>
+
+          <p>
+            We couldn't load the tour details.
+          </p>
+
+          <a
+            href="tour.html"
+            class="btn btn-gold"
+          >
+            Back to Tours
+          </a>
+
+        </div>
+
+      `;
+
+    });
+
+}
+
+</script>
 
 </body>
 </html>
