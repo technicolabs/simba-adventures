@@ -17,99 +17,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    /* =========================================================
+       TOUR DETAILS
+       Uses the same visual system as the rest of the website.
+       ========================================================= */
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "DM Sans", sans-serif;
-      background: #f8f6f0;
-      color: #202820;
-      line-height: 1.7;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    /* HEADER */
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e8e5dc;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      font-family: "Playfair Display", serif;
-      font-size: 25px;
-      font-weight: 700;
-      color: #263a28;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .nav-links a:hover {
-      color: #b07a32;
-    }
-
-    .nav-button {
-      background: #b07a32;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 5px;
-    }
-
-    /* HERO */
-
-    .tour-hero {
+    .tour-detail-hero {
       position: relative;
-      min-height: 520px;
+      min-height: 72vh;
       display: flex;
       align-items: flex-end;
       overflow: hidden;
-      background: #27372a;
+      background: var(--green-950);
     }
 
-    .tour-hero-image {
+    .tour-detail-hero-image {
       position: absolute;
       inset: 0;
       width: 100%;
@@ -117,519 +51,992 @@
       object-fit: cover;
     }
 
-    .tour-hero-overlay {
+    .tour-detail-hero::after {
+      content: "";
       position: absolute;
       inset: 0;
       background:
         linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.78),
-          rgba(0, 0, 0, 0.22) 65%,
-          rgba(0, 0, 0, 0.15)
+          180deg,
+          rgba(16,32,15,0.25) 0%,
+          rgba(16,32,15,0.38) 42%,
+          rgba(16,32,15,0.88) 100%
         );
+      pointer-events: none;
     }
 
-    .hero-content {
+    .tour-detail-hero .wrap {
       position: relative;
       z-index: 2;
-      color: white;
-      padding: 80px 0 55px;
       width: 100%;
+      padding-top: 150px;
+      padding-bottom: 70px;
     }
 
-    .breadcrumb {
-      font-size: 13px;
-      margin-bottom: 18px;
-      opacity: 0.85;
+    .tour-breadcrumb {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 7px;
+      color: rgba(237,231,211,0.68);
+      font-size: 11.5px;
+      margin-bottom: 22px;
     }
 
-    .breadcrumb a:hover {
-      text-decoration: underline;
+    .tour-breadcrumb a:hover {
+      color: var(--gold-light);
     }
 
-    .hero-badge {
-      display: inline-block;
-      background: #b07a32;
-      padding: 7px 13px;
-      border-radius: 30px;
-      font-size: 12px;
+    .tour-breadcrumb .current {
+      color: rgba(237,231,211,0.9);
+    }
+
+    .tour-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--green-950);
+      font-size: 10.5px;
       font-weight: 700;
-      margin-bottom: 18px;
+      letter-spacing: .04em;
+      margin-bottom: 16px;
     }
 
-    #tourHeroTitle {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(38px, 6vw, 68px);
-      line-height: 1.05;
+    .tour-detail-hero h1 {
+      color: #fff;
+      font-size: clamp(2.8rem, 6vw, 4.6rem);
+      line-height: 1.04;
+      letter-spacing: -0.025em;
       max-width: 850px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
-    .hero-location {
-      font-size: 16px;
-      opacity: 0.92;
+    .tour-hero-location {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.82);
+      font-size: 14px;
     }
 
-    /* MAIN */
-
-    main {
-      padding: 70px 0;
+    .tour-hero-location i {
+      color: var(--gold-light);
     }
 
-    .tour-layout {
+
+    /* =========================================================
+       MAIN TOUR CONTENT
+       ========================================================= */
+
+    .tour-detail-section {
+      padding: 72px 0 90px;
+    }
+
+    .tour-detail-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 340px;
-      gap: 55px;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 38px;
       align-items: start;
     }
 
-    .main-content {
+    .tour-main {
       min-width: 0;
     }
 
-    /* INFO BAR */
 
-    .tour-info-grid {
+    /* =========================================================
+       QUICK INFORMATION
+       ========================================================= */
+
+    .tour-facts {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      border: 1px solid #e2ded3;
-      background: white;
-      margin-bottom: 50px;
-      border-radius: 8px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
       overflow: hidden;
+      margin-bottom: 38px;
     }
 
-    .info-item {
-      padding: 23px;
-      border-right: 1px solid #e2ded3;
-      border-bottom: 1px solid #e2ded3;
+    .tour-fact {
+      background: var(--paper);
+      padding: 21px 18px;
+      min-width: 0;
     }
 
-    .info-item:nth-child(2n) {
-      border-right: 0;
-    }
-
-    .info-item:nth-last-child(-n+2) {
-      border-bottom: 0;
-    }
-
-    .info-label {
+    .tour-fact-label {
       display: block;
-      color: #7c7c72;
-      font-size: 12px;
+      font-size: 9.5px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 5px;
+      letter-spacing: .09em;
+      color: var(--ink-faint);
+      margin-bottom: 6px;
     }
 
-    .info-value {
+    .tour-fact-value {
+      font-family: var(--font-display);
       font-size: 17px;
-      font-weight: 700;
-      color: #263a28;
+      line-height: 1.25;
+      color: var(--ink);
+      word-break: break-word;
     }
 
-    .price-value {
-      color: #b07a32;
+    .tour-fact-value.gold {
+      color: var(--gold);
     }
 
-    /* DESCRIPTION */
-
-    .section-title {
-      font-family: "Playfair Display", serif;
-      font-size: 34px;
-      color: #263a28;
-      margin-bottom: 25px;
+    .tour-rating {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
     }
 
-    .detailed-description {
-      background: white;
-      padding: 38px;
-      border: 1px solid #e5e1d8;
-      border-radius: 8px;
+    .tour-rating-stars {
+      color: var(--gold);
+      margin-right: 4px;
     }
 
-    .detailed-description h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 29px;
-      color: #263a28;
-      margin: 35px 0 20px;
+    .tour-reviews {
+      display: block;
+      font-family: var(--font-body);
+      color: var(--ink-faint);
+      font-size: 10.5px;
+      font-weight: 400;
+      margin-top: 3px;
     }
 
-    .detailed-description h2:first-child {
+
+    /* =========================================================
+       CONTENT
+       ========================================================= */
+
+    .tour-section-header {
+      margin-bottom: 22px;
+    }
+
+    .tour-section-header .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .tour-section-header h2 {
+      font-size: 32px;
+    }
+
+    .tour-description {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 38px 40px;
+    }
+
+    .tour-description h1,
+    .tour-description h2,
+    .tour-description h3 {
+      font-family: var(--font-display);
+      color: var(--ink);
+      line-height: 1.18;
+    }
+
+    .tour-description h2 {
+      font-size: 26px;
+      margin: 34px 0 15px;
+    }
+
+    .tour-description h2:first-child {
       margin-top: 0;
     }
 
-    .detailed-description h3 {
-      font-size: 21px;
-      color: #344d38;
-      margin: 30px 0 12px;
+    .tour-description h3 {
+      font-size: 19px;
+      margin: 27px 0 9px;
+      color: var(--green-800);
     }
 
-    .detailed-description p {
-      margin-bottom: 18px;
-      color: #4f554d;
-      font-size: 16px;
+    .tour-description p {
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      line-height: 1.75;
+      margin-bottom: 16px;
     }
 
-    .detailed-description strong {
-      color: #263a28;
-      font-weight: 700;
+    .tour-description strong {
+      color: var(--ink);
+      font-weight: 600;
     }
 
-    .detailed-description ul {
-      padding-left: 25px;
+    .tour-description em {
+      color: var(--ink-soft);
+    }
+
+    .tour-description ul {
+      padding-left: 21px;
+      margin: 10px 0 20px;
+      list-style: disc;
+    }
+
+    .tour-description li {
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
+
+    .tour-description ol {
+      padding-left: 23px;
       margin: 10px 0 20px;
     }
 
-    .detailed-description li {
+    .tour-description ol li {
       margin-bottom: 8px;
     }
 
-    /* SIDEBAR */
 
-    .sidebar {
-      position: sticky;
-      top: 105px;
+    /* =========================================================
+       ROUTE
+       ========================================================= */
+
+    .tour-route-card {
+      background: var(--cream-alt);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 25px 28px;
+      margin-top: 22px;
     }
 
-    .booking-card {
-      background: white;
-      border: 1px solid #e2ded3;
-      border-radius: 8px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(30, 40, 30, 0.06);
-    }
-
-    .booking-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 25px;
-      color: #263a28;
-      margin-bottom: 18px;
-    }
-
-    .booking-price {
-      font-size: 31px;
-      color: #b07a32;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .booking-small {
-      font-size: 13px;
-      color: #77786f;
-      margin-bottom: 25px;
-    }
-
-    .booking-button {
-      display: block;
-      width: 100%;
-      background: #b07a32;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      border-radius: 5px;
-      font-weight: 700;
-      margin-bottom: 11px;
-      transition: 0.2s;
-    }
-
-    .booking-button:hover {
-      background: #8e6025;
-    }
-
-    .booking-button.secondary {
-      background: transparent;
-      border: 1px solid #b07a32;
-      color: #9b6827;
-    }
-
-    .booking-button.secondary:hover {
-      background: #faf3e7;
-    }
-
-    /* ROUTE */
-
-    .route-box {
-      margin-top: 35px;
-      padding: 24px;
-      background: #f2eee4;
-      border-radius: 8px;
-    }
-
-    .route-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+    .tour-route-label {
+      font-size: 10px;
       text-transform: uppercase;
-      color: #7c776b;
+      letter-spacing: .09em;
+      color: var(--gold);
+      font-weight: 600;
       margin-bottom: 7px;
     }
 
-    .route-text {
-      font-size: 15px;
-      font-weight: 600;
-      color: #354235;
+    .tour-route-text {
+      font-family: var(--font-display);
+      font-size: 17px;
+      line-height: 1.45;
+      color: var(--ink);
     }
 
-    /* TAGS */
 
-    .tags {
+    /* =========================================================
+       TAGS
+       ========================================================= */
+
+    .tour-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 22px;
     }
 
-    .tag {
-      background: #edf0e9;
-      color: #3d513e;
-      padding: 7px 12px;
-      border-radius: 30px;
-      font-size: 12px;
+    .tour-tag {
+      font-size: 10.5px;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: var(--paper);
+    }
+
+
+    /* =========================================================
+       SIDEBAR
+       ========================================================= */
+
+    .tour-sidebar {
+      position: sticky;
+      top: 105px;
+    }
+
+    .tour-booking-card {
+      background: var(--green-900);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      color: var(--cream-on-dark);
+    }
+
+    .tour-booking-eyebrow {
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
       font-weight: 600;
-    }
-
-    /* LOADING */
-
-    .loading {
-      padding: 100px 20px;
-      text-align: center;
-      font-size: 18px;
-      color: #777;
-    }
-
-    .error-box {
-      max-width: 750px;
-      margin: 80px auto;
-      background: white;
-      border: 1px solid #e3ded4;
-      padding: 45px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .error-box h2 {
-      font-family: "Playfair Display", serif;
-      color: #263a28;
-      margin-bottom: 15px;
-    }
-
-    .error-box p {
-      color: #666;
-      margin-bottom: 25px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #263a28;
-      color: white;
-      padding: 50px 0;
-      margin-top: 30px;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .footer-brand {
-      font-family: "Playfair Display", serif;
-      font-size: 25px;
       margin-bottom: 10px;
     }
 
-    .footer-text {
-      max-width: 450px;
-      opacity: 0.78;
-      font-size: 14px;
+    .tour-booking-card h3 {
+      color: #fff;
+      font-size: 25px;
+      margin-bottom: 20px;
     }
 
-    .footer-links {
+    .tour-booking-price {
+      font-family: var(--font-display);
+      font-size: 34px;
+      line-height: 1;
+      color: var(--gold-light);
+      margin-bottom: 5px;
+    }
+
+    .tour-booking-price-label {
+      color: rgba(237,231,211,0.6);
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+
+    .tour-booking-card .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .tour-booking-card .btn:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* =========================================================
+       SIDEBAR DETAILS
+       ========================================================= */
+
+    .tour-sidebar-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      margin-top: 18px;
+    }
+
+    .tour-sidebar-card h3 {
+      font-size: 18px;
+      margin-bottom: 17px;
+    }
+
+    .tour-side-line {
       display: flex;
-      gap: 25px;
+      gap: 11px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      color: var(--ink-soft);
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+
+    .tour-side-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .tour-side-line i {
+      width: 15px;
+      color: var(--gold);
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .tour-side-line strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 600;
+      margin-bottom: 1px;
+    }
+
+
+    /* =========================================================
+       CTA
+       ========================================================= */
+
+    .tour-bottom-cta {
+      margin-top: 70px;
+    }
+
+
+    /* =========================================================
+       LOADING / ERROR
+       ========================================================= */
+
+    .tour-loading {
+      padding: 100px 20px;
+      text-align: center;
+      color: var(--ink-faint);
       font-size: 14px;
     }
 
-    .footer-links a:hover {
-      color: #e3b76d;
+    .tour-loading i {
+      color: var(--gold);
+      font-size: 22px;
+      margin-bottom: 12px;
+      display: block;
     }
 
-    /* MOBILE */
+    .tour-error {
+      max-width: 650px;
+      margin: 20px auto 70px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 45px 35px;
+      text-align: center;
+    }
+
+    .tour-error-icon {
+      color: var(--gold);
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .tour-error h2 {
+      margin-bottom: 10px;
+    }
+
+    .tour-error p {
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      margin-bottom: 22px;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 1000px) {
+
+      .tour-detail-layout {
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 25px;
+      }
+
+      .tour-facts {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
 
     @media (max-width: 900px) {
-      .tour-layout {
+
+      .tour-detail-layout {
         grid-template-columns: 1fr;
       }
 
-      .sidebar {
+      .tour-sidebar {
         position: static;
       }
 
-      .tour-info-grid {
-        grid-template-columns: 1fr;
+      .tour-booking-card {
+        max-width: none;
       }
 
-      .info-item,
-      .info-item:nth-child(2n) {
-        border-right: 0;
+      .tour-detail-hero {
+        min-height: 620px;
       }
 
-      .info-item:nth-last-child(-n+2) {
-        border-bottom: 1px solid #e2ded3;
-      }
-
-      .info-item:last-child {
-        border-bottom: 0;
-      }
     }
 
+
     @media (max-width: 700px) {
-      .container {
-        width: min(100% - 28px, 1180px);
+
+      .tour-detail-hero {
+        min-height: 72vh;
       }
 
-      .nav {
-        min-height: 68px;
+      .tour-detail-hero .wrap {
+        padding-top: 125px;
+        padding-bottom: 45px;
       }
 
-      .nav-links {
-        gap: 12px;
-        font-size: 12px;
+      .tour-detail-hero h1 {
+        font-size: clamp(2.4rem, 11vw, 3.5rem);
       }
 
-      .nav-links a:not(.nav-button) {
-        display: none;
+      .tour-detail-section {
+        padding: 52px 0 65px;
       }
 
-      .tour-hero {
-        min-height: 430px;
+      .tour-facts {
+        grid-template-columns: 1fr 1fr;
+        border-radius: var(--radius-md);
       }
 
-      .hero-content {
-        padding: 55px 0 35px;
+      .tour-fact {
+        padding: 17px 15px;
       }
 
-      .detailed-description {
+      .tour-fact-value {
+        font-size: 15px;
+      }
+
+      .tour-description {
+        padding: 26px 21px;
+        border-radius: var(--radius-md);
+      }
+
+      .tour-description h2 {
+        font-size: 23px;
+      }
+
+      .tour-description h3 {
+        font-size: 18px;
+      }
+
+      .tour-description p,
+      .tour-description li {
+        font-size: 13px;
+      }
+
+      .tour-route-card {
+        padding: 21px;
+      }
+
+      .tour-booking-card,
+      .tour-sidebar-card {
         padding: 24px;
       }
 
-      .detailed-description h2 {
-        font-size: 25px;
+      .tour-bottom-cta {
+        margin-top: 50px;
       }
 
-      .detailed-description h3 {
-        font-size: 19px;
-      }
-
-      main {
-        padding: 45px 0;
-      }
     }
+
+
+    @media (max-width: 420px) {
+
+      .tour-facts {
+        grid-template-columns: 1fr;
+      }
+
+      .tour-fact {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .tour-fact:last-child {
+        border-bottom: 0;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container nav">
 
-      <a href="index.html" class="logo">
+  <!-- =======================================================
+       HEADER
+       ======================================================= -->
+
+  <header class="site-header header-overlay">
+
+    <div class="wrap">
+
+      <a href="index.html" class="brand">
+        <i class="fa-solid fa-paw"></i>
         Simba Adventures
       </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="tours.html">Safari Tours</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
+      <ul class="nav-menu nav-menu-links" id="navMenu">
 
-        <a href="contact.html" class="nav-button">
-          Book Now
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="tour.html" class="active">
+            Tours &amp; Safaris
+          </a>
+        </li>
+
+        <li>
+          <a href="about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#testimonials">
+            Reviews
+          </a>
+        </li>
+
+        <li>
+          <a href="gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="contact-us.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+
+      <div class="nav-right">
+
+        <a
+          href="plan-my-safari.html"
+          class="btn btn-gold btn-sm"
+        >
+          Plan My Safari
         </a>
-      </nav>
+
+        <div
+          class="menu-toggle"
+          onclick="document.getElementById('navMenu').classList.toggle('show')"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+      </div>
 
     </div>
+
   </header>
 
 
-  <!-- HERO -->
-  <section class="tour-hero">
+  <!-- =======================================================
+       TOUR HERO
+       ======================================================= -->
+
+  <section class="tour-detail-hero">
 
     <img
       id="tourHeroImage"
-      class="tour-hero-image"
+      class="tour-detail-hero-image"
       src=""
       alt=""
     >
 
-    <div class="tour-hero-overlay"></div>
+    <div class="wrap">
 
-    <div class="container hero-content">
+      <div class="tour-breadcrumb">
 
-      <div class="breadcrumb">
-        <a href="index.html">Home</a>
-        <span> / </span>
-        <a href="tours.html">Safari Tours</a>
-        <span> / </span>
-        <span>Tour Details</span>
+        <a href="index.html">
+          Home
+        </a>
+
+        <span>/</span>
+
+        <a href="tour.html">
+          Tours &amp; Safaris
+        </a>
+
+        <span>/</span>
+
+        <span class="current">
+          Tour Details
+        </span>
+
       </div>
 
-      <div id="tourHeroBadge" class="hero-badge" style="display:none;"></div>
+
+      <div
+        id="tourHeroBadge"
+        class="tour-hero-badge"
+        style="display:none;"
+      ></div>
+
 
       <h1 id="tourHeroTitle">
         Loading safari...
       </h1>
 
-      <div id="tourHeroLocation" class="hero-location"></div>
+
+      <div
+        id="tourHeroLocation"
+        class="tour-hero-location"
+      ></div>
 
     </div>
 
   </section>
 
 
-  <!-- MAIN -->
+  <!-- =======================================================
+       MAIN
+       ======================================================= -->
+
   <main>
 
-    <div class="container">
+    <section class="tour-detail-section">
 
-      <div id="tour-details">
+      <div class="wrap">
 
-        <div class="loading">
-          Loading safari details...
+        <div id="tour-details">
+
+          <div class="tour-loading">
+
+            <i class="fa-solid fa-paw"></i>
+
+            Loading safari details...
+
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+    </section>
 
   </main>
 
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
 
-    <div class="container footer-content">
+  <footer class="site-footer">
 
-      <div>
-        <div class="footer-brand">
-          Simba Adventures
+    <div class="wrap">
+
+      <div class="footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div>
+
+          <div class="footer-brand">
+
+            <i class="fa-solid fa-paw"></i>
+
+            Simba Adventures
+
+          </div>
+
+
+          <p class="footer-desc">
+
+            Arusha-based safari operator.
+            TATO certified.
+            We've been guiding guests for 20 years.
+
+          </p>
+
+
+          <div class="footer-social">
+
+            <a
+              href="https://www.facebook.com/simbaadventures"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+
+              <svg
+                viewBox="0 0 320 512"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+
+              </svg>
+
+            </a>
+
+
+            <a
+              href="https://www.instagram.com/simbaadventuresafaris/?hl=en"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+
+              <svg
+                viewBox="0 0 448 512"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+
+              </svg>
+
+            </a>
+
+
+            <a
+              href="#"
+              aria-label="X"
+            >
+
+              <svg
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+
+              </svg>
+
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="footer-text">
-          Locally owned Tanzanian safari experiences across Tanzania's
-          most spectacular landscapes.
+
+        <!-- EXPLORE -->
+
+        <div>
+
+          <div class="footer-col-title">
+            Explore
+          </div>
+
+          <ul class="footer-menu">
+
+            <li>
+              <a href="tour.html">
+                Serengeti Safaris
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Kilimanjaro Treks
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Zanzibar Retreats
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Ngorongoro Crater
+              </a>
+            </li>
+
+          </ul>
+
         </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div>
+
+          <div class="footer-col-title">
+            Main Navigation
+          </div>
+
+          <ul class="footer-menu">
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="tour.html">
+                Tours &amp; Safaris
+              </a>
+            </li>
+
+            <li>
+              <a href="about-us.html">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#testimonials">
+                Reviews
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a href="contact-us.html">
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <a href="privacy-policy.html">
+                Privacy Policy
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <div class="footer-col-title">
+            Get In Touch
+          </div>
+
+          <div class="footer-contact-info">
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Plot 58, Block E, Sokoine Road, Arusha, Tanzania
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              +255 755 753 576, +255 788 753 576
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              info@simbaadventures.com
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="tours.html">Tours</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 Simba Adventures Ltd. All rights reserved.
+        </div>
+
+        <div>
+          Reg. No. 113663 &middot; VAT No. 40319680K
+        </div>
+
+        <div>
+
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>
+
+          <a href="sitemap.html">
+            Sitemap
+          </a>
+
+        </div>
+
       </div>
 
     </div>
@@ -637,44 +1044,29 @@
   </footer>
 
 
+  <!-- =======================================================
+       DYNAMIC TOUR SCRIPT
+       ======================================================= -->
+
   <script>
 
-    /*
-      ==========================================================
-      SIMBA ADVENTURES - DYNAMIC TOUR DETAILS
-      ==========================================================
+    const params =
+      new URLSearchParams(window.location.search);
 
-      This page works with ALL tours inside tours.json.
-
-      It does NOT contain any hard-coded tour.
-
-      Example:
-
-      tour-details.html?tour=The%20Serengeti%20Symphony
-
-      or
-
-      tour-details.html?tour=Kilimanjaro%20Expedition
-
-      The script finds the matching title inside tours.json
-      and automatically displays its information.
-      ==========================================================
-    */
+    const selectedTourTitle =
+      params.get("tour");
 
 
-    const params = new URLSearchParams(window.location.search);
-
-    const selectedTourTitle = params.get("tour");
-
-
-    /*
-      Escape HTML so CMS content does not accidentally
-      become executable HTML.
-    */
+    /* -------------------------------------------------------
+       HTML ESCAPE
+       ------------------------------------------------------- */
 
     function escapeHtml(value) {
 
-      if (value === null || value === undefined) {
+      if (
+        value === null ||
+        value === undefined
+      ) {
         return "";
       }
 
@@ -688,24 +1080,49 @@
     }
 
 
-    /*
-      Convert the detailedDescription text into
-      properly formatted HTML.
+    /* -------------------------------------------------------
+       INLINE MARKDOWN
+       ------------------------------------------------------- */
 
-      Supports:
+    function formatInlineMarkdown(value) {
 
-      # Heading
-      ## Heading
-      ### Heading
+      let result =
+        escapeHtml(value);
 
-      **bold**
+      result = result.replace(
+        /\*\*(.*?)\*\*/g,
+        "<strong>$1</strong>"
+      );
 
-      *italic*
+      result = result.replace(
+        /\*(.*?)\*/g,
+        "<em>$1</em>"
+      );
 
-      - bullet
+      return result;
 
-      blank lines = paragraphs
-    */
+    }
+
+
+    /* -------------------------------------------------------
+       MARKDOWN / TEXT TO HTML
+
+       Supports:
+
+       # Heading
+       ## Heading
+       ### Heading
+
+       **bold**
+       *italic*
+
+       - bullets
+       * bullets
+
+       1. numbered items
+
+       Blank lines = paragraphs
+       ------------------------------------------------------- */
 
     function markdownToHtml(text) {
 
@@ -713,153 +1130,138 @@
         return "";
       }
 
-      let source = String(text)
-        .replace(/\r\n/g, "\n")
-        .replace(/\r/g, "\n")
-        .trim();
+      let source =
+        String(text)
+          .replace(/\r\n/g, "\n")
+          .replace(/\r/g, "\n")
+          .trim();
 
-
-      const lines = source.split("\n");
+      const lines =
+        source.split("\n");
 
       let html = "";
 
       let paragraph = [];
 
-      let inList = false;
+      let listType = null;
 
 
       function closeParagraph() {
 
-        if (paragraph.length === 0) {
+        if (!paragraph.length) {
           return;
         }
 
-        let content = paragraph.join(" ").trim();
-
-        content = formatInlineMarkdown(content);
+        const content =
+          paragraph
+            .join(" ")
+            .trim();
 
         if (content) {
-          html += "<p>" + content + "</p>";
+
+          html +=
+            "<p>" +
+            formatInlineMarkdown(content) +
+            "</p>";
+
         }
 
         paragraph = [];
+
       }
 
 
       function closeList() {
 
-        if (inList) {
+        if (listType === "ul") {
           html += "</ul>";
-          inList = false;
         }
 
-      }
+        if (listType === "ol") {
+          html += "</ol>";
+        }
 
-
-      function formatInlineMarkdown(value) {
-
-        let result = escapeHtml(value);
-
-        /*
-          Bold
-        */
-        result = result.replace(
-          /\*\*(.*?)\*\*/g,
-          "<strong>$1</strong>"
-        );
-
-        /*
-          Italic
-        */
-        result = result.replace(
-          /\*(.*?)\*/g,
-          "<em>$1</em>"
-        );
-
-        return result;
+        listType = null;
 
       }
 
 
       lines.forEach(function(line) {
 
-        const trimmed = line.trim();
+        const trimmed =
+          line.trim();
 
 
-        /*
-          Empty line
-        */
+        /* EMPTY */
 
         if (!trimmed) {
 
           closeParagraph();
-
           closeList();
 
           return;
+
         }
 
 
-        /*
-          H3
-        */
+        /* H3 */
 
         if (trimmed.startsWith("### ")) {
 
           closeParagraph();
-
           closeList();
 
           html +=
             "<h3>" +
-            formatInlineMarkdown(trimmed.substring(4)) +
+            formatInlineMarkdown(
+              trimmed.substring(4)
+            ) +
             "</h3>";
 
           return;
+
         }
 
 
-        /*
-          H2
-        */
+        /* H2 */
 
         if (trimmed.startsWith("## ")) {
 
           closeParagraph();
-
           closeList();
 
           html +=
             "<h2>" +
-            formatInlineMarkdown(trimmed.substring(3)) +
+            formatInlineMarkdown(
+              trimmed.substring(3)
+            ) +
             "</h2>";
 
           return;
+
         }
 
 
-        /*
-          H1
-        */
+        /* H1 */
 
         if (trimmed.startsWith("# ")) {
 
           closeParagraph();
-
           closeList();
 
           html +=
             "<h2>" +
-            formatInlineMarkdown(trimmed.substring(2)) +
+            formatInlineMarkdown(
+              trimmed.substring(2)
+            ) +
             "</h2>";
 
           return;
+
         }
 
 
-        /*
-          Bullet list
-        */
+        /* BULLET */
 
         if (
           trimmed.startsWith("- ") ||
@@ -868,25 +1270,60 @@
 
           closeParagraph();
 
-          if (!inList) {
+          if (listType !== "ul") {
+
+            closeList();
 
             html += "<ul>";
 
-            inList = true;
+            listType = "ul";
+
           }
 
           html +=
             "<li>" +
-            formatInlineMarkdown(trimmed.substring(2)) +
+            formatInlineMarkdown(
+              trimmed.substring(2)
+            ) +
             "</li>";
 
           return;
+
         }
 
 
-        /*
-          Normal text
-        */
+        /* NUMBERED LIST */
+
+        if (/^\d+\.\s+/.test(trimmed)) {
+
+          closeParagraph();
+
+          if (listType !== "ol") {
+
+            closeList();
+
+            html += "<ol>";
+
+            listType = "ol";
+
+          }
+
+          html +=
+            "<li>" +
+            formatInlineMarkdown(
+              trimmed.replace(
+                /^\d+\.\s+/,
+                ""
+              )
+            ) +
+            "</li>";
+
+          return;
+
+        }
+
+
+        /* NORMAL TEXT */
 
         closeList();
 
@@ -896,42 +1333,41 @@
 
 
       closeParagraph();
-
       closeList();
-
 
       return html;
 
     }
 
 
-    /*
-      Find a tour.
+    /* -------------------------------------------------------
+       FIND TOUR
+       ------------------------------------------------------- */
 
-      Exact match is attempted first.
+    function findTour(
+      tours,
+      requestedTitle
+    ) {
 
-      Then a case-insensitive match.
-
-      Then a decoded/trimmed match.
-    */
-
-    function findTour(tours, requestedTitle) {
-
-      if (!Array.isArray(tours) || !requestedTitle) {
+      if (
+        !Array.isArray(tours) ||
+        !requestedTitle
+      ) {
         return null;
       }
 
 
-      /*
-        Exact match
-      */
+      /* Exact */
 
-      let tour = tours.find(function(item) {
+      let tour =
+        tours.find(function(item) {
 
-        return String(item.title || "").trim() ===
-          String(requestedTitle).trim();
+          return String(item.title || "")
+            .trim() ===
+            String(requestedTitle)
+              .trim();
 
-      });
+        });
 
 
       if (tour) {
@@ -939,23 +1375,23 @@
       }
 
 
-      /*
-        Case-insensitive match
-      */
+      /* Case insensitive */
 
-      const normalizedRequested =
+      const normalized =
         String(requestedTitle)
           .trim()
           .toLowerCase();
 
 
-      tour = tours.find(function(item) {
+      tour =
+        tours.find(function(item) {
 
-        return String(item.title || "")
-          .trim()
-          .toLowerCase() === normalizedRequested;
+          return String(item.title || "")
+            .trim()
+            .toLowerCase() ===
+            normalized;
 
-      });
+        });
 
 
       return tour || null;
@@ -963,159 +1399,196 @@
     }
 
 
-    /*
-      Load tours.json.
-    */
+    /* -------------------------------------------------------
+       LOAD TOURS
+       ------------------------------------------------------- */
 
     async function loadTours() {
 
-      try {
-
-        const response = await fetch(
-          "./tours.json?v=" + Date.now(),
+      const response =
+        await fetch(
+          "./tours.json?v=" +
+          Date.now(),
           {
             cache: "no-store"
           }
         );
 
 
-        if (!response.ok) {
-
-          throw new Error(
-            "Could not load tours.json. HTTP " +
-            response.status
-          );
-
-        }
-
-
-        const data = await response.json();
-
-
-        /*
-          Supports:
-
-          {
-            "tours": [...]
-          }
-
-          and also:
-
-          [...]
-        */
-
-        if (Array.isArray(data)) {
-          return data;
-        }
-
-
-        if (data && Array.isArray(data.tours)) {
-          return data.tours;
-        }
-
+      if (!response.ok) {
 
         throw new Error(
-          "tours.json does not contain a valid tours array."
+          "Could not load tours.json. HTTP " +
+          response.status
         );
 
       }
 
-      catch (error) {
 
-        console.error(
-          "Tour data loading error:",
-          error
-        );
+      const data =
+        await response.json();
 
-        throw error;
 
+      if (Array.isArray(data)) {
+        return data;
       }
+
+
+      if (
+        data &&
+        Array.isArray(data.tours)
+      ) {
+        return data.tours;
+      }
+
+
+      throw new Error(
+        "tours.json does not contain a valid tours array."
+      );
 
     }
 
 
-    /*
-      Create a tag element.
-    */
+    /* -------------------------------------------------------
+       CREATE TAGS
+       ------------------------------------------------------- */
 
     function createTags(tags) {
 
-      if (!Array.isArray(tags) || tags.length === 0) {
+      if (
+        !Array.isArray(tags) ||
+        !tags.length
+      ) {
         return "";
       }
 
 
-      return tags.map(function(tag) {
+      return tags
+        .map(function(tag) {
 
-        return (
-          '<span class="tag">' +
-          escapeHtml(tag) +
-          "</span>"
-        );
+          return `
+            <span class="tour-tag">
+              ${escapeHtml(tag)}
+            </span>
+          `;
 
-      }).join("");
+        })
+        .join("");
 
     }
 
 
-    /*
-      Render the complete tour.
-    */
+    /* -------------------------------------------------------
+       PRICE FORMAT
+       ------------------------------------------------------- */
+
+    function formatPrice(price) {
+
+      if (
+        price === null ||
+        price === undefined ||
+        price === ""
+      ) {
+        return "Price on request";
+      }
+
+      const value =
+        String(price)
+          .replace(/^\$/, "")
+          .replace(/,/g, "");
+
+      if (!isNaN(value)) {
+
+        return "$" +
+          Number(value)
+            .toLocaleString("en-US");
+
+      }
+
+      return "$" +
+        escapeHtml(
+          String(price)
+            .replace(/^\$/, "")
+        );
+
+    }
+
+
+    /* -------------------------------------------------------
+       RENDER TOUR
+       ------------------------------------------------------- */
 
     function renderTour(tour) {
 
-      /*
-        HERO
-      */
-
       const heroImage =
-        document.getElementById("tourHeroImage");
+        document.getElementById(
+          "tourHeroImage"
+        );
 
       const heroTitle =
-        document.getElementById("tourHeroTitle");
+        document.getElementById(
+          "tourHeroTitle"
+        );
 
       const heroLocation =
-        document.getElementById("tourHeroLocation");
+        document.getElementById(
+          "tourHeroLocation"
+        );
 
       const heroBadge =
-        document.getElementById("tourHeroBadge");
+        document.getElementById(
+          "tourHeroBadge"
+        );
 
+
+      /* HERO */
 
       heroTitle.textContent =
-        tour.title || "Safari Experience";
+        tour.title ||
+        "Safari Experience";
 
 
-      heroLocation.textContent =
-        tour.location || "";
+      heroLocation.innerHTML =
+        tour.location
+          ? `
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              ${escapeHtml(tour.location)}
+            </span>
+          `
+          : "";
 
 
       if (tour.image) {
 
-        heroImage.src = tour.image;
+        heroImage.src =
+          tour.image;
 
         heroImage.alt =
-          tour.title || "Simba Adventures Safari";
+          tour.title ||
+          "Simba Adventures Safari";
 
       }
 
 
       if (tour.badge) {
 
-        heroBadge.textContent = tour.badge;
+        heroBadge.textContent =
+          tour.badge;
 
-        heroBadge.style.display = "inline-block";
+        heroBadge.style.display =
+          "inline-flex";
 
       }
 
 
       document.title =
-        (tour.title || "Safari Details") +
+        (tour.title ||
+          "Safari Details") +
         " | Simba Adventures";
 
 
-      /*
-        DESCRIPTION
-      */
+      /* DESCRIPTION */
 
       const detailedText =
         tour.detailedDescription ||
@@ -1131,167 +1604,411 @@
 
 
       const detailedHTML =
-        markdownToHtml(detailedText);
+        markdownToHtml(
+          detailedText
+        );
 
 
-      /*
-        INFO
-      */
+      /* PRICE */
 
-      const detailsContainer =
-        document.getElementById("tour-details");
+      const formattedPrice =
+        formatPrice(tour.price);
 
 
-      detailsContainer.innerHTML = `
+      /* TAGS */
 
-        <div class="tour-layout">
+      const tagsHTML =
+        createTags(tour.tags);
 
-          <div class="main-content">
 
-            <div class="tour-info-grid">
+      /* REVIEWS */
 
-              <div class="info-item">
-                <span class="info-label">
+      const rating =
+        tour.rating || "—";
+
+      const reviews =
+        tour.reviews || "";
+
+
+      /* MAIN HTML */
+
+      document.getElementById(
+        "tour-details"
+      ).innerHTML = `
+
+        <div class="tour-detail-layout">
+
+
+          <!-- =============================================
+               MAIN CONTENT
+               ============================================= -->
+
+          <div class="tour-main">
+
+
+            <!-- QUICK FACTS -->
+
+            <div class="tour-facts">
+
+
+              <div class="tour-fact">
+
+                <span class="tour-fact-label">
                   Duration
                 </span>
 
-                <span class="info-value">
-                  ${escapeHtml(tour.duration || "—")}
-                </span>
+                <div class="tour-fact-value">
+                  ${escapeHtml(
+                    tour.duration || "—"
+                  )}
+                </div>
+
               </div>
 
 
-              <div class="info-item">
-                <span class="info-label">
-                  Starting Price
+              <div class="tour-fact">
+
+                <span class="tour-fact-label">
+                  Starting From
                 </span>
 
-                <span class="info-value price-value">
-                  $${escapeHtml(tour.price || "—")}
-                  <small style="font-size:11px;">
-                    per person
-                  </small>
-                </span>
+                <div class="tour-fact-value gold">
+                  ${formattedPrice}
+                </div>
+
               </div>
 
 
-              <div class="info-item">
-                <span class="info-label">
+              <div class="tour-fact">
+
+                <span class="tour-fact-label">
                   Accommodation
                 </span>
 
-                <span class="info-value">
-                  ${escapeHtml(tour.accommodation || "—")}
-                </span>
+                <div class="tour-fact-value">
+                  ${escapeHtml(
+                    tour.accommodation || "—"
+                  )}
+                </div>
+
               </div>
 
 
-              <div class="info-item">
-                <span class="info-label">
+              <div class="tour-fact">
+
+                <span class="tour-fact-label">
                   Guest Rating
                 </span>
 
-                <span class="info-value">
-                  ★ ${escapeHtml(tour.rating || "—")}
-                  ${tour.reviews
-                    ? "(" + escapeHtml(tour.reviews) + " reviews)"
-                    : ""
+                <div class="tour-fact-value tour-rating">
+
+                  <span class="tour-rating-stars">
+                    ★
+                  </span>
+
+                  ${escapeHtml(rating)}
+
+                  ${
+                    reviews
+                      ? `
+                        <span class="tour-reviews">
+                          ${escapeHtml(reviews)} reviews
+                        </span>
+                      `
+                      : ""
                   }
-                </span>
+
+                </div>
+
               </div>
+
 
             </div>
 
 
-            <section>
+            <!-- DESCRIPTION -->
 
-              <h2 class="section-title">
+            <div class="tour-section-header">
+
+              <span class="eyebrow">
+                The Journey
+              </span>
+
+              <h2>
                 About This Safari
               </h2>
 
+            </div>
 
-              <div class="detailed-description">
 
-                ${
-                  detailedHTML ||
-                  "<p>Detailed information for this safari is currently being prepared.</p>"
-                }
+            <div class="tour-description">
 
-              </div>
+              ${
+                detailedHTML ||
+                `
+                  <p>
+                    Detailed information for this
+                    safari is currently being prepared.
+                  </p>
+                `
+              }
 
-            </section>
+            </div>
 
+
+            <!-- ROUTE -->
 
             ${
               tour.route
-              ? `
-                <div class="route-box">
+                ? `
+                  <div class="tour-route-card">
 
-                  <div class="route-label">
-                    Safari Route
+                    <div class="tour-route-label">
+                      Safari Route
+                    </div>
+
+                    <div class="tour-route-text">
+                      ${escapeHtml(
+                        tour.route
+                      )}
+                    </div>
+
                   </div>
-
-                  <div class="route-text">
-                    ${escapeHtml(tour.route)}
-                  </div>
-
-                </div>
-              `
-              : ""
+                `
+                : ""
             }
 
+
+            <!-- TAGS -->
 
             ${
-              Array.isArray(tour.tags) &&
-              tour.tags.length
-              ? `
-                <div class="tags">
-                  ${createTags(tour.tags)}
-                </div>
-              `
-              : ""
+              tagsHTML
+                ? `
+                  <div class="tour-tags">
+                    ${tagsHTML}
+                  </div>
+                `
+                : ""
             }
+
 
           </div>
 
 
-          <aside class="sidebar">
+          <!-- =============================================
+               SIDEBAR
+               ============================================= -->
 
-            <div class="booking-card">
+          <aside class="tour-sidebar">
+
+
+            <!-- BOOKING -->
+
+            <div class="tour-booking-card">
+
+              <div class="tour-booking-eyebrow">
+                Begin Your Journey
+              </div>
 
               <h3>
                 Plan This Safari
               </h3>
 
-
-              <div class="booking-price">
-                $${escapeHtml(tour.price || "—")}
+              <div class="tour-booking-price">
+                ${formattedPrice}
               </div>
 
-
-              <div class="booking-small">
+              <div class="tour-booking-price-label">
                 Starting price per person
               </div>
 
 
               <a
-                class="booking-button"
-                href="contact.html"
+                href="plan-my-safari.html"
+                class="btn btn-gold btn-block"
               >
-                Enquire About This Safari
+                <i class="fa-solid fa-paper-plane"></i>
+                Plan This Safari
               </a>
 
 
               <a
-                class="booking-button secondary"
-                href="tours.html"
+                href="tour.html"
+                class="btn btn-ghost-light btn-block"
               >
                 View All Safaris
               </a>
 
             </div>
 
+
+            <!-- TOUR INFORMATION -->
+
+            <div class="tour-sidebar-card">
+
+              <h3>
+                Safari Details
+              </h3>
+
+
+              ${
+                tour.location
+                  ? `
+                    <div class="tour-side-line">
+
+                      <i class="fa-solid fa-location-dot"></i>
+
+                      <div>
+
+                        <strong>
+                          Location
+                        </strong>
+
+                        ${escapeHtml(
+                          tour.location
+                        )}
+
+                      </div>
+
+                    </div>
+                  `
+                  : ""
+              }
+
+
+              ${
+                tour.duration
+                  ? `
+                    <div class="tour-side-line">
+
+                      <i class="fa-regular fa-calendar"></i>
+
+                      <div>
+
+                        <strong>
+                          Duration
+                        </strong>
+
+                        ${escapeHtml(
+                          tour.duration
+                        )}
+
+                      </div>
+
+                    </div>
+                  `
+                  : ""
+              }
+
+
+              ${
+                tour.accommodation
+                  ? `
+                    <div class="tour-side-line">
+
+                      <i class="fa-solid fa-bed"></i>
+
+                      <div>
+
+                        <strong>
+                          Accommodation
+                        </strong>
+
+                        ${escapeHtml(
+                          tour.accommodation
+                        )}
+
+                      </div>
+
+                    </div>
+                  `
+                  : ""
+              }
+
+
+              ${
+                tour.route
+                  ? `
+                    <div class="tour-side-line">
+
+                      <i class="fa-solid fa-route"></i>
+
+                      <div>
+
+                        <strong>
+                          Route
+                        </strong>
+
+                        ${escapeHtml(
+                          tour.route
+                        )}
+
+                      </div>
+
+                    </div>
+                  `
+                  : ""
+              }
+
+            </div>
+
+
           </aside>
+
+
+        </div>
+
+
+        <!-- ===============================================
+             BOTTOM CTA
+             =============================================== -->
+
+        <div class="tour-bottom-cta">
+
+          <div class="cta-band">
+
+            <div>
+
+              <span class="eyebrow on-dark">
+                Make It Yours
+              </span>
+
+              <h2>
+                Ready to plan your
+                <span class="italic">
+                  Tanzanian adventure?
+                </span>
+              </h2>
+
+              <p>
+                Tell us your dates, budget and
+                what you want to see. We'll shape
+                this itinerary around you and come
+                back with one clear quote.
+              </p>
+
+            </div>
+
+
+            <div class="cta-actions">
+
+              <a
+                href="plan-my-safari.html"
+                class="btn btn-gold"
+              >
+                Plan My Safari
+              </a>
+
+              <a
+                href="tour.html"
+                class="btn btn-outline-dark"
+              >
+                Browse Other Tours
+              </a>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -1300,15 +2017,24 @@
     }
 
 
-    /*
-      Show an error page.
-    */
+    /* -------------------------------------------------------
+       ERROR
+       ------------------------------------------------------- */
 
-    function showError(title, message) {
+    function showError(
+      title,
+      message
+    ) {
 
-      document.getElementById("tour-details").innerHTML = `
+      document.getElementById(
+        "tour-details"
+      ).innerHTML = `
 
-        <div class="error-box">
+        <div class="tour-error">
+
+          <div class="tour-error-icon">
+            <i class="fa-solid fa-paw"></i>
+          </div>
 
           <h2>
             ${escapeHtml(title)}
@@ -1319,9 +2045,8 @@
           </p>
 
           <a
-            href="tours.html"
-            class="booking-button"
-            style="max-width:250px;margin:0 auto;"
+            href="tour.html"
+            class="btn btn-solid-dark"
           >
             View All Safaris
           </a>
@@ -1333,9 +2058,9 @@
     }
 
 
-    /*
-      START
-    */
+    /* -------------------------------------------------------
+       INITIALIZE
+       ------------------------------------------------------- */
 
     async function initTourPage() {
 
@@ -1343,10 +2068,11 @@
 
         showError(
           "Safari Not Found",
-          "No safari was selected. Please return to the safari tours page and choose a tour."
+          "No safari was selected. Please return to the Tours & Safaris page and choose a tour."
         );
 
         return;
+
       }
 
 
@@ -1391,11 +2117,12 @@
           );
 
           return;
+
         }
 
 
         console.log(
-          "Selected tour data:",
+          "Selected tour:",
           tour
         );
 
@@ -1404,9 +2131,14 @@
 
       }
 
+
       catch (error) {
 
-        console.error(error);
+        console.error(
+          "Tour page error:",
+          error
+        );
+
 
         showError(
           "Unable to Load Safari",
