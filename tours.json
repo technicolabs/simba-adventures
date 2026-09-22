@@ -2,7 +2,7 @@
   "tours": [
     {
       "title": "The Serengeti Symphony",
-      "image": "image/The Serengeti Symphony.jpeg",
+      "image": "images/The Serengeti Symphony.jpeg",
       "location": "Tanzania — Lake Manyara, Serengeti, Ngorongoro & Tarangire",
       "route": "Arusha → Lake Manyara → Serengeti → Ngorongoro → Tarangire → Arusha",
       "description": "A classic 6-day Northern Circuit safari combining Lake Manyara, the Serengeti, Ngorongoro Crater and Tarangire for an unforgettable Tanzanian wildlife experience.",
@@ -30,7 +30,7 @@
     },
     {
       "title": "Tanzania Big Five Signature",
-      "image": "image/Tanzania Big Five Signature.jpeg",
+      "image": "images/Tanzania Big Five Signature.jpeg",
       "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
       "route": "Arusha → Tarangire → Serengeti → Ngorongoro → Arusha",
       "description": "A premium 5-day safari designed to maximize opportunities to see Africa's iconic Big Five across Tanzania's legendary Northern Circuit.",
@@ -57,7 +57,7 @@
     },
     {
       "title": "The Great Migration Horizon",
-      "image": "image/The Great Migration Horizon.jpeg",
+      "image": "images/The Great Migration Horizon.jpeg",
       "location": "Tanzania — Tarangire, Serengeti & Ngorongoro",
       "route": "Arusha → Tarangire → Central Serengeti → Migration Zones → Ngorongoro → Lake Manyara → Arusha",
       "description": "An 8-day deep-dive into Tanzania's Great Migration with multiple dedicated days tracking wildebeest and zebra herds across the Serengeti.",
@@ -84,7 +84,7 @@
     },
     {
       "title": "The Untamed South",
-      "image": "image/The Untamed South.jpeg",
+      "image": "images/The Untamed South.jpeg",
       "location": "Tanzania — Nyerere & Ruaha National Parks",
       "route": "Dar es Salaam → Nyerere → Ruaha → Mikumi / Morogoro → Dar es Salaam",
       "description": "An 8-day off-the-beaten-path adventure through Tanzania's rugged southern wilderness, combining Nyerere and Ruaha National Parks.",
@@ -226,7 +226,7 @@
     },
     {
       "title": "The Roof of Africa & Beyond",
-      "image": "image/The Roof of Africa & Beyond.jpeg",
+      "image": "images/The Roof of Africa & Beyond.jpeg",
       "location": "Tanzania — Kilimanjaro, Tarangire, Serengeti & Ngorongoro",
       "route": "Moshi → Kilimanjaro → Materuni → Tarangire → Serengeti → Ngorongoro → Arusha",
       "description": "A 10-day adventure combining a Kilimanjaro trek experience with Tanzania's legendary wildlife and cultural highlights.",
