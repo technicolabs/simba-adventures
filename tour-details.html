@@ -635,7 +635,7 @@
     <div class="wrap">
 
       <a href="index.html" class="brand">
-        <i class="fa-solid fa-paw"></i>
+        <img src="logo.png" alt="Simba Adventures" class="brand-logo">
         Simba Adventures
       </a>
 
@@ -714,6 +714,7 @@
       class="tour-detail-hero-image"
       src=""
       alt=""
+      onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80';"
     >
 
     <div class="wrap">
@@ -807,7 +808,7 @@
 
           <div class="footer-brand">
 
-            <i class="fa-solid fa-paw"></i>
+            <img src="logo.png" alt="Simba Adventures" class="brand-logo">
 
             Simba Adventures
 
@@ -866,7 +867,7 @@
 
 
             <a
-              href="#"
+              href="https://twitter.com/safaritanzania2?lang=en" target="_blank" rel="noopener"
               aria-label="X"
             >
 
@@ -1047,6 +1048,8 @@
   <!-- =======================================================
        DYNAMIC TOUR SCRIPT
        ======================================================= -->
+
+  <script src="data-embedded.js"></script>
 
   <script>
 
@@ -1405,46 +1408,70 @@
 
     async function loadTours() {
 
-      const response =
-        await fetch(
-          "./tours.json?v=" +
-          Date.now(),
-          {
-            cache: "no-store"
-          }
-        );
+      try {
+
+        const response =
+          await fetch(
+            "./tours.json?v=" +
+            Date.now(),
+            {
+              cache: "no-store"
+            }
+          );
 
 
-      if (!response.ok) {
+        if (!response.ok) {
+
+          throw new Error(
+            "Could not load tours.json. HTTP " +
+            response.status
+          );
+
+        }
+
+
+        const data =
+          await response.json();
+
+
+        if (Array.isArray(data)) {
+          return data;
+        }
+
+
+        if (
+          data &&
+          Array.isArray(data.tours)
+        ) {
+          return data.tours;
+        }
+
 
         throw new Error(
-          "Could not load tours.json. HTTP " +
-          response.status
+          "tours.json does not contain a valid tours array."
         );
 
       }
 
+      catch (error) {
 
-      const data =
-        await response.json();
+        console.error(
+          "Tour loading error, using embedded fallback:",
+          error
+        );
 
 
-      if (Array.isArray(data)) {
-        return data;
+        if (
+          window.SIMBA_TOURS &&
+          Array.isArray(window.SIMBA_TOURS)
+        ) {
+          return window.SIMBA_TOURS;
+        }
+
+
+        throw error;
+
       }
-
-
-      if (
-        data &&
-        Array.isArray(data.tours)
-      ) {
-        return data.tours;
-      }
-
-
-      throw new Error(
-        "tours.json does not contain a valid tours array."
-      );
 
     }
 
