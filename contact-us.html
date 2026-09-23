@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
+
   <header class="site-header header-overlay">
     <div class="wrap">
       <a href="index.html" class="brand"><i class="fa-solid fa-paw"></i>Simba Adventures</a>
+
       <ul class="nav-menu nav-menu-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Tours &amp; Safaris</a></li>
@@ -23,12 +26,17 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact-us.html" class="active">Contact</a></li>
       </ul>
+
       <div class="nav-right">
         <a href="plan-my-safari.html" class="btn btn-gold btn-sm">Plan My Safari</a>
-        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </div>
   </header>
+
 
   <section
     class="page-hero"
@@ -41,89 +49,305 @@
     </div>
   </section>
 
+
   <section class="section">
     <div class="wrap">
+
       <div class="form-layout">
+
         <div class="form-card">
-          <h3 style="margin-bottom:4px;">Safari <span class="italic">Enquiry</span></h3>
-          <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;">Fill in what you know &mdash; we'll handle the rest.</p>
+
+          <h3 style="margin-bottom:4px;">
+            Safari <span class="italic">Enquiry</span>
+          </h3>
+
+          <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:24px;">
+            Fill in what you know &mdash; we'll handle the rest.
+          </p>
+
           <form action="https://formspree.io/f/mjyvqlnr" method="POST">
+
             <div class="form-row">
-              <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" name="name" placeholder="Your name" required></div>
-              <div class="form-group"><label>Email <span class="req">*</span></label><input type="email" name="email" placeholder="you@email.com" required></div>
+
+              <div class="form-group">
+                <label>Full Name <span class="req">*</span></label>
+                <input type="text" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label>Email <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="you@email.com" required>
+              </div>
+
             </div>
-            <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000"></div>
-            <div class="form-group"><label>Message <span class="req">*</span></label><textarea name="message" placeholder="Tell us where you would like to go, when you would like to travel, and anything that would make this trip special..." required></textarea></div>
-            <button type="submit" class="btn btn-gold btn-block">Send My Enquiry &rarr;</button>
-            <p class="form-note">We typically reply within 24 hours.</p>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+
+            <div class="form-group">
+              <label>Message <span class="req">*</span></label>
+              <textarea
+                name="message"
+                placeholder="Tell us where you would like to go, when you would like to travel, and anything that would make this trip special..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block">
+              Send My Enquiry &rarr;
+            </button>
+
+            <p class="form-note">
+              We typically reply within 24 hours.
+            </p>
+
           </form>
+
         </div>
 
+
         <div>
+
           <div class="info-card-dark" style="margin-bottom:20px;">
+
             <h3>Contact Directly</h3>
-            <p style="font-size:12.5px; color:rgba(237,231,211,0.7); margin-bottom:18px;">Prefer a conversation? Our safari specialists are happy to help.</p>
-            <div class="info-line"><i class="fa-solid fa-location-dot"></i><div><strong>Plot 58, Block E, Sokoine Road, Arusha</strong>Arusha, Tanzania</div></div>
-            <div class="info-line"><i class="fa-solid fa-phone"></i><div><strong>+255 755 753 576</strong>Mon&ndash;Sat, 8am&ndash;6pm EAT</div></div>
-            <div class="info-line" style="margin-bottom:0;"><i class="fa-solid fa-envelope"></i><div><strong>info@simbaadventures.com</strong>Response within 24 hours</div></div>
+
+            <p style="font-size:12.5px; color:rgba(237,231,211,0.7); margin-bottom:18px;">
+              Prefer a conversation? Our safari specialists are happy to help.
+            </p>
+
+            <div class="info-line">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Plot 58, Block E, Sokoine Road, Arusha</strong>
+                Arusha, Tanzania
+              </div>
+            </div>
+
+            <div class="info-line">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>+255 755 753 576</strong>
+                Mon&ndash;Sat, 8am&ndash;6pm EAT
+              </div>
+            </div>
+
+            <div class="info-line" style="margin-bottom:0;">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>info@simbaadventures.com</strong>
+                Response within 24 hours
+              </div>
+            </div>
+
           </div>
+
 
           <div class="info-card-light">
+
             <h3>Why book with <span class="italic">Simba</span>?</h3>
-            <div class="check-line"><i class="fa-solid fa-check"></i>100% Tanzanian-owned &amp; operated</div>
-            <div class="check-line"><i class="fa-solid fa-check"></i>No hidden fees &mdash; transparent pricing</div>
-            <div class="check-line"><i class="fa-solid fa-check"></i>Fully bespoke, never group tours</div>
-            <div class="check-line" style="margin-bottom:0;"><i class="fa-solid fa-check"></i>24/7 in-country support</div>
+
+            <div class="check-line">
+              <i class="fa-solid fa-check"></i>
+              100% Tanzanian-owned &amp; operated
+            </div>
+
+            <div class="check-line">
+              <i class="fa-solid fa-check"></i>
+              No hidden fees &mdash; transparent pricing
+            </div>
+
+            <div class="check-line">
+              <i class="fa-solid fa-check"></i>
+              Fully bespoke, never group tours
+            </div>
+
+            <div class="check-line" style="margin-bottom:0;">
+              <i class="fa-solid fa-check"></i>
+              24/7 in-country support
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
   </section>
+
 
   <section class="section" style="padding-top:0;">
+
     <div class="wrap" style="max-width:760px;">
+
       <div class="section-header center">
+
         <span class="eyebrow">Common Questions</span>
+
         <h2>Frequently Asked Questions</h2>
+
       </div>
+
+
       <div class="faq-item">
-        <div class="faq-q">When is the best time to visit Tanzania?<span class="plus">+</span></div>
-        <div class="faq-a">The dry season from June to October offers the best game viewing, including the Great Migration river crossings. The calving season in January&ndash;February is also spectacular.</div>
+
+        <div class="faq-q">
+          When is the best time to visit Tanzania?
+          <span class="plus">+</span>
+        </div>
+
+        <div class="faq-a">
+          The dry season from June to October offers the best game viewing,
+          including the Great Migration river crossings. The calving season
+          in January&ndash;February is also spectacular.
+        </div>
+
       </div>
+
+
       <div class="faq-item">
-        <div class="faq-q">How far in advance should I book?<span class="plus">+</span></div>
-        <div class="faq-a">We recommend booking 6&ndash;12 months ahead for peak season (July&ndash;September) to secure the best camps. Off-peak trips can often be arranged with 2&ndash;3 months' notice.</div>
+
+        <div class="faq-q">
+          How far in advance should I book?
+          <span class="plus">+</span>
+        </div>
+
+        <div class="faq-a">
+          We recommend booking 6&ndash;12 months ahead for peak season
+          (July&ndash;September) to secure the best camps. Off-peak trips
+          can often be arranged with 2&ndash;3 months' notice.
+        </div>
+
       </div>
+
+
       <div class="faq-item">
-        <div class="faq-q">Are your safaris suitable for families?<span class="plus">+</span></div>
-        <div class="faq-a">Absolutely. We design family-friendly itineraries with shorter drive times, family tents, and guides experienced in engaging younger travellers.</div>
+
+        <div class="faq-q">
+          Are your safaris suitable for families?
+          <span class="plus">+</span>
+        </div>
+
+        <div class="faq-a">
+          Absolutely. We design family-friendly itineraries with shorter
+          drive times, family tents, and guides experienced in engaging
+          younger travellers.
+        </div>
+
       </div>
+
+
+      <!-- NEW FAQ 1 -->
+
+      <div class="faq-item">
+
+        <div class="faq-q">
+          What is included in a safari with Simba Adventures?
+          <span class="plus">+</span>
+        </div>
+
+        <div class="faq-a">
+          Our safari packages generally include a 4x4 Safari Land Cruiser
+          with a pop-up roof, a professional English-speaking guide, fuel,
+          vehicle and park fees, national park and conservation fees,
+          accommodation and meals according to your itinerary, drinking
+          water, airport transfers from JRO or Arusha, and AMREF / Flying
+          Doctors emergency evacuation cover. Exact inclusions can vary
+          by itinerary and will be confirmed before booking.
+        </div>
+
+      </div>
+
+
+      <!-- NEW FAQ 2 -->
+
+      <div class="faq-item">
+
+        <div class="faq-q">
+          What isn't included in the safari price?
+          <span class="plus">+</span>
+        </div>
+
+        <div class="faq-a">
+          International flights, travel insurance, Tanzania visa fees,
+          guide tips, personal expenses, alcoholic drinks and soft drinks
+          are not included. Optional experiences such as balloon safaris,
+          Maasai village visits, night game drives and walking safaris
+          are also extra unless specifically included in your itinerary.
+          Accommodation before or after your safari in Arusha can be
+          arranged separately.
+        </div>
+
+      </div>
+
     </div>
+
   </section>
 
+
   <footer class="site-footer">
+
     <div class="wrap">
+
       <div class="footer-grid">
+
         <div>
-          <div class="footer-brand"><i class="fa-solid fa-paw"></i>Simba Adventures</div>
-          <p class="footer-desc">Arusha is home for us. We're local guides who plan your trip friend to friend — no scripts, no upselling.</p>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/simbaadventures" target="_blank"><svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-            <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank"><svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-            <a href="#"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+
+          <div class="footer-brand">
+            <i class="fa-solid fa-paw"></i>Simba Adventures
           </div>
+
+          <p class="footer-desc">
+            Arusha is home for us. We're local guides who plan your trip
+            friend to friend — no scripts, no upselling.
+          </p>
+
+          <div class="footer-social">
+
+            <a href="https://www.facebook.com/simbaadventures" target="_blank">
+              <svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank">
+              <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.6-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+              </svg>
+            </a>
+
+          </div>
+
         </div>
+
+
         <div>
+
           <div class="footer-col-title">Explore</div>
+
           <ul class="footer-menu">
             <li><a href="tour.html">Serengeti Safaris</a></li>
             <li><a href="tour.html">Kilimanjaro Treks</a></li>
             <li><a href="tour.html">Zanzibar Retreats</a></li>
             <li><a href="tour.html">Ngorongoro Crater</a></li>
           </ul>
+
         </div>
+
+
         <div>
+
           <div class="footer-col-title">Main Navigation</div>
+
           <ul class="footer-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="tour.html">Tours &amp; Safaris</a></li>
@@ -132,28 +356,53 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact-us.html">Contact</a></li>
           </ul>
+
         </div>
+
+
         <div>
+
           <div class="footer-col-title">Get In Touch</div>
+
           <div class="footer-contact-info">
             <p><i class="fa-solid fa-location-dot"></i>Plot 58, Block E, Sokoine Road, Arusha, Tanzania</p>
             <p><i class="fa-solid fa-phone"></i>+255 755 753 576, +255 788 753 576</p>
             <p><i class="fa-solid fa-envelope"></i>info@simbaadventures.com</p>
           </div>
+
         </div>
+
       </div>
+
+
       <div class="footer-bottom">
+
         <div>&copy; 2026 Simba Adventures. All rights reserved.</div>
+
         <div>Reg. No. 113663 &middot; VAT No. 40319680K</div>
-        <div><a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.html">Sitemap</a></div>
+
+        <div>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+
       </div>
+
     </div>
+
   </footer>
+
+
   <script>
     document.querySelectorAll('.faq-item').forEach(function(item){
       var q = item.querySelector('.faq-q');
-      if(q){ q.addEventListener('click', function(){ item.classList.toggle('open'); }); }
+      if(q){
+        q.addEventListener('click', function(){
+          item.classList.toggle('open');
+        });
+      }
     });
   </script>
+
 </body>
 </html>
