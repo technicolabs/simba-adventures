@@ -55,6 +55,7 @@
     color: #eae4cf;
   }
   .brand i { color: #C89B3C; font-size: 16px; }
+  .brand img { width: 38px; height: 38px; object-fit: contain; }
 
   .nav-menu {
     display: flex; align-items: center; gap: 30px;
@@ -318,8 +319,10 @@
   }
   .test-head h2 em { font-style: italic; color: #2f5f47; }
   .test-list {
-    display: flex; flex-direction: column; gap: 20px;
-    max-width: 880px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1080px; margin: 0 auto;
   }
   .test-card {
     background: #fff;
@@ -409,6 +412,7 @@
     font-family: 'Fraunces', serif; font-size: 19px; color: #fff; margin-bottom: 12px;
   }
   .site-footer .footer-brand i { color: #C89B3C; }
+  .site-footer .footer-brand img { width: 32px; height: 32px; object-fit: contain; }
   .site-footer .footer-desc {
     font-size: 12.5px; color: rgba(237,231,211,0.6); max-width: 230px; margin-bottom: 16px; line-height: 1.7;
   }
@@ -420,6 +424,7 @@
     font-size: 12px; color: rgba(237,231,211,0.7);
   }
   .site-footer .footer-social a:hover { border-color: #D9B564; color: #D9B564; }
+  .site-footer .footer-social svg { width: 13px; height: 13px; display: block; }
   .site-footer .footer-col-title {
     font-size: 11px; text-transform: uppercase; letter-spacing: .08em;
     color: #D9B564; margin-bottom: 18px; font-weight: 600;
@@ -449,6 +454,7 @@
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-feats { grid-template-columns: 1fr 1fr; }
     .certs-grid { grid-template-columns: repeat(2, 1fr); }
+    .test-list { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
 
@@ -500,7 +506,7 @@
 <nav class="navbar">
   <div class="container">
     <a href="index.html" class="brand">
-      <i class="fa-solid fa-paw"></i>
+      <img src="logo.png" alt="Simba Adventures" class="brand-logo">
       Simba Adventures
     </a>
     <ul class="nav-menu nav-menu-links" id="navMenu">
@@ -743,12 +749,12 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><i class="fa-solid fa-paw"></i>Simba Adventures</div>
+        <div class="footer-brand"><img src="logo.png" alt="Simba Adventures" class="brand-logo"> Simba Adventures</div>
         <p class="footer-desc">Tanzania's premier safari specialist. Crafting unforgettable wildlife journeys since 2006.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/simbaadventures" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/simbaadventuresafaris/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/safaritanzania2?lang=en" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://twitter.com/safaritanzania2?lang=en" target="_blank" aria-label="Twitter"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" class="social-svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
         </div>
       </div>
       <div>
@@ -787,6 +793,7 @@
   </div>
 </footer>
 
+<script src="data-embedded.js"></script>
 <script>
   (function () {
     var tabs = document.querySelectorAll('.filter-tab');
@@ -801,6 +808,13 @@
         })
         .then(function (data) {
           return Array.isArray(data) ? data : (data.tours || []);
+        })
+        .catch(function (error) {
+          console.error('Tour loading error, using embedded fallback:', error);
+          if (window.SIMBA_TOURS && Array.isArray(window.SIMBA_TOURS)) {
+            return window.SIMBA_TOURS;
+          }
+          throw error;
         });
     }
 
@@ -870,7 +884,7 @@
         var badge = tour.badge || '';
         var title = tour.title || 'Safari Experience';
         var description = tour.description || '';
-        var detailUrl = 'tour.html?tour=' + encodeURIComponent(title);
+        var detailUrl = 'tour-details.html?tour=' + encodeURIComponent(title);
 
         var card = document.createElement('article');
         card.className = 'card';
