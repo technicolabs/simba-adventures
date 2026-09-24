@@ -20,7 +20,7 @@
     {
       "title": "Where the evening settles Serengeti",
       "image": "/images/whatsapp-image-2026-09-14-at-12.42.22-pm-1-.jpeg",
-      "location": "Tarangire, Tanzania",
+      "location": "Serengeti, Tanzania",
       "category": "Tanzania",
       "height": "240px",
       "alt": "Where the evening settlesSerengeti"
@@ -28,23 +28,23 @@
     {
       "title": "Gorilla Trekking Rwanda",
       "image": "/images/gorilla.jpeg",
-      "location": "Okavango Delta, Botswana",
-      "category": "Botswana",
+      "location": "Virunga Mountains, Rwanda",
+      "category": "Rwanda",
       "height": "320px",
       "alt": "Gorilla Trekking Rwanda"
     },
     {
-      "title": "The last light",
+      "title": "The Roof of Africa",
       "image": "/images/whatsapp-image-2026-09-14-at-12.42.23-pm.jpeg",
-      "location": "Laikipia, Kenya",
-      "category": "Kenya",
+      "location": "Kilimanjaro, Tanzania",
+      "category": "Tanzania",
       "height": "300px",
       "alt": "The last light"
     },
     {
-      "title": "Tall tales Tarangire, Tanzania",
+      "title": "Tarangire National Park",
       "image": "/images/whatsapp-image-2026-09-14-at-12.42.18-pm-1-.jpeg",
-      "location": "Ngorongoro, Tanzania",
+      "location": "Arusha, Tanzania",
       "category": "Tanzania",
       "height": "260px",
       "alt": "A moving pattern"
